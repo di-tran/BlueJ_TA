@@ -1,0 +1,8 @@
+1. As a user, I would like to save my work to a git repository on my computer. TIME 1 WEEK
+2. As a user, I would like to use Github with my BlueJ project. TIME 2 WEEKS
+3. As a user, I would like to revert to a commit that I made earlier. TIME 3 WEEKS
+4. As a user, I would like to create a new branch.  TIMES 2 WEEKS
+5. As a user, I would like to checkout a repository using Git. TIME 1 DAYS but it overlapps with other user stories
+6. As a user, I would like to commit to a repository using Git. TIME 1 DAYS but it overlapps with other user stories
+7. As a user, I would like to use a Git repository in BlueJ with a GUI. TIME 0.2 WEEKS
+8. As a user, I would like to save my work to a git repository on a remote computer. OVERLAPPS WITH #2. Possible combine.

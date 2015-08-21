@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=eDir\ userName
+comment0.target=ExecuteThread(java.io.File,\ java.lang.String)
+comment1.params=path
+comment1.target=void\ setJunitPath(java.lang.String)
+comment2.params=path
+comment2.target=void\ setExtPath(java.lang.String)
+comment3.params=testFile
+comment3.target=void\ setTestPath(java.io.File)
+comment4.params=
+comment4.target=boolean\ hasTestLoaded()
+comment5.params=
+comment5.target=void\ run()
+comment6.params=
+comment6.target=java.lang.String\ runTest()
+comment7.params=
+comment7.target=void\ stopTest()
+numComments=8

@@ -1,0 +1,1 @@
+﻿Collection of README’s dispersed at every level of the repository. These documents guide future developers with information like an explanation of the repository layout, install directions, and general repository usage recommendations. The following artifact consists of the README’s created for project BlueJ TA.

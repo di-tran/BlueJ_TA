@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=menuName
+comment0.target=CodingExercisesAction(java.lang.String)
+comment0.text=\r\n\ Constructs\ a\ CodingAction\ used\ for\ when\ the\ user\ clicks\ the\ \r\n\ exercises\ "button"\r\n\ \r\n\ @param\ menuName\r\n
+comment1.params=event
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment1.text=\r\n\ Starts\ the\ GUI\ for\ this\ extension\r\n\ \r\n\ @param\ event\ ActionEvent\ passed\r\n
+numComments=2

@@ -1,0 +1,12 @@
+Presentation 2 talks about design patterns.
+First, we briefly defined design patterns.
+Second, we describe the elements of a design pattern.
+Third, we describe the types of design patterns.
+Fourth, we explain the need to identify the problem
+before prescribing a design pattern.
+Fifth, we compare design patterns to math formulas.
+Six, we show a real computer science application of design patterns.
+Seventh, we show how we made a mistake in selecting 
+a design pattern because we did not properly identify the problem.
+Finally, we wrap up the presentation by emphasizing the need
+ to identify the problem.

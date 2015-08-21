@@ -1,0 +1,12 @@
+Design Desisions:
+
+A)Some form of multi threading may be needed to ensure the 
+gui's event handling thread dosent lock up on a lengtly or infinite junit proccess.
+	-This is currently depicted in the Proposed Design Documesnts(v1).
+
+B)Might want a cancel button or feature to help stop lenglty JUnit processes
+
+C)need to pass JUnit.jar location to the process as well as the curerent jre or jdk location
+
+D)Made JUnitCore run in a process instead of a thread because threads .stop() are depreciated 
+and the processes are safer to destry in an infinite state.

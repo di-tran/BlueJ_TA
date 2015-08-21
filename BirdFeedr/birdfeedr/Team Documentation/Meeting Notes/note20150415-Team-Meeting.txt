@@ -1,0 +1,51 @@
+015-04-15 14:04
+
+DECISIONS
+- Refactoring to be done by end of this week
+
+ACCOMPLISHMENTS
+- Program takes .xls information to make file list
+- Key message vaguely decided
+- Extension project compiles again.
+- Checklist of user stories uploaded to drive
+
+UNANSWERED QUESTIONS
+
+TO DO
+- Hard copy of portfolio to be laid out
+- Josh will find an easier way to assemble the portfolio, a plan ‘a.’
+- Create key message before talking to Jody
+- Make checklist of where BlueJ TA is compared to our user stories, on white board.
+
+RAW NOTES
+
+J: Concerned about not enough manhours to complete everything.
+   Might need java files in project, or just need to say there will be code that makes mapping.
+W: Scope was to ‘load an exercise’ and ‘do an exercise’
+J: 
+W: Physical copy to be created, stacked into a PDF. Hard copies to be
+N: Are we writing it out on pen?
+W: No, we’re going to print it out. Easier to print everything and assemble everything out afterwards.
+J: Could be a plan b, I might be able to find a better idea
+
+W/D Flesh presentation
+T/M/N/J Refactoring / Parser Integration 
+
+Check in:
+Decided to create a presentation about stakeholders. 
+
+J: So this is about outsourcing decision making
+D: No, we made the decision
+
+J: No tangible progress - I made a revision on install file for windows (on up yet).
+  I’ve been looking at howing to refactor it
+N: You’re learning the gaps.
+
+M: Project compiles now on Nate’s but not mine.
+W: I feel like a lot of our issues are based off building. Make a release folder and put jars in them.
+
+J: Thomas can you start checklist and then we can finish it?
+T: I can start it.
+
+T: For user stories that haven’t been satisfied, ‘does the framework for it exist’ becomes the next question.
+

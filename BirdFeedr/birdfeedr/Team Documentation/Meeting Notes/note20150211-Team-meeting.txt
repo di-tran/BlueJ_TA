@@ -1,0 +1,108 @@
+2015-02-11 14:04:19
+
+Wei: Pair programming is the topic of presentation.
+
+Wei: show a bad programming approach and show pair programming as the solution.
+
+Nate: Focus on pair programming and show how not to do it.
+
+
+Wei: research what makes pair programming effective.
+
+Nate: sometimes its faster just to program it solo.
+ Long term, it could be benefitcial.
+
+Wei: Everybody participates.
+
+Nate: Two people present, Two people do the bad, and two people do the good.
+
+Wei: the first person goes last to bring familarity.
+
+Wei: show the two good helping out the two bad.
+
+Di: some people could be doing research. Others could be presenting.
+
+Wei: have project git working and add one small feature to project chirp.
+
+Wei: Do a Saturday group meeting.
+
+  Next week we will be rehearsing.
+
+Nate: its on the 25th
+
+Di: yes.
+
+Wei: Monday half present research, other half rehearse it.
+  and fix it if we don't like it.
+
+Thomas: we need to define a cut off point for project Git.
+
+Josh: Instead of cutting Git off, we could just plan one iteration at a time.
+  
+
+Wei: We could be the QA team.
+
+Nate: make project Git worth while.
+
+Josh: We would need to write user stories and priority.
+   and pick the highest priority first.
+
+Josh: we could create QA tasks and send them over.
+
+DI: we could check on things using our checklist.
+
+Josh: could you document the checklist.
+
+Miguel: the next prj should be decided by everyone.
+
+Wei: We should get more input from our side.
+
+2015-02-11 14:32:22
+
+2015-02-11 15:23:39
+
+Wei: What is our market?
+
+Nate: Go talk to CS1 students about what they want.
+
+Wei: ask JP what he wants.
+
+Wei: mission statement: help teachers.
+
+Di: make BlueJ easy to use and make Java easy to use.
+
+   Range user just picked up BLueJ 1 to 2 years.
+
+Josh: should we create an umbrella for new project or existing projects.
+
+
+Di: swift has a playground feature.
+
+Josh: We could start next week on a mission statement.
+
+Mission Statement: Encourage students and teachers to use BlueJ.
+
+Wei: Goal 1: talk to teachers and students to see what they need.
+
+Di: Jody wants a vision statement.
+   We need to figure it out.
+  What will we development.
+
+  Help make Java easier to use by enhancing BlueJ.
+  We would have to cease dev.
+
+  Make java easier to teach and use using BlueJ.
+  When someone is in CS1 one, they don't lern version control.
+
+Thomas: expand mission statement: Provide tools to help Java.
+
+
+Miguel: What would be the first thing.
+
+Wei: ask teachers what they want.
+
+
+BlueJ has intellisense.
+
+2015-02-11 15:57:31
+

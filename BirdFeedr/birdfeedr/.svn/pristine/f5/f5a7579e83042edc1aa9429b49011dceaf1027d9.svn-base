@@ -1,0 +1,6 @@
+program ifTest;
+	var i,j,x:integer;
+	begin
+        i:=2;
+        j:=3;
+	end.

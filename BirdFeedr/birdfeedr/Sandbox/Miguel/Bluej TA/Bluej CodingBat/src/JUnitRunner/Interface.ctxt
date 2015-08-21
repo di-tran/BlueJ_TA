@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=f
+comment0.target=org.junit.runner.Result\ test(java.io.File)
+comment0.text=\n\ Runs\ Junit\ Test\ from\ specified\ file,\ and\ returns\ the\ results\ object\ containing\ the\ results.\n\ \n\ @param\ f\ the\ JUnit\ test\ class\ to\ run\n\ @Return\ the\ result\ of\ the\ JUnit\ Test\n
+numComments=1

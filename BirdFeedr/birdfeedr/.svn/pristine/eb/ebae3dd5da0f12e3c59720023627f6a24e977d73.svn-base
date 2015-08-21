@@ -1,0 +1,23 @@
+\par
+This portfolio was created to show the process and product produced by Team Birdfeedr.
+\smallskip
+\par
+Throughout the course of 15 weeks, Team BirdFeedr was chose to develop an extension for the BlueJ IDE.
+To figure out the best way to tackle the content of the extension,
+we took a chance to lay out the tools and follow Agile methodologies that we previously learned in CS 4250.
+We held several team building events,
+communicated through email, voice chat, live person, and created group policies.
+We then explored BlueJ’s API by creating “small” projects before proceeding.
+\smallskip
+\par
+After an exploration and survey, we found that students, had a difficult time understanding the syntax and nature of computer languages and programming.
+Thus, the project BlueJ TA was born.
+\smallskip
+\par
+Our product is by no means complete, but it contains a complete framework that future developers can build on.
+Our repository contains all the source files, and as well as a build file so developers can immediately start working.
+Bundled with our product are some sample exercises so users can practice right away.
+\smallskip
+\par
+Overall, our time in Software Engineering Practices has proven fruitful, and this portfolio demonstrates that a team of 6 senior students, when working together, can produce a product that is not only demonstrable immediately, but also has enough forethought put into it that when it will be passed on and can be further developed into the product it was envisioned it to be.
+

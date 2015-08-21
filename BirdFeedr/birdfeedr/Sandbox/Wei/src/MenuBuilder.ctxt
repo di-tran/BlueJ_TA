@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=bPackage
+comment0.target=javax.swing.JMenuItem\ getToolsMenuItem(bluej.extensions.BPackage)
+comment0.text=\r\n\ Adds\ extension\ menu\ items\ to\ the\ BlueJ\ tools\ menu\r\n\ \r\n\ @param\ bPackage\ \ BlueJ\ package\r\n\ @return\ \ \ \ \ the\ menu\ item\ to\ be\ added\ to\ BlueJ\ tools\ menu\r\n
+comment1.params=bClass
+comment1.target=javax.swing.JMenuItem\ getClassMenuItem(bluej.extensions.BClass)
+comment1.text=\r\n\ \r\n
+numComments=2

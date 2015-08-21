@@ -1,0 +1,42 @@
+import bluej.extensions.*;
+import bluej.extensions.editor.*;
+
+import bluej.extensions.event.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+import java.io.File;
+
+class MenuBldr extends MenuGenerator {
+    
+    private final BlueJ bluej;
+    private final TestRunner runner; 
+    private String EXT_JAR_CP;
+    
+    MenuBldr(BlueJ b){
+        bluej = b;
+        runner = new TestRunner(bluej.getSystemLibDir().getAbsolutePath() + "/*"); 
+    }
+    
+    @Override
+    public JMenuItem getToolsMenuItem(BPackage aPackage) {
+        return new JMenuItem("Load Excersize");
+    }
+    
+    @Override
+    public JMenuItem getClassMenuItem(BClass aClass) {
+        EXT_JAR_CP =  ExtJarCp.getCP(bluej, "MyExt.jar");
+        System.out.println("-cp \"" + EXT_JAR_CP + "\"");
+        
+        JMenu menu = new JMenu("Exercise");
+        menu.add(new JMenuItem("About"));
+        menu.addSeparator();
+        try{
+            File excDir = bluej.getCurrentPackage().getDir();
+            menu.add(new JMenuItem(new ExecuteAction("Test", bluej.getCurrentFrame(), runner, excDir, aClass)));
+        }catch(Exception e){
+            System.err.println("Err: "+e);
+        }
+        return menu;
+    }
+}

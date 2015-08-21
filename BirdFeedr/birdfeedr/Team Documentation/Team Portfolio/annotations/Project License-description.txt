@@ -1,0 +1,5 @@
+We did a little research on the license 
+and decided that we would like to use the Creative Commons license.
+We choose this because it aligned we our goals of making the product
+freely available and open source.
+We are not sure what the university policies are for content we create.

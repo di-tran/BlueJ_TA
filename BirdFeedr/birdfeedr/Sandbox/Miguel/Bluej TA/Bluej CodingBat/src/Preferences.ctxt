@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=bluej
+comment0.target=Preferences(bluej.extensions.BlueJ)
+comment1.params=e
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment2.params=e
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=
+comment3.target=java.lang.String\ openFileChooser()
+comment4.params=
+comment4.target=javax.swing.JPanel\ getPanel()
+comment5.params=
+comment5.target=void\ saveValues()
+comment6.params=
+comment6.target=void\ loadValues()
+numComments=7

@@ -1,0 +1,7 @@
+2015-04-23  9:38:11 
+
+Week of 4/19 to 4/25:
+ - The build works on three OSs and the lab computers.
+ - Di, Wei compile a list of missing features and bugs then added them to
+   Redmine.\
+2015-04-23  9:40:50 

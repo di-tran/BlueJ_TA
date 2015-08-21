@@ -1,0 +1,116 @@
+2015-01-23 17:01:31 
+
+What Should the ext do?
+
+
+BlueJ able to compile PHP
+
+Code support C++ ect.
+
+
+Group Assignment:
+
+Each person analyses possible project outcomes.
+
+
+---
+
+Miguel:
+Clarify each project outcome.
+Remove ambiguity.
+
+
+Wei: Understands what we mean by the project we want to do.
+
+
+Wei: Puts his vote in for svn b/c it comes with redmine.
+
+Di: votes the same.
+
+Miguel: Votes the same.
+
+Nate: says its the one he used to.
+
+Josh: Since we know those tools we don't have to spend time learning.
+
+Thomas: has never used redmine.
+
+Wei: YOu just need to knw how to write wiki pages and create issues.
+
+
+Team names Ideas
+Bird feeder
+Extendables
+
+
+Characteristics:
+Wei: Proud of it.
+Nathan: Something that motivates us.
+Di: BirdFeedr
+
+
+We are choosing Team BirdFeedr w/o the last e because we are making extensions.
+ We invision our team as feeding the BlueJ community.
+
+---
+
+Wei: Wants one out of class meeting per week.
+ Make sure everyone is on the same page.
+ We can do it more often as needed.
+ A few key people need to be there.
+ i.e. only people that are coding the extension.
+
+JOsh: one or more meetings weekly.
+ 
+Di: The weekly the meeting will allow us to touch base.
+
+Wei: class will be mostly teaching.
+  Record each meeting so we can keep track.
+
+Wei: we could have a folder in svn for reports corresponding to the project
+  notebook.
+
+Thomas: volunteering for managing svn.
+
+  Individuals do not have a notebook but rather a portfolio.
+
+Wei: Update the project notebook after every meeting.
+
+Thomas: The notebook should be in the svn repo.
+
+Josh: There will be a report after each meeting in the notebook.
+
+Wei: Current status -- deciding our extension.
+  Everyone should report on that on Monday.
+
+Nathan: Discuss the extension on monday. Clearify.
+Miguel Research
+
+FInished svn, metric tracking, team name.
+Todo Process model, choosing extension.
+
+Josh: exp for tiem tracking.
+
+Nathan: Suggestion -- Note what you did b4 the day is over.
+
+Di: agrees.
+Miguel: Agrees.
+
+
+Group Policy -- Track which you did each day if it applies to project.
+
+
+The report policy b/c effective after redmines comes online.
+
+Time tracking b/c active in the pen and paper sense.
+ Once redmine becomes online then the time tracking policy becomes effective.
+
+
+
+Wei -- emails jody w/ team name, svn/redmine.
+
+
+We met our meeting time.
+
+Nathan: never used blueJ. Will play around with it.
+2015-01-23 18:02:57 

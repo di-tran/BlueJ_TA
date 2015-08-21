@@ -1,0 +1,5 @@
+#BlueJ class context
+comment0.params=code
+comment0.target=java.lang.String\ getClassName(java.lang.String)
+comment0.text=\r\n\ Extracts\ the\ first\ class\ name\ from\ the\ given\ class\ code.\r\n\r\n\ @param\ code\ the\ code\ to\ scan.\r\n\ @return\ the\ name\ of\ the\ class\ within\ the\ code\ if\ any,\ otherwise\ returns\r\n\ null.\r\n
+numComments=1

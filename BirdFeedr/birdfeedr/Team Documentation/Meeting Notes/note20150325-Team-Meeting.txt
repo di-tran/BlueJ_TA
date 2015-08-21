@@ -1,0 +1,44 @@
+2015-03-25 14:05:37 
+
+Miguel: Looked an example on design patterns.
+
+SOURCE: http://www.oodesign.com/
+
+---
+Miguel: Use a specific design pattern.
+
+Wei: These should convey our message.
+
+Nate: I found a good website.
+
+
+Wei: A design pattern has consequences.
+  Has parts: the name, the problem -- when, elements and correlation,
+    consequence
+
+Possible messages:
+  - Simplify complexity.
+  - Choose the positive trade off.
+
+Wei: You cannot use an object oriented design pattern for a functional language.
+Di: You want to use a design patterns to solve reoccuring problems.
+
+Wei: Use design patterns in the design phase instead of the coding phase.
+  Design patterns should make coding easier.
+  Important part of implying design patterns is knowing your problems.
+  The more time we spend with design patterns the easier it is code.
+
+Nate: They are like math formulas.
+  It will reduce work and simplify communication.
+
+Know your problem before choosing a design pattern. - More problem analysis.
+Design patterns can reduce work later if picked correctly. - Would involve statistics.
+
+Message:
+Know your problem before choosing a design pattern.
+
+Agenda:
+ - Presentation.
+ - Demonstrate the project.
+ - Create status message.
+2015-03-25 15:28:12 

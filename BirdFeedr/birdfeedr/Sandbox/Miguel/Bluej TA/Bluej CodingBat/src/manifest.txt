@@ -1,0 +1,2 @@
+Main-Class: Main
+Class_Path: <BLUEJ_HOME>/lib/junit-4.8.2.jar

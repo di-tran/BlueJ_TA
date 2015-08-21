@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<exercise>
+		<title>Addition</title>
+		<description>Write a method for adding two vairables</description>
+		<example>
+			<example1>First line down.</example1>
+			<example2>Woot, made it to the second.</example2>
+			<example3>Almost there!!</example3>
+		</example>
+		<hint>That's all folks.</hint>
+		<sampleAnswer>Now that is what I call a good job.</sampleAnswer>
+	</exercise>

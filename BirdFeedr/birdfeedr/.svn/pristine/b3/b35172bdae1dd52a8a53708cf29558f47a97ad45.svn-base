@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=java.lang.String\ getName()
+comment0.text=\r\n\ Used\ to\ get\ the\ name\ of\ this\ extension\r\n\ \r\n\ @return\ the\ name\ of\ this\ extension\r\n
+comment1.params=
+comment1.target=java.lang.String\ getVersion()
+comment1.text=\r\n\ Used\ to\ get\ the\ current\ version\ of\ this\ extension\r\n\ \r\n\ @return\ the\ current\ version\ of\ this\ extension\r\n
+comment2.params=
+comment2.target=boolean\ isCompatible()
+comment2.text=\r\n\ Used\ to\ check\ if\ this\ extension\ is\ compatible\ with\ the\ BlueJ\r\n\ version\ used\r\n\ \r\n\ @return\ true\ if\ this\ extension\ is\ compatible,\ false\ otherwise\r\n
+comment3.params=blueJ
+comment3.target=void\ startup(bluej.extensions.BlueJ)
+comment3.text=\r\n\ Used\ at\ start\ up\ of\ the\ extension\r\n\ \r\n\ @param\ blueJ\ The\ BlueJ\ instance\r\n
+numComments=4

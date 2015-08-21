@@ -1,0 +1,28 @@
+public class SymbolToken
+{
+	private String type;
+	private String lex;
+	private char nest;
+	
+	public SymbolToken(Token t, char y)
+	{
+		type=t.getType();
+		lex=t.getLex();
+		nest=y;
+	}
+	
+	public String getType()
+	{
+		return type;
+	}
+	
+	public String getLex()
+	{
+		return lex;
+	}
+	
+	public char getNest()
+	{
+		return nest;
+	}
+}

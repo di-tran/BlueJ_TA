@@ -1,0 +1,35 @@
+In general:
+ * Rephrase to enhance the readability.
+ * Focus on external behavior, results, and characteristics rather than feelings.
+ * Compress sentances and phrases into smaller expressions using stronger vocabulary.
+
+Slide "Pair Programming"
+ * How it can and can’t work. -- Compress.
+
+Slide "What’s Pair Programming?" -- Compress.
+
+Slide "Positive Expert - Expert Scenario"
+ * Both thinking about the project at hand. -- Compress
+ * Both talking and thinking about each other's responses. -- Compress.
+ * Explaining why they want to add what they want to add. -- Compress.
+
+Slide "Negative Expert - Novice Scenario"
+ * Novice intimidated by expert. -- Focus on externals.
+ * Expert risks taking over for novice. -- Rephrase
+
+Slide "Positive Expert - Novice Scenario"
+ * Both believe the other can bring valuable potential to the project. -- Focus on externals, Compress.
+ * Novice not afraid to contribute. -- Focus on externals.
+ * Expert willing to listen to novice. -- Focus on externals.
+
+Slide "Negative Novice - Novice Scenario"
+ * Without mentor role, novices produce substandard code. -- Resource cosideration.
+ * May be too intimidated to ask for help. -- Focus on externals.
+ * Both too afraid to admit to their own lack of knowledge. -- Focus on externals.
+
+Slide "Positive Novice - Novice Scenario"
+ * Willing to at least try and tackle the problem. -- Rephrase.
+ * Listen to each other and use the others certainty levels as warning signals. -- Compress.
+ * Willing to ask for help when needed. -- Compress.
+
+Slide "To Wrap Up" -- Compress.

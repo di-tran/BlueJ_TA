@@ -1,0 +1,12 @@
+birdfeedr/Projects/Git/Git-Extension/+libs
+birdfeedr/.svn
+.svn/
+META-INF/
+*.bluej*
++libs/
+*.jar
+*.class
+*.gdoc
+*.gslides
+*.ctxt
+dist/

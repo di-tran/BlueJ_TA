@@ -1,0 +1,61 @@
+<project name = "BlueJ_TA" basedir = "." default = "main">
+
+    <property name = "main-class" value = "Extension.Main"/>
+    <property name = "libDir" value = "src/+libs"/>
+
+    <target name = "clean">
+        <delete dir ="classes"/>
+        <delete dir ="dist"/>
+    </target>
+
+    <path id = "classpath">
+        <fileset dir="."/>
+        <fileset dir="${libDir}" includes="**/*.jar"/>
+    </path>
+
+    <target name = "compile">
+        <mkdir dir = "classes"/>
+        <javac includeantruntime="false" srcdir = "src" destdir = "classes" classpathref = "classpath"/>
+    </target>
+
+
+    <target name = "transfer" depends = "compile">
+        <mkdir dir = "classes/Extension/exercises"/>
+        <copy todir = "classes/Extension/exercises">
+            <fileset dir = "src/Extension/exercises" includes = "**"/>
+        </copy>
+
+        <copy todir = "classes/Extension/GUI">
+            <fileset dir = "src/Extension/GUI" includes = "*.fxml"/>
+        </copy>
+
+    </target>
+
+    <path id = "jarClassPath">
+        <fileset dir="dist" includes="*.jar"/>
+    </path>
+
+
+    <target name = "jar" depends = "transfer">
+        <mkdir dir = "dist"/>
+
+	<copy todir = "dist">
+            <fileset dir = "${libDir}" includes = "**"/>
+        </copy>
+
+        <manifestclasspath property = "jarCP" jarfile = "${ant.project.name}.jar">
+            <classpath refid = "jarClassPath"/>
+        </manifestclasspath>
+
+        <jar destfile = "dist/${ant.project.name}.jar" basedir = "classes">
+            <manifest>	
+                <attribute name = "Main-Class" value = "${main-class}"/>
+                <attribute name = "Class-Path" value = "jfxrt.jar bluejext.jar junit-4.8.2.jar"/>
+            </manifest>
+        </jar>
+
+    </target>
+
+    <target name = "main" depends = "clean, jar"/>
+
+</project>

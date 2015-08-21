@@ -1,0 +1,5 @@
+public class Permutations {
+    public int perm(int n, int r){
+        return -1;
+    }
+}

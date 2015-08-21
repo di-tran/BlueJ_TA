@@ -1,0 +1,36 @@
+#!/bin/bash
+VMLEVEL=1.6
+javac *.java -source 1.6 -target 1.6 -cp .:$(find +libs  /Applications/BlueJ  -iname "*.jar" | xargs echo | sed "s/jar \(.\)/jar:\1/g")
+if [ $? != 0 ]; then exit; fi
+
+
+#Set local variables.
+outJar=$PWD/CodingPractice.jar
+tempMFFile=Manifest.mf
+mainClass=Main.class
+libPath=+libs
+extPath=$HOME/Library/Preferences/org.bluej/extensions
+JDK="$(ls -d /Library/Java/JavaVirtualMachines/jdk1.8*/Contents/Home/jre/lib/)"
+
+#Create manifest.
+echo Main-Class: Main> $tempMFFile
+echo Class-Path: $(find "$JDK" -iname "*.jar" -print | xargs -I{} basename '{}' | xargs) $(find +libs  -iname "*.jar" -print | xargs -I{} basename '{}' | xargs)>> $tempMFFile
+
+#Make jar
+jar -cfm  "$outJar" $tempMFFile *.class *.fxml
+cp -R ../BlueJCodingBat_Resources $extPath/..
+pushd ../BlueJCodingBat_Resources
+jar -uf  "$outJar" Exercises/*
+popd
+
+#Remove manifest.
+rm $tempMFFile
+
+#Copy the jars into the extensions folder.
+mkdir -p "$extPath"
+cp "$outJar" "$extPath/"
+#XXX don't copy bluejext.jar
+find +libs  -iname "*.jar" -exec cp '{}' "$extPath/" \;
+cp -n "$JDK"/* "$extPath/"
+
+open /Applications/BlueJ/BlueJ.app/

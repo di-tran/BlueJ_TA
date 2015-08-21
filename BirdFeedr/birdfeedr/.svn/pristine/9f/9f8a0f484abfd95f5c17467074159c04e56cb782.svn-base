@@ -1,0 +1,6 @@
+JavaFX is a Java library that helps in the creation and deployment of graphical user 
+interface for a program. BlueJ TA utilizes this library mainly for its own graphical displays.
+We decided to use this approach because of the simplicity in making and managing the code for
+JavaFX using available JavaFX tools.
+
+The following artifacts consists some samples of _____

@@ -1,0 +1,175 @@
+package UI.GUI;
+import java.awt.event.ActionEvent;
+
+
+import javax.swing.SwingUtilities;
+import java.util.ArrayList;
+import java.io.File;
+import org.junit.runner.Result;
+import java.io.*;
+import javax.swing.*;
+import java.nio.file.Path;
+import bluej.extensions.BlueJ;
+import bluej.extensions.BProject;
+import bluej.extensions.BPackage;
+import bluej.extensions.BClass;
+import java.util.Scanner;
+import java.util.List;
+import java.util.LinkedList;
+import Runner.*;
+
+
+
+
+/**
+ * Write a description of class ExerciseManager here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class ExerciseManager
+{
+    /*
+    public static File getTempDir(){
+        return tempDir;
+    }
+    
+    public static JUnitRunner getRunner(){
+        return runner;
+    }*/
+    
+    /*
+    public static void parseExercises() {
+        /* Will parse xml files and populate exercise list.
+         * March 28, 2015 last edited comment.
+         */
+        exercises = new ArrayList<Exercise>();
+        System.out.println( exercisesLocation );
+        if ( exercisesLocation == null || exercisesLocation.isEmpty() )
+        {*/
+            /**
+            Scanner in = new Scanner( Main.class.getResourceAsStream( "/exercises.lst" ) );
+            List<String> files = new LinkedList<String>();
+            while ( in.hasNextLine() )
+            {
+                String ex = in.nextLine();
+                System.out.println( "ex: " + ex );
+                files.add(  ex  );
+            }
+            System.out.println( "files.size()" + files.size() );
+                String[] filesInDir = files.toArray( new String[files.size()] );            
+                XMLReader reader = new XMLReader();
+        
+                for(int i = 0; i < filesInDir.length; i++) {    
+                    System.out.println("FIle: " + filesInDir[i] );
+                    exercises.add(reader.readExercise(Main.class.getResourceAsStream( filesInDir[i] ) ));
+            }
+            **/
+        /*}
+        else
+        {
+            File directory = new File(exercisesLocation);//new File(resPath, "/Exercises");
+            System.out.println(directory.toPath());
+            File[] filesInDir = directory.listFiles();
+            XMLReader reader = new XMLReader();
+        
+            for(int i = 0; i < filesInDir.length; i++) {    
+                if(filesInDir[i].isFile() && !filesInDir[i].isHidden()){
+                    System.out.println("File: " + filesInDir[i].toPath().toString());
+                    exercises.add(reader.readExercise(filesInDir[i].toPath().toString()));
+                }
+            }
+        }
+        
+        System.out.println("Size: " + exercises.size());
+        //initialize();
+    }*/
+   
+    
+    
+    /**
+     * Initializes the exercise list.
+     * @return exercises - the list of exercises.
+     */
+    public static ArrayList<Exercise> getExerciseList() {
+        return exercises;
+    }
+    
+    public static void showErrorMessage(String mssg) {
+        JOptionPane.showMessageDialog(null, mssg, "Error", JOptionPane.ERROR_MESSAGE);
+    }
+    
+    /**
+     * Creates the GUI showing the JUnit tests for the exercise.
+     */
+    public static void createTestResultsGUI() {
+        if (testResultsGUI == null) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    testResultsGUI = new TestResultsGUI();
+                    testResultsGUI.packGUI();
+                }
+            });
+        } else if(!testResultsGUI.isVisible()) {
+            testResultsGUI.setVisible(true);
+        }
+    }
+    
+    /**
+     * creates the GUI for the description of the exercise.
+     */
+    public static void createDescriptionGUI() {
+        if (descriptionGUI == null) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    descriptionGUI = new DescriptionGUI();
+                    descriptionGUI.packGUI();
+                }
+            });
+        } else if(!descriptionGUI.isVisible()) {
+            descriptionGUI.setVisible(true);
+        }
+    }
+    
+    /**
+     * Creates the GUI for picking an exercise.
+     */
+    public static void createExerciseListGUI() {
+        if (exerciseListGUI == null) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    exerciseListGUI = new ExerciseListGUI();
+                    exerciseListGUI.packGUI();
+                }
+            });
+        } else if(!exerciseListGUI.isVisible()) {
+            exerciseListGUI.setVisible(true);
+        }
+    }
+    
+    /**
+     * disposes descriptionGUI
+     */
+    public static void disposeDescriptionGUI() {
+        if( descriptionGUI != null ){
+            descriptionGUI.setVisible(false);
+            descriptionGUI.dispose();
+            descriptionGUI = null;
+        }
+    }
+    
+     /**
+     * disposes testGUI 
+     */
+    public static void disposeTestResultsGUI() {
+        if( testResultsGUI != null ){
+            testResultsGUI.setVisible(false);
+            testResultsGUI.dispose();
+            testResultsGUI = null;
+        }
+    }
+
+}

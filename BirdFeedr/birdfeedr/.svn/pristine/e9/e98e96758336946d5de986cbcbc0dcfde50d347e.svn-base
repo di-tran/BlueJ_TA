@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=ExerciseGUI()
+comment0.text=\r\n\ Creates\ the\ GUI\r\n
+comment1.params=event
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment1.text=\r\n\ Opens\ up\ a\ message\ dialog.\r\n\ \r\n\ @param\ event\ Actionevent\ event\r\n
+numComments=2

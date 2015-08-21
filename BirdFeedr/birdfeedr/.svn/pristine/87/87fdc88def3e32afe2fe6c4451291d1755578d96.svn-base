@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=menuName
+comment0.target=CodingActions(java.lang.String)
+comment0.text=\r\n\ Constructs\ a\ Coding\ action\ with\ given\ name\r\n\ \r\n\ @param\ menuName\ \ The\ name\ to\ be\ put\ in\ the\ BlueJ\ toolbar\ \r\n
+comment1.params=event
+comment1.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment1.text=\r\n\ The\ action\ that\ this\ object\ performs.\r\n\ Classes\ that\ implement\ CodingActions\ must\ override\ this\ method\r\n\ \r\n\ @param\ event\ ActionEvent\ passed\r\n
+numComments=2

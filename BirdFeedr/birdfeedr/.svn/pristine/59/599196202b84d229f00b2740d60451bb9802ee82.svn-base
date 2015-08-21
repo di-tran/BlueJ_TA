@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=code
+comment0.target=java.lang.String\ getName(java.lang.String)
+comment1.params=path\ contents
+comment1.target=boolean\ save(java.io.File,\ java.lang.String)
+comment2.params=source\ dest
+comment2.target=void\ copy(java.io.File,\ java.io.File)
+comment2.text=\n\ \n\ @see\ http\://examples.javacodegeeks.com/core-java/io/file/4-ways-to-copy-file-in-java/\n
+comment3.params=path
+comment3.target=boolean\ deleteDir(java.io.File)
+comment3.text=\n\ \n\ @see\ http\://www.rgagnon.com/javadetails/java-0483.html\n
+comment4.params=bluej\ name
+comment4.target=void\ closeProj(bluej.extensions.BlueJ,\ java.lang.String)
+numComments=5

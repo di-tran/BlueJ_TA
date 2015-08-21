@@ -1,0 +1,732 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.*;
+
+public class ScanToken
+{
+	private String str, tokenName;
+	private char[] arr;
+	private ArrayList<Object> strList=new ArrayList<Object>();
+	private ArrayList<Token> tokList=new ArrayList<Token>();
+	private ListIterator i;
+	private int lineNum, colNum;
+	private boolean accept = true;
+	private boolean reject = false;
+	private PrintWriter pw;
+
+	/* Constructor for the Scanner.
+	 * Also reads in the text file containing the program.
+	 */
+	public ScanToken(PrintWriter p) throws FileNotFoundException
+	{
+		pw=p;
+		pw.println("Scan Errors:");
+		pw.println();
+		lineNum=1;
+		colNum=1;
+		Scanner inFile;
+		Scanner s=new Scanner(System.in);
+		System.out.print("Please enter the text file: ");
+		String temp=s.nextLine();
+		inFile=new Scanner(new File(temp));
+		str="";
+		while(inFile.hasNextLine())
+		{
+			str=str.concat(inFile.nextLine()).concat("\n");
+		}
+		inFile.close();
+		str=str.concat("&");
+		arr=str.toCharArray();
+		for(int x=0; x<arr.length; x++)
+		{
+			strList.add(arr[x]);
+		}
+		i=strList.listIterator();
+	}
+
+	public Queue<Token> getTokenList()
+	{
+		Queue<Token> l=new LinkedList<Token>();
+		for(int x=0; x<tokList.size(); x++)
+		{
+			l.add(tokList.get(x));
+		}
+		return l;
+	}
+	
+	public void getToken()
+	{
+		if(i.hasNext()==false)
+			pw.println("Error: File has no characters.");
+		else{
+			while(i.hasNext())
+			{
+				char temp=(char)(i.next());
+				//burn whitespace
+				if(temp==' ' || temp=='\t')
+					colNum++;
+				//burn the newline and increase row counter
+				else if(temp=='\n')
+				{
+					lineNum++;
+					colNum=1;
+				}
+				else
+				{
+					i.previous();
+					//check to see if Identifier
+					if(isLetter(temp) || temp=='_')
+						isIdentifier();
+					//check to see if some type of Int
+					else if(isDigit(temp) || temp=='+' || temp=='-')
+						isInt();
+					//check to see if String
+					else if(temp=='\'')
+						isString();
+					//check for comment
+					else if(temp=='{')
+					{
+						String lex="";
+						try {
+							while(temp!='}')
+							{
+								lex+=temp;
+								temp=(char)i.next();
+							}
+						} catch(NoSuchElementException e)
+						{
+							pw.println("Run on comment at row: "+lineNum);
+						}
+					}
+					//check Symbol
+					else
+						isSymbol();
+				}
+			}
+		}
+		/*
+		for(int x=0; x<tokList.size(); x++)
+		{
+			tokList.get(x).printToken();
+		}
+		*/
+	}
+
+	//checks to see if the current char is a letter (uppercase/lowercase)
+	private boolean isLetter(char letter)
+	{
+		if (letter == 'a'||letter == 'b'||letter == 'c'||letter == 'd'||letter == 'e'||letter == 'f'
+				||letter == 'g'||letter == 'h'||letter == 'i'||letter == 'j'||letter == 'k'||letter == 'l'
+				||letter == 'm'||letter == 'n'||letter == 'o'||letter == 'p'||letter == 'q'||letter == 'r'
+				||letter == 's'||letter == 't'||letter == 'u'||letter == 'v'||letter == 'w'||letter == 'x'
+				||letter == 'y'||letter == 'z'||letter == 'A'||letter == 'B'||letter == 'C'||letter == 'D'
+				||letter == 'E'||letter == 'F'||letter == 'G'||letter == 'H'||letter == 'I'||letter == 'J'
+				||letter == 'K'||letter == 'L'||letter == 'M'||letter == 'N'||letter == 'O'||letter == 'P'
+				||letter == 'Q'||letter == 'R'||letter == 'S'||letter == 'T'||letter == 'U'||letter == 'V'
+				||letter == 'W'||letter == 'X'||letter == 'Y'||letter == 'Z'){
+			return true;
+		}
+		else
+			return false;
+	}
+
+	/**
+	 * This is a simple method to check if the character is a digit as specified by our language
+	 * @param digit
+	 * @return true: if the character is an accepted digit
+	 * 		   false: if it is not
+	 */
+	private boolean isDigit(char digit){
+		if (digit=='0' || digit=='1' || digit=='2' || digit=='3' || digit=='4'
+				|| digit=='5' || digit=='6' || digit=='7' || digit=='8' || digit=='9')
+			return true;
+		else
+			return false;
+	}
+
+	/**
+	 * This method will check to see if the string is a reserved word
+	 * @param word
+	 * @param iterator
+	 */
+	private void isReserved(String word)
+	{
+		switch(word){
+		case "and":
+			tokenName = "MP_AND";
+			break;
+		case "begin":
+			tokenName = "MP_BEGIN";
+			break;
+		case "boolean":
+			tokenName = "MP_BOOLEAN";
+			break;
+		case "div":
+			tokenName = "MP_DIV";
+			break;
+		case "do":
+			tokenName = "MP_DO";
+			break;
+		case "downto":
+			tokenName = "MP_DOWNTO";
+			break;
+		case "else":
+			tokenName = "MP_ELSE";
+			break;
+		case "end":
+			tokenName = "MP_END";
+			break;
+		case "false":
+			tokenName = "MP_FALSE";
+			break;
+		case "fixed":
+			tokenName = "MP_FIXED";
+			break;
+		case "float":
+			tokenName = "MP_FLOAT";
+			break;
+		case "for":
+			tokenName = "MP_FOR";
+			break;
+		case "function":
+			tokenName = "MP_FUNCTION";
+			break;
+		case "if":
+			tokenName = "MP_IF";
+			break;
+		case "integer":
+			tokenName = "MP_INTEGER";
+			break;
+		case "mod":
+			tokenName = "MP_MOD";
+			break;
+		case "not":
+			tokenName = "MP_NOT";
+			break;
+		case "or":
+			tokenName = "MP_OR";
+			break;
+		case "procedure":
+			tokenName = "MP_PROCEDURE";
+			break;
+		case "program":
+			tokenName = "MP_PROGRAM";
+			break;
+		case "read":
+			tokenName = "MP_READ";
+			break;
+		case "repeat":
+			tokenName = "MP_REPEAT";
+			break;
+		case "string":
+			tokenName = "MP_STRING";
+			break;
+		case "then":
+			tokenName = "MP_THEN";
+			break;
+		case "to":
+			tokenName = "MP_TO";
+			break;
+		case "true":
+			tokenName = "MP_TRUE";
+			break;
+		case "until":
+			tokenName = "MP_UNTIL";
+			break;
+		case "var":
+			tokenName = "MP_VAR";
+			break;
+		case "while":
+			tokenName = "MP_WHILE";
+			break;
+		case "write":
+			tokenName = "MP_WRITE";
+			break;
+		case "writeln":
+			tokenName = "MP_WRITELN";
+			break;
+		default:
+			tokenName="MP_IDENTIFIER";
+			break;
+		}
+	}
+
+	//checks to see if the given input is an identifier
+	private void isIdentifier()
+	{
+		String lex="";
+		boolean done = false;
+		int state = 0;
+		int endState=1;
+		char temp=(char)i.next();
+		colNum++;
+		while (!done){
+			switch(state){
+			//check underscore or letter
+			case 0:
+				if(temp == '_')
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					state=1;
+					break;
+				}
+				else if(isLetter(temp))
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					state=2;
+					break;
+				}
+				else
+				{
+					state=99;
+					break;
+				}
+			//check letter or digit
+			case 1:
+				if(isLetter(temp) || isDigit(temp))
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					state=2;
+					break;
+				}
+				else if(temp=='_')
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					state=3;
+					break;
+				}
+				else
+				{
+					state=99;
+					break;
+				}
+			//check letter, underscore, or digit
+			case 2:
+				if(isLetter(temp))
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					break;
+				}
+				else if(temp=='_')
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					state=1;
+					break;
+				}
+				else if(isDigit(temp))
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					break;
+				}
+				else
+				{
+					state=99;
+					break;
+				}
+			//case to handle multiple underscores
+			case 3:
+				if(isDigit(temp) || isLetter(temp) || temp=='_')
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					break;
+				}
+				else
+				{
+					pw.println("Invalid Identifier: too many '_', row: "+lineNum+
+							", col: "+(colNum-lex.length()-1));
+					state=99;
+					endState=0;
+					break;
+				}
+			default:
+				done=true;
+				i.previous();
+				colNum--;
+			}
+		}
+		int len=lex.length();
+		switch(endState){
+		case 0:
+			break;
+		default:
+			if(len<10 && !lex.contains("_"))
+			{
+				String strTemp=lex.toLowerCase();
+				isReserved(strTemp);
+				tokList.add(new Token(tokenName, lex, lineNum, (colNum-lex.length())));
+			}
+			else
+			{
+				tokList.add(new Token("MP_IDENTIFIER", lex, lineNum, (colNum-lex.length())));
+			}
+			break;
+		}
+	}
+
+	/* Checks to see if the given char sequence is a symbol.
+	 * '.'|','|';'|'('|')'|'='|'>'|'>='|'<'|'<='|'<>'|':='|'+'|'-'|'*'|':'|'/'
+	 */
+	private void isSymbol()
+	{
+		String lex="";
+		char temp=(char)i.next();
+		switch(temp) {
+		case '.':
+			lex+=temp;
+			tokList.add(new Token("MP_PERIOD", lex, lineNum, colNum));
+			break;
+		case ',':
+			lex+=temp;
+			tokList.add(new Token("MP_COMMA", lex, lineNum, colNum));
+			break;
+		case ';':
+			lex+=temp;
+			tokList.add(new Token("MP_SCOLON", lex, lineNum, colNum));
+			break;
+		case '(':
+			lex+=temp;
+			tokList.add(new Token("MP_LPAREN", lex, lineNum, colNum));
+			break;
+		case ')':
+			lex+=temp;
+			tokList.add(new Token("MP_RPAREN", lex, lineNum, colNum));
+			break;
+		case '=':
+			lex+=temp;
+			tokList.add(new Token("MP_EQUAL", lex, lineNum, colNum));
+			break;
+		case '+':
+			lex+=temp;
+			tokList.add(new Token("MP_PLUS", lex, lineNum, colNum));
+			break;
+		case '-':
+			lex+=temp;
+			tokList.add(new Token("MP_MINUS", lex, lineNum, colNum));
+			break;
+		case '*':
+			lex+=temp;
+			tokList.add(new Token("MP_TIMES", lex, lineNum, colNum));
+			break;
+		case '&':
+			lex+=temp;
+			tokList.add(new Token("MP_EOF", lex, lineNum, colNum));
+			break;
+		case ':':
+			lex+=temp;
+			temp=(char)i.next();
+			if(temp=='=')
+			{
+				lex+=temp;
+				tokList.add(new Token("MP_ASSIGN", lex, lineNum, colNum));
+				colNum++;
+				break;
+			}
+			else {
+				tokList.add(new Token("MP_COLON", lex, lineNum, colNum));
+				i.previous();
+				break;
+			}
+		case '>':
+			lex+=temp;
+			temp=(char)i.next();
+			if(temp=='=')
+			{
+				lex+=temp;
+				tokList.add(new Token("MP_GEQUAL", lex, lineNum, colNum));
+				colNum++;
+				break;
+			}
+			else {
+				tokList.add(new Token("MP_GTHAN", lex, lineNum, colNum));
+				i.previous();
+				break;
+			}
+		case '<':
+			lex+=temp;
+			temp=(char)i.next();
+			if(temp=='=')
+			{
+				lex+=temp;
+				tokList.add(new Token("MP_LEQUAL", lex, lineNum, colNum));
+				colNum++;
+				break;
+			}
+			else if(temp=='>')
+			{
+				lex+=temp;
+				tokList.add(new Token("MP_NEQUAL", lex, lineNum, (colNum)));
+				colNum++;
+				break;
+			}
+			else {
+				tokList.add(new Token("MP_LTHAN", lex, lineNum, colNum));
+				i.previous();
+				break;
+			}
+		case '/':
+			lex+=temp;
+			tokList.add(new Token("MP_FSLASH", lex, lineNum, colNum));
+			break;
+		default:
+			System.out.println("Not a valid symbol at row: "+lineNum+", col: "+colNum);
+			break;
+		}
+	}
+
+	//checks to see if the given input is an int
+	private void isInt()
+	{
+		String lex="";
+		boolean done = false;
+		int state=0;
+		char flag='i';	//i=integer, d=fixed, f=float, p=plus/minus
+		char temp=(char)i.next();
+		colNum++;
+		while (!done){
+			switch(state){
+			//checks if + or -
+			case 0:
+				if(temp == '+')
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					//if plus is not followed by a digit, it is just a plus
+					if(!isDigit(temp))
+					{
+						flag='p';
+						i.previous();
+						state=99;
+						break;
+					}
+					else {
+						state=1;
+						break;
+					}
+				}
+				else if(temp=='-')
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					//if minus is not followed by a digit, it is just a minus
+					if(!isDigit(temp))
+					{
+						flag='p';
+						i.previous();
+						state=99;
+						break;
+					}
+					else {
+						state=1;
+						break;
+					}
+				}
+				//number does not have to have a plus or minus in front of it
+				else
+				{
+					state=1;
+					break;
+				}
+			case 1:
+				//say here on digits
+				if(isDigit(temp))
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					break;
+				}
+				//transition on a decimal
+				else if(temp=='.')
+				{
+					flag='d';
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					state=2;
+					break;
+				}
+				else {
+					state=99;
+					break;
+				}
+			//decimal or e/E has to be followed by a digit
+			//check for digit
+			case 2:
+				//stay here on digit
+				if(isDigit(temp))
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					break;
+				}
+				//transition on anything else
+				else {
+					state=3;
+					break;
+				}
+			case 3:
+				if(temp=='e' || temp=='E')
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					state=4;
+					break;
+				}
+				else {
+					state=99;
+					break;
+				}
+			case 4:
+				if(temp=='+' || temp=='-')
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					state=5;
+					break;
+				}
+				else if(isDigit(temp))
+				{
+					state=5;
+					break;
+				}
+				else {
+					state=99;
+					break;
+				}
+			case 5:
+				//stay here on digit
+				if(isDigit(temp))
+				{
+					flag='f';
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					break;
+				}
+				//transition on anything else
+				else {
+					state=99;
+					break;
+				}
+			default:
+				done=true;
+				i.previous();
+				colNum--;
+			}
+		}
+		if(flag=='i')
+			tokList.add(new Token("MP_INTEGER_LIT", lex, lineNum, (colNum-lex.length())));
+		else if(flag=='d')
+			tokList.add(new Token("MP_FIXED_LIT", lex, lineNum, (colNum-lex.length())));
+		else if(flag=='f')
+			tokList.add(new Token("MP_FLOAT_LIT", lex, lineNum, (colNum-lex.length())));
+		else if(flag=='p')
+			isSymbol();
+		else
+			pw.println("ERROR - isInt");
+	}
+
+	//checks to see if the given input is a string literal
+	private void isString()
+	{
+		String lex="";
+		boolean done = false;
+		int state = 0;
+		char flag='g';  //g=good, b=bad
+		char temp=(char)i.next();
+		colNum++;
+		while (!done){
+			switch(state){
+			case 0:
+				if (temp == '\'')
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					state = 1;
+					break;
+				} 
+				else {
+					state=99;
+					break;
+				}
+			case 1:
+				if (temp == '\'')
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					state = 2;
+					break;
+				}
+				else if(temp=='\n')
+				{
+					i.previous();
+					flag='b';
+					done=true;
+					break;
+				}
+				else {
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					state = 1;
+					break;
+				}
+			case 2:
+				//start of new string lit in string lit
+				if(temp == '\'')
+				{
+					lex+=temp;
+					temp=(char)i.next();
+					colNum++;
+					state = 1;
+					break;
+				} 
+				else {
+					state=99;
+					break;
+				}
+			default:
+				i.previous();
+				done=true;
+				state=99;
+				break;
+			}
+		}
+		if(flag=='g')
+			tokList.add(new Token("MP_STRING_LIT", lex, lineNum, (colNum-lex.length())));
+		else
+			pw.println("Run-on string at line: "+lineNum+", col: "+(colNum-lex.length()));
+	}
+	
+	public void printTokens()
+	{
+		for(int x=0; x<tokList.size(); x++)
+		{
+			tokList.get(x).printToken();
+		}
+	}
+}

@@ -1,0 +1,4 @@
+#BlueJ class context
+comment0.params=classPaths\ fileToCompile
+comment0.target=java.io.File\ compileFile(java.lang.String[],\ java.io.File)
+numComments=1

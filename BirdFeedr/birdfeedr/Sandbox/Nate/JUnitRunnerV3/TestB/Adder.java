@@ -1,0 +1,8 @@
+
+public abstract class Adder {
+    
+    public static int add(int a, int b){
+        return a + b;
+    }
+    
+}

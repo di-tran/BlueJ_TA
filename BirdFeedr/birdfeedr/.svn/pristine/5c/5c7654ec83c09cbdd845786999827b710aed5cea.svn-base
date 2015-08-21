@@ -1,0 +1,21 @@
+
+1) Create jar
+To run create a jar from the project, note JUnit does NOT need to be included anymore with the new runner, 
+and place it in the ext folder.
+
+
+2) Copy folders
+Copy the "BlueJCodingBat_Resources" folder to the local user folder/bluej found by bluej 
+with: blueJ.getUserConfigDir().
+
+
+3) setup the junit test class
+Compile the AddTest.java with the Adder.java with a classpath set to a junit.jar. 
+Delete the Adder.class and move the AddTest.class to the "BlueJCodingBat_Resources/Temp" folder
+for a test to be seen by the runner.
+
+
+4) Run a demo project
+To run open the DemoTestA project or make a new project with a class called adder in it with an 
+add method. Load any exercise(the loading is isn't tied to the runner/compiler yet) and run the 
+test on it. 

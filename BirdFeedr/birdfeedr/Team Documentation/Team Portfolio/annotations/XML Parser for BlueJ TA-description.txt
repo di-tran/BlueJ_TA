@@ -1,0 +1,1 @@
+The following artifact is a sample of the code for the XML parser module created for the BlueJ TA extension. The XML parser module reads XML documents and loads the contents into memory. To be more specific, the XML parser reads in pre-generated XML exercise files and created Exercise objects for use by the extension. The parser uses the Java Jaxby tool to parser XML documents.

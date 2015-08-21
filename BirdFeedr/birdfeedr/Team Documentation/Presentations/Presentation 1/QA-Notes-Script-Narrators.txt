@@ -1,0 +1,23 @@
+"lead lead" -- repeated words 2nd paragraph.
+
+During this presentation, Thomas will lead lead you on an exploration through Expert-Expert, Expert-Novice, and Novice-Novice programming styles.
+  -Use scenarios instead of styles.
+  -Need to tell the audience what the purpose of this is.
+ 
+Explain how it helped us
+  -Need specific points.
+
+"step into 2 different shops were pairs are at work coding " -- grammar. Consider rephrase.
+
+After each pair act, the narrator might want to tell the audience that they
+  are allowed to comment. I know we practiced this, but, maybe it should
+  explicitly scripted.
+
+Remember to add strong transitions between scenario types.
+  -Cover what we learned.
+  -Present the new type.
+  -Offer a description.
+  -Tips and special considerations.
+
+
+Messages should be deliberate.

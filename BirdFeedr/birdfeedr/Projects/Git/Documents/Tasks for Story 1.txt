@@ -1,0 +1,8 @@
+Create an extension base that proves that we can create a BlueJ extension. TIME ESTIMATED 1 HOUR.
+Find a way to talk to Git. This would be a research task. I bet there is an API that will do it. TIME ESTIMATE 4 HOURS
+Create a quick demo that proves Java can talk to Git. TIME ESTIMATE 0.5 HOURS
+Create a plugin with menu items for git. i.e. initialize, commit. TIME ESTIMATE 2 HOURS
+Create a unit test for initialization. TIME ESTIMATE 2 HOURS
+Create a unit test for committing.. TIME ESTIMATE 2 HOURS
+Implement initialization. TIME ESTIMATE 1 HOURS
+Implement committing. TIME ESTIMATE 1 HOURS

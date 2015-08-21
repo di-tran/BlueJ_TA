@@ -1,0 +1,54 @@
+Current active project: BlueJ_CodingBat
+
+Location of java source files: ..\BlueJ_CodingBat\Bluej CodingBat\src
+Location of java .class files: ..\BlueJ_CodingBat\Bluej CodingBat\bin
+Location of extension jar:     ..\BlueJ_CodingBat\CodingPractice.jar
+Location of build file:        ..\BlueJ_CodingBat\Bluej CodingBat\src\Installation.txt
+
+==============================================================================================================
+Manual build instructions:
+
+Note: Replace [and anything inside]
+1. Create manifest.txt with following text inside: 
+Main-Class: [Your startup file. No file extension]
+2. Move manifest.txt to your extension's .class files
+3. Open command prompt and navigate to your .class files
+4. Type in the follow command prompt argument to build: 
+jar cmf manifest.txt [Name of jar file].jar *.class
+5. The Bluej extension .jar file should be in your current directory.
+
+==============================================================================================================
+Structure of repository:
+
+Location:		           Explination:
+______________________________________________________________________________________________________________
++SVN		                -- Top most directory.
+|-+ Projects                      -- Where all our projects are located.
+  |-+ BlueJ_CodingBat               -- A folder for Project Bluej CodingBat (name tenative).
+    |-+ BlueJ CodingBat               -- An Eclipse Project folder for Project Bluej CodingBat.
+      |-+ .settings
+      |-+ bin                           -- Location of .class files for Project Bluej CodingBat.
+      |-+ META-INF
+      |-+ src                           -- Location of .java files for Project Bluej CodingBat.
+      |-- .classpath
+      |-- .project
+      |-- manifest.txt	                -- Used to build a Bluej Extension jar in the command line.
+    |-+ Possible Templates            -- A folder with possible class names for Project Bluej CodingBat.
+    |-+ Documentation	              -- A documents folder specifically for Project Bluej CodingBat.
+  |-+ Chirp                         -- A folder for Project Chirp.
+    |-- ChirpEx.zip	              -- A zip folder designed to test out releases.
+    |-- Chirp.wav	              -- .wav sound file for Project Chirp.
+    |-- (Various jar files)           -- Bluej extension jars for project Chirp. Each one was a different test.
+    |-- Documentation                 -- A documents folder specifically for Project Chirp.
+    |-- Exploration Summary.txt       -- A text file talking about our results from creating Project Chirp.
+    |-- Sandbox.java	              -- A program to test the .wav sound file.
+    |-- SimpleExtension.java          -- Our first attempt at creating an extension for Bluej.
+  |-+ Github                        -- A folder for Project Git.
+    |-+ Documents                     -- A documents folder specifically for Project GitHub.
+    |-+ Git-Extension
+    |-+ PhpProject1
+    |-+ Sample Project
+|-+ Sandbox                       -- A directory to folders for individual members' use.
+   |-+ (Group member's name)        -- Folder for individual member's use.
+   |-- Readme.txt 	            -- The Readme file with a description of the Sandbox.
+|-- Readme.txt                    -- This file.

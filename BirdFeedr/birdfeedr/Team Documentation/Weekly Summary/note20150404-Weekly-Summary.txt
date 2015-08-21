@@ -1,0 +1,7 @@
+2015-04-04 13:03:19 
+
+Week of March 29
+ - We gave a status report.
+ - We demonstrated our implemented UI.
+ - We gave a presentation on Design Patterns.
+2015-04-04 13:04:25 

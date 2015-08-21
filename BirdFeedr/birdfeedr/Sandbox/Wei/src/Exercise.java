@@ -1,0 +1,24 @@
+import java.io.File;
+
+
+/**
+ * Write a description of class Execise here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Exercise
+{
+   public String title, description, examples;
+   public File testFile;
+   
+   public Exercise(String title, String desc, String examples) {
+       this.title = title;
+       this.description = desc;
+       this.examples = examples;
+   }
+    
+   public String toString() {
+       return title;
+   }
+}

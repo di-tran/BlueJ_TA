@@ -1,0 +1,25 @@
+     399 ../../Projects/BlueJ_TA/Code/src/Extension/BackEnd/Exercise.java
+     151 ../../Projects/BlueJ_TA/Code/src/Extension/BackEnd/FileUtil.java
+      74 ../../Projects/BlueJ_TA/Code/src/Extension/BackEnd/RemoveThread.java
+      75 ../../Projects/BlueJ_TA/Code/src/Extension/BackEnd/runner/JRunner.java
+     335 ../../Projects/BlueJ_TA/Code/src/Extension/BackEnd/StateManager.java
+      76 ../../Projects/BlueJ_TA/Code/src/Extension/BackEnd/XMLReader.java
+     127 ../../Projects/BlueJ_TA/Code/src/Extension/GUI/DescriptionGUI.java
+      94 ../../Projects/BlueJ_TA/Code/src/Extension/GUI/ExerciseListGUI.java
+      91 ../../Projects/BlueJ_TA/Code/src/Extension/GUI/FXMLDescriptionDocumentController.java
+     110 ../../Projects/BlueJ_TA/Code/src/Extension/GUI/FXMLExerciseDocumentController.java
+      97 ../../Projects/BlueJ_TA/Code/src/Extension/GUI/FXMLTestResultsDocumentController.java
+     128 ../../Projects/BlueJ_TA/Code/src/Extension/GUI/TestResultsGUI.java
+      77 ../../Projects/BlueJ_TA/Code/src/Extension/Main.java
+      88 ../../Projects/BlueJ_TA/Code/src/Extension/MenuBuilder.java
+     157 ../../Projects/BlueJ_TA/Code/src/Extension/Preferences.java
+       4 ../../Projects/BlueJ_TA/Possible Templates/AddTestGUI.java
+       4 ../../Projects/BlueJ_TA/Possible Templates/ExerciseParser.java
+       0 ../../Projects/BlueJ_TA/Possible Templates/Exercises.java
+       4 ../../Projects/BlueJ_TA/Possible Templates/GUI.java
+       0 ../../Projects/BlueJ_TA/Possible Templates/Main.java
+       3 ../../Projects/BlueJ_TA/Possible Templates/MenuOption.java
+       4 ../../Projects/BlueJ_TA/Possible Templates/Preferences.java
+       3 ../../Projects/BlueJ_TA/Possible Templates/Repository.java
+       0 ../../Projects/BlueJ_TA/Possible Templates/Tests.java
+    2101 total

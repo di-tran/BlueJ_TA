@@ -1,0 +1,201 @@
+2015-03-07 14:01:59 
+
+Wei: Miguel and I programmed and uploaded the implementation.
+
+Di: Architecture went well.
+
+Nate: I think it went well.
+
+Wei: I think we can just start.
+
+Di: When the clock turns 2:05 PM.
+
+Agenda:
+ - Update ea other on the progress.
+ - Status report creation and main speaker.
+
+Wei: If we are moving clockwise then Miguel will be next.
+
+Josh: Miguel is that Okay?
+
+Miguel: That is fine.
+
+Assign seating: Thomas -> Miguel -> Josh -> Nate -> Di -> Wei
+
+Josh: We might need to add the scope to project definition.
+
+Nate: who would like to go first.
+
+Wei: We can go first.
+  What we did:
+  I did the writing.
+  He did the navigation.
+  We call it coding practice.
+  Created a window w/ an editable text area and description.
+  We did not get into designs.
+
+Josh's Observations: 5 classes, window pops up, and displays
+  pop up when you click run.
+
+Wei: It just pretends to compile.
+
+Miguel: I used JavaFX. I can't get it to run w/ BlueJ. It might have something
+  to do with the jar file.
+
+Todo: Make JavaFX work with BlueJ.
+
+Miguel: The one we make works but if I change it then it stops working.
+  BlueJ does not start.
+
+Josh: Did you take a look at the debugging folder.
+
+Wei: If we can JavaFX to work the with BlueJ then that would be awesome.
+  There should not be a compatibility.
+
+Miguel: The benefit is it is easy to code.
+
+Josh: Have you guys thought about loose coupling and cohesion.
+
+Wei: I thik miguel took care of that.
+
+   We will replace the GUI with JavaFX.
+
+Di: we did the design on the whiteboard.
+  Today is not the best day for checking design decisions.
+
+Nate: there is alot of unsaid things here.
+  there is three designs.
+  The firs is the architecutre.
+  2nd is the UI
+  The last one in the bottom corner is the files.
+  Very similar to the Model-View approach.
+  The saver and loader is for later.
+  The GUI will only to talk to the back end via the interface.
+
+Di: I will talk about the file formats.
+  Three files:
+  test file, exercise, and user state.
+
+  Nate and I decided to make file to store things.
+  
+  User state files stores information about the user
+   like completed exercises, user info, current exercise, drafted code,
+      current test
+  Exercise contains the information about the exercise.
+    Contains exercise text, and the JUnit file that would test the user code.
+  Test file -- groups exercises togethers, and description.
+    Extra organization.
+
+  Any questions?
+
+Wei: For the user state, when you talk about user info would that be a name.
+  For now we don't have to worry about user state.
+  So its out scope.
+
+Josh: I think its important to note that the architecture
+  covers everything including many things that are out of scope.
+
+Nate: The architecture will make sure the design will not break.
+
+Nate: the user interface:
+  The UI lists elements.
+  The exact design does not have to match.
+  The results of the current exercise.
+  The submit button will run the test and display the results.
+  It could have a autosave.
+  Load exercise can help pick the test questions.
+
+  In the future, we could map the user stories through the diagram.
+
+Wei: for the layout, we should keep coding bat in mind.
+
+Josh: UI design implementers do not have to conform to exact layout.
+
+Wei: Recommends adding a note to the image saying that the 
+
+  UI design does not regulate the design implementation.
+
+
+Wei: I really like the presentation on presentations.
+
+Wei: Lets pick the top two
+  I like the presentation on presentations.
+
+Di: Likes presentation on presentation.
+  Likes creating a vision.
+
+Nate: Likes presentation on presentation, Group manuevers, vision.
+
+Miguel: It might be risky because we might need to be experts in the subjects.
+  So its a credibility problem.
+  Our presentation could also not be good too.
+
+Miguel: I like the interface/teamwork and design patterns.
+
+Josh: I like Continuous Integration and Design Patterns.
+
+Wei: We should think think about the message.
+   The message I want to get accrossed in presntations always have a message.
+   Why you should use design patterns.
+
+Miguel: agree w/ Wei's message for design patterns.
+   does not have a message for the other one.
+
+Josh: agree w/ Wei's message.
+  Continous I. would be how the CI helps the software manufacturing process.
+
+Di: A project needs a vision b/c a represents the intent of team members
+  and a road map for the project's future.
+  Agree w/ Wei's message.
+
+Nate: If we did the presentation it would have to be really good.
+  You need a vision to hold people accountable and prevent deviations.
+
+  Group manuevers -- Find the manuever that works for your team.
+
+Josh: Should we talk about anything else?
+
+Di: Will we talk about what we will talk about on Monday.
+ Status update time.
+
+
+Status Update
+ - Wednesday, we got our members back and oriented them.
+   --Splitting into pairs allowed Di and Nate to regain familarity w/ the group
+    and current process.
+ - Wednesday
+    --Created a project definition.
+    --Created a list of entitities.
+    --Created users stories.
+ - Wednesday, by splitting up we accomplished two things.
+ - Over the weekend.
+    --Created an architecture and a UI design.
+    * drafted
+    --Finished attaching an extension to BlueJ that pops up a GUI
+    --Created a list of 6 presentation ideas.
+    --We each picked our favorites and discussed messages.
+ 
+    --Organized our status update and elected speaker.
+      ---so that we are ready to go.
+    --Created a system for decided who is the speaker.
+
+Josh: We just need to discuss what we will do on monday
+  I propose we do the release and iteration planner.
+
+Di: that would be nice. We can say we are doing an iteration.
+
+Wei: Tracking issues.
+
+Wei: I will look into JavaFX tomorrow.
+  Report on monday.
+
+Josh: We can pick a presentation choose.
+
+Nate: It would be nice to go over the design on monday.
+
+Di: The design will help us plan the release.
+
+Wei: we should talk about that first.
+
+Sent a meeting summary email.
+2015-03-07 15:22:32 

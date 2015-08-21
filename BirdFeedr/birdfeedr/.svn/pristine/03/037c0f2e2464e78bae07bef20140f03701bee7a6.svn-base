@@ -1,0 +1,46 @@
+Last Edited: 5-1-2015 at 4:59 PM
+Current active project: BlueJ TA
+
+Location of Java source files: \Projects\BlueJ_TA\Code\src
+Location of ant build file:    \Projects\BlueJ_TA\Code\build.xml
+Location of README:            \Projects\BlueJ_TA\Code\README.txt
+
+Currently the best way to create the jar for Project BlueJCodingBat is to use 
+the ant build file above.
+For more information about the project or manual build instructions see the 
+README.txt as above.
+
+===============================================================================
+Structure of repository:
+
+Location:		             Explanation:
+_______________________________________________________________________________
+|birdfeedr
++---Projects                          -- All Projects.
+|   +---BlueJ_TA                      -- Project BlueJ TA.
+|   |   +---Code                      -- The heart of the project.
+|   |   |   \---README.txt            -- Explains how extension works.
+|   |   \---Documentation             -- Design and management artifacts.
+|   |       +---Designs               -- GUI and internal designs (outdated).
+|   |       |   \---Do Function       -- GUI flow design (outdated).
+|   |       +---Possible Templates    -- Java entity ideas.
+|   |       +---Process Model         -- Failed attempt to formalize process.
+|   |       +---Survey                -- The student/teacher survey.
+|   |       \---Tour                  -- A collection of screen shots.
+|   +---Chirp                         -- Folder for Project Chirp.
+|   |   +---Dist                      -- Distribution of Project Chirp.
+|   |   +---src                       -- Java source files for project Chirp.
+|   |   \---Exploration Summary.txt   -- Experience gained from Project Chirp.
+|   \---Git                           -- Folder for Project Git.
+|       +---Documents                 -- Project Documentation.
+|       \---Git-Extension             -- source files for Project Git.
++---Sandbox                           -- Individual team member folders.
+|   +---README.txt 	                  -- A description of the Sandbox.
+|   +---(Group member's name)*        -- Folder for individual member's use.
+\---Team Documentation                -- All Team decumentation.
+    +---Meeting Notes                 -- Notes from group meetings. (informal)
+    +---Presentations                 -- All presentations.
+    +---Reports                       -- All team reports.
+    +---Team Portfolio                -- The project Notebook.
+    \---Weekly Summary                -- Weekly status updates. (formal)
+    \---Birdfeedr Policies.txt        -- A text file for group policies.

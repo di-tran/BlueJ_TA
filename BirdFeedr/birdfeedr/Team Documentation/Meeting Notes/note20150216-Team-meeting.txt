@@ -1,0 +1,80 @@
+
+2015-02-16 15:13:54
+
+Presentation:
+
+Two narrators.
+
+Two role players with the bad example
+Two role players with the good example.
+
+Thomas: CS larp live action role play.
+
+Miguel: will have slides.
+
+Wei: slide with peer review.
+
+Nate: narrator on slides.
+
+Thomas: slides will be the work of narrator.
+
+Wei and Di will be  bad larpers.
+
+Nate and Josh are good larp.
+
+Thomas: have one narrators.
+
+Josh: we need points.
+
+Thomas: each group has a set of points.
+  How can situation be fixed.
+
+  or What is good.
+
+Di: Driver-tweeter.
+
+We have to be prepared for no questions.
+
+Thomas: You guys come up with ideas about bad programming.
+
+Nate: the presentation needs a heart.
+ a core.
+
+Wei: Should presentation fit inside our vision as well?
+
+
+Next mondays expecation.
+  Get the main points read for next Wednesday..
+
+Nate: concept of reuniting.
+
+Di: bring things together.
+
+---
+
+Project topic.
+
+Di: Think about our product.
+  Lets pull out past ideas and see if they fit.
+
+Thomas: Will read the ideas.
+ 
+  Other code. nay
+  Refactor. nay
+  Virtual under the hood display: yah.
+  Updated UI: nay b/c of class card extension.
+  Block generator: nay b/c it could generate dependency.
+  JUnit starter: nay too advanced.
+  JUnit statistics: nay too advanced.
+  Open GL integration: nay Green foot support.
+  BlueJ tutor: yah reads the code to the user.
+  Android cell phone exporter: nay not education.
+  Change logs: nay not a learning tool.
+
+JP: JBoxes. animates java execution.
+  BlueJ tutor -- pick the things that our problematic.
+    point out if variables are instance and class.
+    Scope and domain would be difficult.
+    UI addressing that aspect.
+    
+2015-02-16 15:53:17

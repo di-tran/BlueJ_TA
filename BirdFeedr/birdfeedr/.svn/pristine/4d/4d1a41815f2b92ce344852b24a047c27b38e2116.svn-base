@@ -1,0 +1,162 @@
+2015-03-21 14:07:10 
+
+Agenda:
+ - Everybody reports.
+ - Presentation.
+
+
+Wei: Created an exercise class.
+ description, title.
+
+ Everyone of the exercises is an exercise object.
+ Its easier.
+
+ The controls show description and examples when the user selects.
+
+ The right click does not show for every object.
+ Right now it only shows up in exercise.
+ For the future we may use packages to control the right click menu.
+
+ Miguel created the execute and execute test.
+
+   and exercise description.
+
+ The execute test shows the test dialog.
+ 
+ Its semi connected and we might have to use an lisener.
+
+ Created the state manager.
+  Miguel thought of and I implemented.
+ Holds the state of the entire extension.
+  If the guis have been initialized.
+
+Di: Will execute run the test automatically?
+
+Wei: I believe so.
+
+Di: so the run button will rerun the test.
+
+Di: so name it to "rerun"
+
+Wei: that is a good idea.
+
+Di: I see you all are using scene builder.
+
+Wei: We have not implemented the compiler.
+
+  The VM must be reset when we run it in BlueJ
+  We believe that it is a problem wiht JavaFX.
+
+
+Josh: What type of process model would you say this maps to?
+
+Wei: Ideas and implementation.
+
+Josh: Code and fix it.
+
+Wei: there is also the prototyping we are doing.
+  Design -> implement -> Demonstration
+
+  Add pair programming, designs, small iterations.
+
+Di: I have a link to the process model.
+
+Josh: at this time, Wei and Miguel have went. Does that leave Nate?
+
+Nate: I did not work on the GUI.
+   Started to dev the v2 of JUnit runner.
+   Concern: runner does not work in an infinite loop.
+   I made a new process to run the test.
+   The listener will notify the GUI when its completed.
+   Use a socket to communicate b/t processes.
+
+Josh: Was does not threading solve this problem?
+
+Wei: the stop thread is deprecated and a security risk.
+   This way you can stop bad code without killing BlueJ itself.
+   This will be a lot of stuff to test.
+
+
+Josh: How will this effect the maintainence overhead?
+
+Nate: I will be trying to get the Maintainability lower
+   For example, getting the BlueJ library folders.
+   Version 2 only works with methods.
+
+Josh: Will everything else be uploaded?
+
+Nate: I will upload the latest version.
+
+Wei: I will upload my state class.
+
+   We did not test it in different OSs.
+   I just uploaded.
+
+Nate: I just uploaded as well.
+
+
+Josh: 
+
+Di: I would like to go over the structure.
+   Similar to the Tiger Team presentation.
+   Encourage the audience to use design patterns.
+   First what it is and not.
+   Next Types.
+   Next specific types.
+   We are not sure if this message is strong enough.
+
+Wei: The message is not focused b/c of the three points.
+
+Note: this 2nd time that thomas has not been at meeting
+  and informed us.
+
+
+Di: Work on the presentation and make sure it is in the a good state
+  for our practice next time.
+
+Di: Next Sat we can divy up parts.
+
+Josh: Are we choosing this one.
+
+Wei: I am okay with that.
+
+Miguel: I am okay with that.
+
+Nate: As long as we know what we are talking about.
+
+Wei: I might do some reasoning.
+
+   We used the Singleton in the State class.
+
+   Its a global controler.
+   A singleton is like th God class.
+
+
+Wei: Want to persuade them to use a design pattern.
+
+Di: When do want to think about design patterns.
+
+
+Di: So we will meeting on Wednesday at 2 PM and discuss our message
+ and research findings.
+
+
+Di: Wednesday we can discuss our progress towards our designs.
+
+Josh: On Wednesday, we can make the email and
+  make sure that he has expecatations from the design.
+
+
+Di: Iron triangle: scope, cost, and time
+  Uses fidelity as well.
+SOURCE:http://availagility.co.uk/2009/12/22/fidelity-the-lost-dimension-of-the-iron-triangle/
+
+Di: Fidelity is quaility of the project.
+  We were just developing things to get it to work.
+
+Nate: the GUI is produced just to show the windows.
+   Take a big block and refined like a sculpter.
+
+Josh: Its like we are sculpting the project.
+  I will be moving.
+2015-03-21 15:37:36 

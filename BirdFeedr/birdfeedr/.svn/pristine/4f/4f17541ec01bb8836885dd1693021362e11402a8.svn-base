@@ -1,0 +1,81 @@
+
+2015-01-26 14:04:06
+
+Established communication.
+Team name.
+Obtained Redmine and SVN
+Research into extensions
+Narrowed down project goal.
+
+Policies: Notebook and logging.
+
+Named Thomas the SVN manager.
+2015-01-26 14:09:48
+
+2015-01-26 14:21:52
+
+Picking our extensions.
+
+Redmine Workflow.
+Where to put what.
+
+Dinner Feb 10, 5:30 pm
+
+Wei: Refactoring. Small ext. Easy to maintain.
+  Suggestions/analysis and refactoring.
+  Support a small subset of refactoring.
+
+Miguel: version control.
+
+Thomas: do a small extension to begin with to give our team a quick
+  success. We could do another extension.
+
+Thomas: slightly easier -- ext further languages. Why? Env setup.
+  Linux has native support for c++. WIndows does not.
+Josh: IDE does not allow opening other files types.
+Thomas: The lang tools are out their.
+
+Nate: Visualization. What's on the stack, heap, garbage collection.
+      Visualize multithreading deadlocks.
+      IT would help people in BlueJ learn.
+
+Di: Simulation also. Harder, but, more helpful.
+
+Josh: Clojure IDE got shutdown.
+   Refactoring was feasible.
+   Like gen automation testing.
+   Like simulation.
+
+Everyone likes the idea of starting with an easy project.
+
+Thomas: clean room dev. Find a bug start all over.
+
+  COT -- specialized XML made by the military.
+2015-01-26 15:01:25
+
+2015-01-26 15:19:03
+
+
+Thomas: Two parrallel teams.
+
+Wei: asks the other team for help.
+
+Thomas: everyone can be more involved.
+
+JP Loves the agile approach to get something done.
+  Choose a small set of features like copy n paste detector.
+
+Scoping the project down to what is doable.
+
+Think of a small increment.
+
+Like the idea of working in parrallel b/c you could learn more.
+
+Di: Chirp.
+
+Thomas: Git is on the table.
+  Just commit.
+
+Weekly meetings on Saturday at 2 PM
+ except Feb 23 and 28.
+2015-01-26 15:52:42

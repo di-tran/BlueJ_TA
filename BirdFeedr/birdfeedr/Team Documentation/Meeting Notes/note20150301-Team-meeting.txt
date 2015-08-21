@@ -1,0 +1,146 @@
+
+2015-03-01 16:06:17
+
+
+JP wanted something to facilitate pair programming.
+
+
+Wei survey results:
+
+Sample Size: 11
+
+90% said syntax.
+
+What they did.
+
+Evaluated. Integrated psysiology major.
+  Hardest part syntax and functions.
+  i.e. what was static.
+  
+Trend talking to someone else about programming helped.
+
+Talking to a tutor.
+
+Object-oriented to functional programming issues.
+
+--
+Used different questions for professors.
+
+What makes it easier for your students to learn?
+
+JP said plug and play like green foot and scratch.
+  i.e. program the cars and see them move around.
+
+Shultz -- role playing and acting out.
+  Have a network program that has students work on the same code
+  Over the monitor split screen.
+  That aligns w/ JP idea.
+
+JP Not building good enough coding habits in CS2.
+
+  Facilitate better programming practice.
+
+Basides syntax another common issue is data structure
+  visualization and algorithms.
+
+What helped is talking to someone about?
+
+--
+
+Miguel: Idea: make an ext that makes it easier for them to understand compiler errors.
+  Explain where it would occur and what happened.
+
+--
+Wei: we could add that to a larger ext called the facilitator ext which
+  does everything we want it to do.
+
+---
+Thomas: Up for coding anything. Project.
+
+Wei: Lets make one big extension that has everything.
+  We have a main ext and we build classes into that ext.
+  We can work in parrelel.
+
+
+Wei: should have another survey?
+
+
+Josh: are we confident on the decision?
+
+Wei: We have surveys and online backup.
+
+    We should grow a project.
+    Start with something super small.
+    This is a cool idea lets build on that.
+
+Josh: So we build an iteration and get feedback.
+
+Wei: We build a demo
+   and from there keep adding.
+
+Wei: There is two ways to go about this
+   One big extension that would help people.
+   Or we make a list and show it Jody.
+
+Josh: one week project.
+
+
+Wei: THe next iteration is this.
+
+
+Team break:
+
+
+Josh: I would be cool w/ a project idea.
+
+Everyone: Lets compile a list and send it to Jody.
+  
+Ideas:
+ Thread Visualization.
+ Stack/heap visualization
+ API Doc.
+ Explain errors.
+ Split screen network program.
+ Pair programming facilitator
+ Pair programming timer.
+ Ask teacher.
+ 
+Students love the idea of something that helps them find what they.
+
+ Thread and heap is good the students want to know what they are doing.
+   API Doc.
+   Explain compile errors.
+  
+ They liked typing in english and having the program split something back out.
+ They liked the error.
+
+Miguel: SInce JP is manager then he must approve idea.
+
+Wei: We got through the students then JP and waste 2.
+     We go through the JP then students and they don't like it and we waste 2 days.
+
+Wei: Go with Miguel. B/c impatience. Too much thinking. Not enough doing. Tired of talking about it.
+     If we talk to the students and they shut it down then it would be weird.
+     If the students back something up that is we have evidence then there is no way he could shut it down
+        unless the idea is implemented. 
+
+Thomas: frustrated b/c we are spinning
+
+Talked about the results from the students.
+Dicussed our plan of action for this week.
+
+Wei: post the survey info. and send it to svn.
+    Create project list idea.
+
+Josh: Create status message.
+
+Plan:
+1. Send project.
+2. Make a prototype by Wendesday.
+3. Wednesday, network w/ students.
+
+
+
+Wei: will post at 6 pm.
+
+2015-03-01 17:54:44

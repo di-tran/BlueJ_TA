@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=
+comment0.target=boolean\ isCompatible()
+comment0.text=\r\n\ This\ method\ must\ decide\ if\ this\ Extension\ is\ compatible\ with\ the\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \r\n\ current\ release\ of\ the\ BlueJ\ Extensions\ API\r\n
+comment1.params=
+comment1.target=java.lang.String\ getVersion()
+comment1.text=\r\n\ Returns\ the\ version\ number\ of\ this\ extension\r\n
+comment2.params=
+comment2.target=java.lang.String\ getName()
+comment2.text=\r\n\ Returns\ the\ user-visible\ name\ of\ this\ extension\r\n
+comment3.params=
+comment3.target=void\ terminate()
+comment4.params=
+comment4.target=java.lang.String\ getDescription()
+comment5.params=
+comment5.target=java.net.URL\ getURL()
+comment5.text=\r\n\ Returns\ a\ URL\ where\ you\ can\ find\ info\ on\ this\ extension.\r\n\ The\ real\ problem\ is\ making\ sure\ that\ the\ link\ will\ still\ be\ alive\ \r\n\ in\ three\ years...\r\n
+numComments=6

@@ -1,0 +1,18 @@
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+
+public class TestRunnerA{
+    
+    public static void main(String[] args){
+        Result result = new JUnitCore().run(TestClass.class); 
+        System.out.println("Test: " + result.getRunCount() + System.lineSeparator()
+                         + "Fail: " + result.getFailureCount());
+        for (Object fail : result.getFailures()) {
+            System.out.println("    " + fail);
+        }
+    }
+    
+    private static void sendResults(Result result){
+        
+    }
+}

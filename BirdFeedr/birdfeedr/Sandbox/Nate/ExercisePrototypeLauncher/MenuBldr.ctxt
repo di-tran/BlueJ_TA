@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=b
+comment0.target=MenuBldr(bluej.extensions.BlueJ)
+comment1.params=aPackage
+comment1.target=javax.swing.JMenuItem\ getToolsMenuItem(bluej.extensions.BPackage)
+comment2.params=e
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=
+comment3.target=void\ run()
+comment4.params=bClass
+comment4.target=javax.swing.JMenuItem\ getClassMenuItem(bluej.extensions.BClass)
+numComments=5

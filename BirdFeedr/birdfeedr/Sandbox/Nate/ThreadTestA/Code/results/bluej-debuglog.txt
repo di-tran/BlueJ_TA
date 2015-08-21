@@ -1,0 +1,51 @@
+BlueJ run started: Sun May 03 14:30:59 MDT 2015
+BlueJ version 3.1.4
+Java version 1.8.0_20
+Virtual machine: Java HotSpot(TM) 64-Bit Server VM 25.20-b23 (Oracle Corporation)
+Running on: Mac OS X 10.10.2 (x86_64)
+Java Home: /Applications/BlueJ/BlueJ.app/Contents/Frameworks/jdk.framework/Versions/A/Contents/Home/jre
+----
+Detected language "english" based on iso639-2 code "eng"
+getExtensionsClass: jarFile=jfxrt.jar Manifest does not contain Main-Class attribute
+null
+ex: exercises/SortExercise.xml
+ex: exercises/PermutationExercise.xml
+Size: 2
+getExtensionsClass: jarFile=bluejext.jar Manifest does not contain Main-Class attribute
+getExtensionsClass: jarFile=jfxrt.jar Manifest does not contain Main-Class attribute
+getExtensionsClass: jarFile=junit-4.8.2.jar Manifest does not contain Main-Class attribute
+Opening project: /Users/Ditran/BirdFeedr/birdfeedr/Sandbox/Nate/BlueJ_TA(RefactorB)/src
+1430685061032: Listening for JDWP connection on address: 127.0.0.1:63020
+Connected to debug VM via dt_socket transport...
+Communication with debug VM fully established.
+Extension.GUI.FXMLExerciseDocumentController@24565285
+jar:file:/Users/Ditran/Library/Preferences/org.bluej/extensions/BlueJ_TA.jar!/Extension/GUI/FXMLDocument.fxml
+Opening project: /Users/Ditran/Library/Preferences/org.bluej/TA_Temp/Sorting Exercise_Files/Sorting Exercise
+1430685114650: Listening for JDWP connection on address: 127.0.0.1:63025
+Connected to debug VM via dt_socket transport...
+Communication with debug VM fully established.
+Extension.GUI.FXMLDescriptionDocumentController@31df5d2c
+jar:file:/Users/Ditran/Library/Preferences/org.bluej/extensions/BlueJ_TA.jar!/Extension/GUI/FXMLDescriptionDocument.fxml
+Extension.GUI.FXMLTestResultsDocumentController@48b9cd04
+jar:file:/Users/Ditran/Library/Preferences/org.bluej/extensions/BlueJ_TA.jar!/Extension/GUI/FXMLTestDocument.fxml
+Opening project: /Users/Ditran/Library/Preferences/org.bluej/TA_Temp/Permutations Exercise_Files/Permutations Exercise
+1430685146792: Listening for JDWP connection on address: 127.0.0.1:63040
+Connected to debug VM via dt_socket transport...
+Communication with debug VM fully established.
+Extension.GUI.FXMLDescriptionDocumentController@2859426
+jar:file:/Users/Ditran/Library/Preferences/org.bluej/extensions/BlueJ_TA.jar!/Extension/GUI/FXMLDescriptionDocument.fxml
+Extension.GUI.FXMLDescriptionDocumentController@630e4459
+jar:file:/Users/Ditran/Library/Preferences/org.bluej/extensions/BlueJ_TA.jar!/Extension/GUI/FXMLDescriptionDocument.fxml
+Opening project: /Users/Ditran/Library/Preferences/org.bluej/TA_Temp/Sorting Exercise_Files/Sorting Exercise
+1430685168621: Listening for JDWP connection on address: 127.0.0.1:63042
+Connected to debug VM via dt_socket transport...
+Communication with debug VM fully established.
+Extension.GUI.FXMLDescriptionDocumentController@745cb9ab
+jar:file:/Users/Ditran/Library/Preferences/org.bluej/extensions/BlueJ_TA.jar!/Extension/GUI/FXMLDescriptionDocument.fxml
+Extension.GUI.FXMLDescriptionDocumentController@2e5ece42
+jar:file:/Users/Ditran/Library/Preferences/org.bluej/extensions/BlueJ_TA.jar!/Extension/GUI/FXMLDescriptionDocument.fxml
+Extension.GUI.FXMLDescriptionDocumentController@3462bbbf
+jar:file:/Users/Ditran/Library/Preferences/org.bluej/extensions/BlueJ_TA.jar!/Extension/GUI/FXMLDescriptionDocument.fxml
+Extension.GUI.FXMLDescriptionDocumentController@56c5705f
+jar:file:/Users/Ditran/Library/Preferences/org.bluej/extensions/BlueJ_TA.jar!/Extension/GUI/FXMLDescriptionDocument.fxml
+BlueJ TA Terminated

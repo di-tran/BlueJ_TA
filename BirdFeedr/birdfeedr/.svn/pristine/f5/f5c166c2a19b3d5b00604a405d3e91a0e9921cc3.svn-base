@@ -1,0 +1,7 @@
+Issues/Bugs
+
+- What if user closes BlueJ, then opens it. The project they are working on last will open (and exercise from extension) 
+	but extension won’t know it an exercise?
+
+- Currently does not have a proper way to find the XML file directories.
+	(using the BlueJ getUserConfigDir() does not return proper path)

@@ -1,0 +1,6 @@
+Presentation one talked about our experience with pair programming.
+We started the presentation by defining pari programming.
+Next, we used our experiences to talk about different pair programming scenarios.
+Specifically, we created a skit to show good and bad programming pairs
+of three types: expert-expert, expert-novice, and novice-novice.
+We have included slides(s) from the presentation below.

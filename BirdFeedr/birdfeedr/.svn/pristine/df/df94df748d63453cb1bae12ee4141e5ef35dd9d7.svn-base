@@ -1,0 +1,10 @@
+Project Java Interpreter
+Time Estimate: 2 Weeks.
+Relevance: High
+Difficulty: Easy
+
+There is already a Java interpreter online and its source code is on Github. I tried to compile it and I got it to work. I think this extension could really help people over come barriers to programming in Java.
+
+SOURCE: http://www.javarepl.com/console.html
+SOURCE: https://github.com/albertlatacz/java-repl
+

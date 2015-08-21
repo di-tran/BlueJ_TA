@@ -1,0 +1,28 @@
+public class Token
+{
+	private String type, lex;
+	private int row, col;
+	
+	public Token(String type, String lex, int row, int col)
+	{
+		this.type=type;
+		this.lex=lex;
+		this.row=row;
+		this.col=col;
+	}
+	
+	public void printToken()
+	{
+		System.out.println(type+" "+row+" "+col+" "+lex);
+	}
+	
+	public String getType()
+	{
+		return type;
+	}
+	
+	public String getLex()
+	{
+		return lex;
+	}
+}

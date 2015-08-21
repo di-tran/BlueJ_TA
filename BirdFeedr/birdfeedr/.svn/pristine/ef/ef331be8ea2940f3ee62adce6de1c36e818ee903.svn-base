@@ -1,0 +1,3 @@
+bluej.dir=/Applications/BlueJ//BlueJ.app/Contents/Resources/Java/
+user.bluej.dir=${user.home}/Library/Preferences/org.bluej
+bluej.launch.command=open /Applications/BlueJ/BlueJ.app

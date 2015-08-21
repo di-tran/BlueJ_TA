@@ -1,0 +1,131 @@
+BIRDFEEDR POLICIES FAQ:
+
+1. EMAILS
+**********
+1.1 INTERNAL EMAILS
+- - - - - - -
+Who should I send an email to?
+      All group members, unless there is a reason not to
+      (for example, if you want to send an email to your subgroup)
+Somebody just sent an email to me, when should I reply?
+      Within 24 hours.
+
+EXTERNAL EMAILS
+- - - - - - - 
+How should I send an email to Jody or anybody else?
+      Send a draft to everyone else in the group, and specify
+      a time in which people can suggest edits before sending.
+How long should I wait before sending it?
+      Wait until the end of the day before sending it.
+I just got a draft, what should I do?
+      Suggest changes to the original writer, or approve it.
+    
+
+2. MEETINGS
+**********
+CONDUCT
+- - - - - - -
+What is the expected level of conduct?
+        Keep things civilized. No personal attacks. If conflict arises
+        in a meeting, resolve it or  through mediation.
+How long am I allowed to talk?
+        Three minutes, unless what you have to say is really important.
+I just interrupted someone, what do I do?
+        Stop talking and let them continue. If they explicitly state you can continue, then
+        you may continue talking.
+Do I have to go to this meeting?
+        If you were invited, you have to go. Sorry.
+What if I want to go on a tangent?
+	Start your statement with “I’m going on a tangent,” to explicitly state 
+	that you are going on a tangent and intend to return to the main topic 
+	of the discussion after you’re done.
+
+NATURE OF THE MEETING
+- - - - - - - 
+When does a meeting start?
+         A meeting starts when all members are in attendance,
+         or 10 minutes after the original meeting time, 
+         whichever comes first.
+
+FACILITATOR
+- - - - - - -
+Who facilitates meetings?
+         ???
+What should a facilitator do?
+         A facilitator should guide discussions, keep the group on topic,
+         and most importantly, ensure the group’s success
+         without having a stake in a specific decision.
+
+NOTES
+- - - - - - -
+Who is taking notes?
+         Currently, Josh is taking notes.
+Where can I find notes if I missed a meeting?
+         Check this Subversion folder:
+         /Documentation/Meeting Notes
+
+AGENDA
+- - - - - - -
+What is the agenda’s purpose?
+        The agenda lists all items to cover during
+        the meeting.
+When should an agenda be published?
+	Before the meeting.
+What if I want to talk about something not on the agenda?
+	If the facilitator allows it, you may talk about it.
+	But try not to.
+
+DECISIONS
+- - - - - - -
+How does a final decision work?
+	Final decisions must be declared, and all team members
+	must be consulted in a round robin fashion before
+	finalizing the decision.
+What if the team needs to revoke a final decision?
+	In the same way it was declared: revoking the decision
+	requires an appeal to revoke, followed by a 
+	consultation of all team members, round robin style.
+
+ENDING A MEETING
+- - - - - - -
+When is this meeting gonna be OVER?
+         When all the items on the agenda are finished,
+         or the team finds a stopping point. 
+
+3. ONLINE MEETINGS
+********************
+Do I have to turn on my webcam?
+       No. But we like seeing you.
+When should I mute?
+       If your mic feed is dirty, you should mute it
+       when you’re not speaking. Someone will complain about it.
+What if somebody is breaking up?
+       Tell them so they know, and they can repeat what they said.
+
+4. SUBVERSION
+******************************
+Who’s maintaining the SVN directory right now?
+         Currently, Thomas is managing it.
+Which folders can I access?
+      You can read any file from any folder.
+      Subgroups have complete jurisdiction of the contents in their folder.
+What is the sandbox folder for?
+         It’s for exploration purposes.
+What folders in the sandbox am I allowed to use?
+         The one with your name on it.
+
+5. TRACKING WITH REDMINE
+******************************
+Where should I log my hours?
+         On Redmine, go to the ‘Log Hours’ link on the
+         right side of the home page.
+
+6. POLICY CHANGES
+******************************
+Is this document subject to change?
+      Yes, team members can agree on adding, removing, 
+      or amending group policies in this document.
+How does that work?
+      A team member motions to add, remove or amend a
+      policy. If the rest of the team consents to this
+      decision, the policy is updated.

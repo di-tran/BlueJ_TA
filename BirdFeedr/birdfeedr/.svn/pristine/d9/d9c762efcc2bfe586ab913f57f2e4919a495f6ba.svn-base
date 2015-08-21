@@ -1,0 +1,25 @@
+import java.awt.event.ActionEvent;
+
+import bluej.extensions.BPackage;
+
+
+
+public class CodingExercisesAction extends CodingActions{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	public CodingExercisesAction(String menuName, BPackage bPackage) {
+		super(menuName, bPackage);
+	}
+
+	/**
+	 * on Click Listener
+	 */
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		new ExerciseGUI();
+	}
+}

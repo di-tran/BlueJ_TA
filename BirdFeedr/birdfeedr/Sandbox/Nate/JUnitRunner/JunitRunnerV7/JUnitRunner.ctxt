@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=junitPath\ extPath
+comment0.target=JUnitRunner(java.lang.String,\ java.lang.String)
+comment1.params=
+comment1.target=boolean\ isRunning()
+comment2.params=
+comment2.target=void\ stopTest()
+comment3.params=userProjDir\ junitClassPath
+comment3.target=ResultHolder\ runTest(java.io.File,\ java.io.File)
+numComments=4

@@ -1,0 +1,87 @@
+
+2015-02-07 14:06:05
+
+Wei: Idea: block code generator.
+
+Josh: API offline documentation.
+
+Wei: A visualization of Java source.
+
+Josh: Helps people learn.
+ Use abstract syntax tree.
+
+Thomas: The current ideas don't sound bad.
+  Idea: find bugs.
+  Implement a find a bugs extension
+
+Wei: we might have to maintain the project even after.
+
+Nate: the virtual display requeries deep research.
+
+Miguel: Idea: Intellisense. 
+
+Wei: Problem: modify BlueJ source.
+
+Josh: BlueCLJ. IDE supports clojure.
+
+Wei: Do risk analysis on each of the ideas?
+
+
+Thomas: Jody likes tangible proof of work done.
+
+Josh: Project Chirp and Project Git give status report together.
+
+Josh: Get consensus on our Research presentations and present next week.
+
+Nathan: Set the date and topic.
+
+Josh: Presentations about how to pair people people together and assign roles.
+
+Wei: So that is team building.
+
+Nate: Thomas said pick a topic and go with it.
+
+Josh: Project Git has accomplished this week's goals and surpassed them.
+   We implemented the Git Commit and Init features.
+
+   Miguel implemented the clone and push features.
+
+Wei: Project Chirp has been researching various topics.
+   Project Chirp will gather information and get and idea for the presentation.
+
+Josh: Project Git will try to polish
+
+Wei: Don't polish Project Git and just document everything.
+
+MigueL: project Git is in the way of the bigger project.
+
+Wei: The team meeting will be on Tuesday and when we get the big group together.
+
+
+Josh: I don't want to talk about work in our team building meating.
+
+Wei: I agree.
+
+Decisions:
+
+  Have a idea list by monday. Wednesday finalize.
+  Project Git wraps up.
+  Presentation researching.
+  Next presentation.
+  Schedule reminder on Monday.
+--
+
+
+Josh: Some people work better solo.
+
+Nate: Pair programming increases communication.
+
+Wei: 2 conditions: things get done and people know what you are doing.
+
+   Document decisions made alone.
+   So people understand why.
+
+Project Git will try to remove debugging code.
+ and produce a status report for monday.
+Josh will produce a team wide status report.
+2015-02-07 15:26:57

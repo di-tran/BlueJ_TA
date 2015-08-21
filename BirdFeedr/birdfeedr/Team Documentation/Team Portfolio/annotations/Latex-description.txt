@@ -1,0 +1,11 @@
+Latex is a tool for manufactering documentation.
+It is widely used for technical or scientific documents.
+It is like HTML because the author can create content of the document
+and use formatting codes to control the way the text will be displayed.
+Thus, it easy to version control.
+Also, just like HTML it can include other documents like PDFs
+and JPEGs.
+
+\smallskip
+Latex was used in this project to create the project notebook.
+A screen shot below shows how LaTex code looks.

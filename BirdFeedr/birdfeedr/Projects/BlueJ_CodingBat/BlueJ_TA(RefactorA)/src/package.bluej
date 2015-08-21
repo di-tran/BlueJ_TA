@@ -1,0 +1,22 @@
+#BlueJ package file
+objectbench.height=76
+objectbench.width=748
+package.editor.height=409
+package.editor.width=650
+package.editor.x=273
+package.editor.y=94
+package.numDependencies=0
+package.numTargets=1
+package.showExtends=true
+package.showUses=true
+project.charset=windows-1252
+readme.editor.height=700
+readme.editor.width=900
+readme.editor.x=0
+readme.editor.y=0
+target1.height=62
+target1.name=Extension
+target1.type=PackageTarget
+target1.width=80
+target1.x=130
+target1.y=70

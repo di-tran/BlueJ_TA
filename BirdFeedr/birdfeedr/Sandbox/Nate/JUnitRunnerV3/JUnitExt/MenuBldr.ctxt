@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=b
+comment0.target=MenuBldr(bluej.extensions.BlueJ)
+comment1.params=aPackage
+comment1.target=javax.swing.JMenuItem\ getToolsMenuItem(bluej.extensions.BPackage)
+comment2.params=aClass
+comment2.target=javax.swing.JMenuItem\ getClassMenuItem(bluej.extensions.BClass)
+numComments=3

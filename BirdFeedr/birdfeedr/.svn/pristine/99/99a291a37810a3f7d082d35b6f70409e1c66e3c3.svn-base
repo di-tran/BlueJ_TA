@@ -1,0 +1,33 @@
+public class ErrorHandler {
+
+    private static ErrorHandler errorHandler;
+    private boolean errorsExist = false;
+
+    public static synchronized ErrorHandler getErrorHandler() {
+        if (errorHandler == null) {
+            errorHandler = new ErrorHandler();
+        }
+        return errorHandler;
+    }
+
+    public static void logError(String errorMessage) {
+        disableCodeGeneration();
+        System.out.println(errorMessage);
+    }
+
+    public static boolean errorsExist() {
+        return getErrorHandler().getErrorsExistFlag();
+    }
+
+    public static void disableCodeGeneration() {
+        getErrorHandler().setErrorsExistFlag(true);
+    }
+
+    public boolean getErrorsExistFlag() {
+        return errorsExist;
+    }
+
+    public void setErrorsExistFlag(boolean errorsExist) {
+        this.errorsExist = errorsExist;
+    }
+}

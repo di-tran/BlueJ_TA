@@ -1,0 +1,1315 @@
+import java.io.PrintWriter;
+import java.util.EmptyStackException;
+import java.util.Queue;
+import java.util.Stack;
+
+public class Parser
+{
+	private Queue<Token> tokList;
+	private Stack<String> s;
+	private Token lookAhead;
+	private String lookType;
+	private PrintWriter pw;
+	private SymbolTable st;
+	private char nest;
+	
+	public Parser(ScanToken scan, PrintWriter p)
+	{
+		pw=p;
+		st=new SymbolTable();
+		pw.println("Parsing Errors:");
+		s=new Stack<String>();
+		tokList=scan.getTokenList();
+		lookAhead=tokList.poll();
+		lookType=lookAhead.getType();
+	}
+	
+	public boolean parse()
+	{
+		systemGoal();	
+		try{
+			s.peek();
+			//st.printTable();
+			return false;
+		}catch(EmptyStackException e){
+			//st.printTable();
+			return true;
+		}
+	}
+	
+	private void match(String str)
+	{		
+		if((str.compareTo(lookType))==0)
+		{
+			lookAhead=tokList.poll();
+			lookType=lookAhead.getType();
+			s.pop();
+		}
+	}
+	
+	private void matchAhead()
+	{		
+		switch(lookType){
+		case "MP_PERIOD":
+			match(s.peek());
+			break;
+		case "MP_SCOLON":
+			match(s.peek());
+			break;
+		case "MP_COLON":
+			match(s.peek());
+			break;
+		case "MP_LPAREN":
+			match(s.peek());
+			break;
+		case "MP_RPAREN":
+			match(s.peek());
+			break;
+		case "MP_ASSIGN":
+			match(s.peek());
+			break;
+		case "MP_DO":
+			match(s.peek());
+			break;
+		case "MP_ELSE":
+			match(s.peek());
+			break;
+		case "MP_END":
+			match(s.peek());
+			break;
+		case "MP_FIXED":
+			match(s.peek());
+			break;
+		case "MP_NOT":
+			match(s.peek());
+			break;
+		case "MP_THEN":
+			match(s.peek());
+			break;
+		case "MP_UNTIL":
+			match(s.peek());
+			break;
+		case "MP_EOF":
+			match(s.peek());
+			break;
+		default:
+			pw.println("ERROR - MatchAhead");
+			break;
+		}
+	}
+	
+	private void systemGoal()
+	{		
+		s.push("Program");
+		program();
+	}
+	
+	private void program()
+	{			
+		if(s.peek().equals("Program"))
+		{
+			s.pop();
+			s.push("MP_PERIOD");
+			s.push("Block");
+			s.push("MP_SCOLON");
+			s.push("ProgramHeading");			
+			programHeading();
+			matchAhead();
+			block();
+			matchAhead();
+		}
+		else
+			pw.println("ERROR - Program");
+	}
+	
+	private void programHeading()
+	{				
+		if(s.peek().equals("ProgramHeading"))
+		{
+			nest='h';		//h for program heading
+			s.pop();
+			s.push("ProgramIdentifier");
+			s.push("MP_PROGRAM");
+			match(s.peek());
+			st.addToken(lookAhead, nest);
+			programIdentifier();
+		}
+		else
+			pw.println("ERROR - ProgramHeading");
+	}
+	
+	private void block()
+	{
+		if(s.peek().equals("Block"))
+		{
+			s.pop();
+			s.push("StatementPart");
+			s.push("ProcedureAndFunctionDeclarationPart");
+			s.push("VariableDeclarationPart");
+			variableDeclarationPart();
+			procedureAndFunctionDeclarationPart();
+			statementPart();
+		}
+		else
+			pw.println("ERROR - Block");
+	}
+	
+	private void variableDeclarationPart()
+	{
+		if(s.peek().equals("VariableDeclarationPart"))
+		{
+			nest='v';		//v for variable declaration
+			s.pop();
+			switch(lookType){
+			case "MP_VAR":
+				s.push("VariableDeclarationTail");
+				s.push("MP_SCOLON");
+				s.push("VariableDeclaration");
+				s.push("MP_VAR");
+				match(s.peek());				
+				variableDeclaration();
+				matchAhead();
+				variableDeclarationTail();
+				break;
+			default:
+				break;	
+			}
+		}
+		else
+			pw.println("ERROR - VariableDeclarationPart");
+	}
+	
+	private void variableDeclarationTail()
+	{
+		if(s.peek().equals("VariableDeclarationTail"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_IDENTIFIER":
+				s.push("VariableDeclarationTail");
+				s.push("MP_SCOLON");
+				s.push("Type");
+				s.push("MP_COLON");
+				s.push("IdentifierList");
+				identifierList();
+				matchAhead();
+				type();
+				matchAhead();
+				variableDeclarationTail();
+				break;
+			default:
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - VariableDeclarationTail");
+	}
+	
+	private void variableDeclaration()
+	{
+		if(s.peek().equals("VariableDeclaration"))
+		{
+			s.pop();
+			s.push("Type");
+			s.push("MP_COLON");
+			s.push("IdentifierList");
+			identifierList();
+			matchAhead();
+			type();
+		}
+		else
+			pw.println("ERROR - VariableDeclaration");
+	}
+	
+	private void type()
+	{
+		if(s.peek().equals("Type"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_INTEGER":
+				s.push("MP_INTEGER");
+				match(s.peek());
+				break;
+			case "MP_FLOAT":
+				s.push("MP_FLOAT");
+				match(s.peek());
+				break;
+			default:
+				break;	
+			}
+		}
+		else
+			pw.println("ERROR - Type");
+	}
+	
+	private void procedureAndFunctionDeclarationPart()
+	{
+		if(s.peek().equals("ProcedureAndFunctionDeclarationPart"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_PROCEDURE":
+				s.push("ProcedureAndFunctionDeclarationPart");
+				s.push("ProcedureDeclaration");
+				procedureDeclaration();
+				procedureAndFunctionDeclarationPart();
+				break;
+			case "MP_FUNCTION":
+				s.push("ProcedureAndFunctionDeclarationPart");
+				s.push("FunctionDeclaration");
+				functionDeclaration();
+				procedureAndFunctionDeclarationPart();
+				break;
+			default:
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - ProcedureAndFunctionDeclarationPart");
+	}
+	
+	private void procedureDeclaration()
+	{
+		if(s.peek().equals("ProcedureDeclaration"))
+		{
+			nest='p';		//p for procedure
+			s.pop();
+			s.push("MP_SCOLON");
+			s.push("Block");
+			s.push("MP_SCOLON");
+			s.push("ProcedureHeading");
+			procedureHeading();
+			matchAhead();
+			block();
+			matchAhead();
+		}
+		else
+			pw.println("ERROR - ProcedureDeclaration");
+	}
+	
+	private void functionDeclaration()
+	{
+		if(s.peek().equals("FunctionDeclaration"))
+		{
+			nest='f';		//f for function
+			s.pop();
+			s.push("MP_SCOLON");
+			s.push("Block");
+			s.push("MP_SCOLON");
+			s.push("FunctionHeading");
+			functionHeading();
+			matchAhead();
+			block();
+			matchAhead();
+		}
+		else
+			pw.println("ERROR - FunctionDeclaration");
+	}
+	
+	private void procedureHeading()
+	{
+		if(s.peek().equals("ProcedureHeading"))
+		{
+			s.pop();
+			s.push("OptionalFormalParameterList");
+			s.push("MP_IDENTIFIER");
+			s.push("MP_PROCEDURE");
+			match(s.peek());
+			st.addToken(lookAhead, nest);
+			identifier();
+			optionalFormalParameterList();
+		}
+		else
+			pw.println("ERROR - ProcedureHeading");
+	}
+	
+	private void functionHeading()
+	{
+		if(s.peek().equals("FunctionHeading"))
+		{
+			s.pop();
+			s.push("Type");
+			s.push("OptionalFormalParameterList");
+			s.push("MP_IDENTIFIER");
+			s.push("MP_FUNCTION");
+			match(s.peek());
+			st.addToken(lookAhead, nest);
+			identifier();
+			optionalFormalParameterList();
+			type();
+		}
+		else
+			pw.println("ERROR - FunctionHeading");
+	}
+	
+	private void optionalFormalParameterList()
+	{
+		if(s.peek().equals("OptionalFormalParameterList"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_LPAREN":
+				s.push("MP_RPAREN");
+				s.push("FormalParameterSectionTail");
+				s.push("FormalParameterSection");
+				s.push("MP_LPAREN");
+				match(s.peek());
+				formalParameterSection();
+				formalParameterSectionTail();
+				matchAhead();
+				break;
+			default:
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - OptionalFormalParameterList");
+	}
+	
+	private void formalParameterSectionTail()
+	{
+		if(s.peek().equals("FormalParameterSectionTail"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_SCOLON":
+				s.push("FormalParameterSectionTail");
+				s.push("FormalParameterSection");
+				s.push("MP_SCOLON");
+				match(s.peek());
+				formalParameterSection();
+				formalParameterSectionTail();
+				break;
+			default:
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - FormalParameterScetionTail");
+	}
+	
+	private void formalParameterSection()
+	{
+		if(s.peek().equals("FormalParameterSection"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_IDENTIFIER":
+				s.push("ValueParameterSection");
+				valueParameterSection();
+				break;
+			case "MP_VAR":
+				s.push("VariableParameterSection");
+				variableParameterSection();
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - FormalParameterSection");
+	}
+	
+	private void valueParameterSection()
+	{
+		if(s.peek().equals("ValueParameterSection"))
+		{
+			s.pop();
+			s.push("Type");
+			s.push("MP_COLON");
+			s.push("IdentifierList");
+			identifierList();
+			matchAhead();
+			type();
+		}
+		else
+			pw.println("ERROR - ValueParameterSection");
+	}
+	;
+	private void variableParameterSection()
+	{
+		if(s.peek().equals("VariableParameterSection"))
+		{
+			s.push("Type");
+			s.push("MP_COLON");
+			s.push("IdentifierList");
+			s.push("MP_VAR");
+			match(s.peek());
+			identifierList();
+			matchAhead();
+			type();
+		}
+		else
+			pw.println("ERROR - VariableParameterSection");
+	}
+	
+	private void statementPart()
+	{
+		if(s.peek().equals("StatementPart"))
+		{
+			nest='s';		//s for statement
+			s.pop();
+			s.push("CompoundStatement");
+			compoundStatement();
+		}
+		else
+			pw.println("ERROR - StatementPart");
+	}
+	
+	private void compoundStatement()
+	{
+		if(s.peek().equals("CompoundStatement"))
+		{			
+			s.pop();
+			s.push("MP_END");
+			s.push("StatementSequence");			
+			s.push("MP_BEGIN");
+			match(s.peek());
+			statementSequence();
+			matchAhead();
+		}
+		else
+			pw.println("ERROR - CompoundStatement");
+	}
+	
+	private void statementSequence()
+	{
+		if(s.peek().equals("StatementSequence"))
+		{
+			s.pop();
+			s.push("StatementTail");
+			s.push("Statement");
+			statement();
+			statementTail();
+		}
+		else
+			pw.println("ERROR - StatementSequence");
+	}
+	
+	private void statementTail()
+	{
+		if(s.peek().equals("StatementTail"))
+		{
+			s.pop();			
+			switch(lookType){			
+			case "MP_END":
+				break;
+			default:
+				s.push("StatementTail");
+				s.push("Statement");
+				s.push("MP_SCOLON");
+				match(s.peek());
+				statement();
+				statementTail();
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - StatementTail");
+	}
+	
+	private void statement()
+	{
+		if(s.peek().equals("Statement"))
+		{
+			s.pop();
+			switch(lookType)
+			{
+			case "MP_READ":
+				s.push("ReadStatement");
+				readStatement();
+				break;
+			case "MP_WRITE":
+				s.push("WriteStatement");
+				writeStatement();
+				break;
+			case "MP_IF":
+				s.push("IfStatement");
+				ifStatement();
+				break;
+			case "MP_WHILE":
+				s.push("WhileStatement");
+				whileStatement();
+				break;
+			case "MP_FOR":
+				s.push("ForStatement");
+				forStatement();
+				break;
+			case "MP_REPEAT":
+				s.push("RepeatStatement");
+				repeatStatement();
+				break;
+			case "MP_IDENTIFIER":
+				String temp=lookAhead.getLex();
+				SymbolToken sTok=st.getToken(temp);
+				if(sTok==null)
+					pw.println("ERROR - No Value in Symbol Table");
+				else{
+					if(sTok.getNest()=='v' || sTok.getNest()=='f')
+					{
+						s.push("AssignmentStatement");
+						assignmentStatement();
+					}
+					else{
+						s.push("ProcedureStatement");
+						procedureStatement();
+					}
+				}
+				break;
+			case "MP_BEGIN":
+				s.push("CompoundStatement");
+				compoundStatement();
+				break;
+			default:
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - Statement");
+	}
+	
+	private void readStatement()
+	{
+		if(s.peek().equals("ReadStatement"))
+		{
+			nest='d';		//d for read statement
+			s.pop();
+			s.push("MP_RPAREN");
+			s.push("ReadParameterTail");
+			s.push("ReadParameter");
+			s.push("MP_LPAREN");
+			s.push("MP_READ");
+			match(s.peek());
+			matchAhead();
+			readParameter();
+			readParameterTail();
+		}
+		else
+			pw.println("ERROR - ReadStatement");
+	}
+	
+	private void readParameterTail()
+	{
+		if(s.peek().equals("ReadParameterTail"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_COMMA":
+				s.push("ReadParameterTail");
+				s.push("ReadParameter");
+				s.push("MP_COMMA");
+				match(s.peek());
+				readParameter();
+				readParameterTail();
+				break;
+			default:
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - ReadParameterTail");
+	}
+	
+	private void readParameter()
+	{
+		if(s.peek().equals("ReadParameter"))
+		{
+			s.pop();
+			s.push("MP_IDENTIFIER");
+			identifier();
+		}
+		else
+			pw.println("ERROR - ReadParameter");
+	}
+	
+	private void writeStatement()
+	{
+		if(s.peek().equals("WriteStatement"))
+		{
+			nest='w';		//w for write statement
+			s.pop();
+			s.push("MP_RPAREN"); 
+			s.push("WriteParameterTail");
+			s.push("WriteParameter");
+			s.push("MP_LPAREN");
+			s.push("MP_WRITE");
+			match(s.peek());
+			matchAhead();
+			writeParameter();
+			writeParameterTail();
+			matchAhead();
+		}
+		else
+			pw.println("ERROR - WriteStatement");
+	}
+	
+	private void writeParameterTail()
+	{
+		if(s.peek().equals("WriteParameterTail"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_COMMA":
+				s.push("WriteParameterTail");
+				s.push("WriteParameter");
+				s.push("MP_COMMA");
+				match(s.peek());
+				writeParameter();
+				writeParameterTail();
+				break;
+			default:
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - WriteParameterTail");
+	}
+	
+	private void writeParameter()
+	{
+		if(s.peek().equals("WriteParameter"))
+		{
+			s.pop();
+			s.push("OrdinalExpression");
+			ordinalExpression();
+		}
+		else
+			pw.println("ERROR - WriteParameter");
+	}
+	
+	private void assignmentStatement()
+	{
+		if(s.peek().equals("AssignmentStatement"))
+		{
+			nest='a';		//a for assignment statement
+			s.pop();
+			String temp=lookAhead.getLex();
+			SymbolToken sTok=st.getToken(temp);
+			if(sTok==null)
+				pw.println("ERROR - No Value in Symbol Table");
+			else{
+				if(sTok.getNest()=='v')
+				{
+					s.push("Expression");
+					s.push("MP_ASSIGN");
+					s.push("VariableIdentifier");
+					variableIdentifier();
+					matchAhead();
+					expression();
+				}
+				else if(sTok.getNest()=='f')
+				{
+					s.push("Expression");
+					s.push("MP_ASSIGN");
+					s.push("FunctionIdentifier");
+					functionIdentifier();
+					matchAhead();
+					expression();
+				}
+				else
+					System.out.println("nest does not match in assignmentStatement");
+			}
+		}
+		else
+			pw.println("ERROR - AssignmentStatement");
+	}
+	
+	private void ifStatement()
+	{
+		if(s.peek().equals("IfStatement"))
+		{
+			nest='i';		//i for if statement
+			s.pop();
+			s.push("OptionalElsePart");
+			s.push("Statement");
+			s.push("MP_THEN");
+			s.push("BooleanExpression");
+			s.push("MP_IF");
+			match(s.peek());
+			booleanExpression();
+			matchAhead();
+			statement();
+			optionalElsePart();
+		}
+		else
+			pw.println("ERROR - IfStatement");
+	}
+	
+	private void optionalElsePart()
+	{
+		if(s.peek().equals("OptionalElsePart"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_ELSE":
+				s.push("Statement");
+				s.push("MP_ELSE");
+				match(s.peek());
+				statement();
+				break;
+			default:
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - OptionalElsePart");
+	}
+	
+	private void repeatStatement()
+	{
+		if(s.peek().equals("RepeatStatement"))
+		{
+			nest='r';		//r for repeat statement
+			s.pop();
+			s.push("BooleanExpression");
+			s.push("MP_UNTIL");
+			s.push("StatementSequence");
+			s.push("MP_REPEAT");
+			match(s.peek());
+			statementSequence();
+			matchAhead();
+			booleanExpression();
+		}
+		else
+			pw.println("RepeatStatement");
+	}
+	
+	private void whileStatement()
+	{
+		if(s.peek().equals("WhileStatement"))
+		{
+			nest='w';		//w for while statement
+			s.pop();
+			s.push("Statement");
+			s.push("MP_DO");
+			s.push("BooleanExpression");
+			s.push("MP_WHILE");
+			match(s.peek());
+			booleanExpression();
+			matchAhead();
+			statement();
+		}
+		else
+			pw.println("ERROR - WhileStatement");
+	}
+	
+	private void forStatement()
+	{
+		if(s.peek().equals("ForStatement"))
+		{
+			nest='l';		//l for for statement
+			s.pop();
+			s.push("Statement");
+			s.push("MP_DO");
+			s.push("FinalValue");
+			s.push("StepValue");
+			s.push("InitialValue");
+			s.push("MP_ASSIGN");
+			s.push("ControlVariable");
+			s.push("MP_FOR");
+			match(s.peek());
+			controlVariable();
+			matchAhead();
+			initialValue();
+			stepValue();
+			finalValue();
+			matchAhead();
+			statement();
+		}
+		else
+			pw.println("ERROR - ForStatement");
+	}
+	
+	private void controlVariable()
+	{
+		if(s.peek().equals("ControlVariable"))
+		{
+			s.pop();
+			s.push("MP_IDENTIFIER");
+			st.addToken(lookAhead, nest);
+			identifier();
+		}
+		else
+			pw.println("ERROR - ControlVariable");
+	}
+	
+	private void initialValue()
+	{
+		if(s.peek().equals("InitialValue"))
+		{
+			s.pop();
+			s.push("OrdinalExpression");
+			ordinalExpression();
+		}
+		else
+			pw.println("ERROR - InitialValue");
+	}
+	
+	private void stepValue()
+	{
+		if(s.peek().equals("StepValue"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_TO":
+				s.push("MP_TO");
+				match(s.peek());
+				break;
+			case "MP_DOWNTO":
+				s.push("MP_DOWNTO");
+				match(s.peek());
+				break;
+			}
+		}
+		else
+			pw.println("StepValue");
+	}
+	
+	private void finalValue()
+	{
+		if(s.peek().equals("FinalValue"))
+		{
+			s.pop();
+			s.push("OrdinalExpression");
+			ordinalExpression();
+		}
+		else
+			pw.println("FinalValue");
+	}
+	
+	private void procedureStatement()
+	{
+		if(s.peek().equals("ProcedureStatement"))
+		{
+			s.pop();
+			s.push("OptionalActualParameterList");
+			s.push("MP_IDENTIFIER");
+			st.addToken(lookAhead, nest);
+			identifier();
+			optionalActualParameterList();
+		}
+		else
+			pw.println("ERROR - ProcedureStatement");
+	}
+	
+	private void optionalActualParameterList()
+	{
+		if(s.peek().equals("OptionalActualParameterList"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_LPAREN":
+				s.push("MP_RPAREN");
+				s.push("ActualParameterTail");
+				s.push("ActualParameter");
+				s.push("MP_LPAREN");
+				match(s.peek());
+				actualParameter();
+				actualParameterTail();
+				matchAhead();
+				break;
+			default:
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - OptionalActualParameterList");
+	}
+	
+	private void actualParameterTail()
+	{
+		if(s.peek().equals("ActualParameterTail"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_COMMA":
+				s.push("ActualParameterTail");
+				s.push("ActualParameter");
+				s.push("MP_COMMA");
+				match(s.peek());
+				actualParameter();
+				actualParameterTail();
+				break;
+			default:
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - ActualParameterTail");
+	}
+	
+	private void actualParameter()
+	{
+		if(s.peek().equals("ActualParameter"))
+		{
+			s.pop();
+			s.push("OrdinalExpression");
+			ordinalExpression();
+		}
+		else
+			pw.println("ERROR - ActualParameter");
+	}
+	
+	private void expression()
+	{
+		if(s.peek().equals("Expression"))
+		{
+			s.pop();
+			s.push("OptionalRelationalPart");
+			s.push("SimpleExpression");
+			simpleExpression();
+			optionalRelationalPart();
+		}
+		else
+			pw.println("ERROR - Expression");
+	}
+	
+	private void optionalRelationalPart()
+	{
+		if(s.peek().equals("OptionalRelationalPart"))
+		{
+			s.pop();
+			if(lookType.equals("MP_EQUAL") || lookType.equals("MP_LTHAN") ||
+					lookType.equals("MP_GTHAN") || lookType.equals("MP_LEQUAL") ||
+					lookType.equals("MP_GEQUAL") || lookType.equals("MP_NEQUAL"))
+			{
+				s.push("SimpleExpression");
+				s.push("RelationalOperator");
+				relationalOperator();
+				simpleExpression();
+			}
+		}
+	}
+	
+	private void relationalOperator()
+	{
+		if(s.peek().equals("RelationalOperator"))
+		{
+			switch(lookType){
+			case "MP_EQUAL":
+				s.push("MP_EQUAL");
+				match(s.peek());
+				break;
+			case "MP_NEQUAL":
+				s.push("MP_NEQUAL");
+				match(s.peek());
+				break;
+			case "MP_LTHAN":
+				s.push("MP_LTHAN");
+				match(s.peek());
+				break;
+			case "MP_GTHAN":
+				s.push("MP_GTHAN");
+				match(s.peek());
+				break;
+			case "MP_LEQUAL":
+				s.push("MP_LEQUAL");
+				match(s.peek());
+				break;
+			case "MP_GEQUAL":
+				s.push("MP_GEQUAL");
+				match(s.peek());
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - RelationalPart");
+	}
+	
+	private void simpleExpression()
+	{
+		if(s.peek().equals("SimpleExpression"))
+		{
+			s.pop();
+			s.push("TermTail");
+			s.push("Term");
+			s.push("OptionalSign");
+			optionalSign();
+			term();
+			termTail();
+		}
+		else
+			pw.println("ERROR - SimpleExpression");
+	}
+	
+	private void termTail()
+	{
+		if(s.peek().equals("TermTail"))
+		{
+			s.pop();
+			if(lookType.equals("MP_ADD") || lookType.equals("MP_MINUS") ||
+					lookType.equals("MP_OR"))
+			{
+				s.push("TermTail");
+				s.push("Term");
+				s.push("AddingOperator");
+				addingOperator();
+				term();
+				termTail();
+			}
+			
+		}
+		else
+			pw.println("ERROR - TermTail");
+	}
+	
+	private void optionalSign()
+	{
+		if(s.peek().equals("OptionalSign"))
+		{
+			s.pop();
+			switch(lookType)
+			{
+			case "MP_PLUS":
+				s.push("MP_PLUS");
+				match(s.peek());
+				break;
+			case "MP_MINUS":
+				s.push("MP_MINUS");
+				match(s.peek());
+				break;
+			default:
+				break;
+			}
+		}
+	}
+	
+	private void addingOperator()
+	{
+		if(s.peek().equals("AddingOperator"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_PLUS":
+				s.push("MP_PLUS");
+				match(s.peek());
+				break;
+			case "MP_MINUS":
+				s.push("MP_MINUS");
+				match(s.peek());
+				break;
+			case "MP_OR":
+				s.push("MP_OR");
+				match(s.peek());
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - AddingOperator");
+	}
+	
+	private void term()
+	{
+		if(s.peek().equals("Term"))
+		{
+			s.pop();
+			s.push("FactorTail");
+			s.push("Factor");
+			factor();
+			factorTail();
+		}
+		else
+			pw.println("ERROR - Term");
+	}
+	private void factorTail()
+	{
+		if(s.peek().equals("FactorTail"))
+		{
+			s.pop();
+			if(lookType.equals("MP_FSLASH") || lookType.equals("MP_TIMES") ||
+					lookType.equals("MP_MOD") || lookType.equals("MP_AND"))
+			{
+				s.push("FactorTail");
+				s.push("Factor");
+				s.push("MultiplyingOperator");
+				multiplyingOperator();
+				factor();
+				factorTail();
+			}
+		}
+		else
+			pw.println("ERROR - FactorTail");
+	}
+	
+	private void multiplyingOperator()
+	{
+		if(s.peek().equals("MultiplyingOperator"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_TIMES":
+				s.push("MP_TIMES");
+				match(s.peek());
+				break;
+			case "MP_FSLASH":
+				s.push("MP_FSLASH");
+				match(s.peek());
+				break;
+			case "MP_MOD":
+				s.push("MP_MOD");
+				match(s.peek());
+				break;
+			case "MP_AND":
+				s.push("MP_AND");
+				match(s.peek());
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - MultiplyingOperator");
+	}
+	
+	//need to finish once lookup table is done
+	private void factor()
+	{
+		if(s.peek().equals("Factor"))
+		{
+			s.pop();			
+			switch(lookType){
+			case "MP_NOT":
+				s.push("Factor");
+				s.push("MP_NOT");
+				match(s.peek());
+				factor();
+				break;
+			case "MP_LPAREN":
+				s.push("MP_RPAREN");
+				s.push("Expression");
+				s.push("MP_LPAREN");
+				match(s.peek());
+				expression();
+				matchAhead();
+				break;
+			case "MP_INTEGER_LIT":
+				s.push("MP_INTEGER_LIT");
+				st.addToken(lookAhead, nest);
+				match(s.peek());
+				break;
+			case "MP_FIXED_LIT":
+				s.push("MP_FIXED_LIT");
+				st.addToken(lookAhead, nest);
+				match(s.peek());
+				break;
+			case "MP_FLOAT_LIT":
+				s.push("MP_FLOAT_LIT");
+				st.addToken(lookAhead, nest);
+				match(s.peek());
+				break;
+			case "MP_IDENTIFIER":
+				s.push("MP_IDENTIFIER");
+				st.addToken(lookAhead, nest);
+				identifier();
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - Factor");
+	}
+	
+	private void programIdentifier()
+	{			
+		if(s.peek().equals("ProgramIdentifier"))
+		{
+			s.pop();
+			s.push("MP_IDENTIFIER");
+			identifier();
+		}
+		else
+			pw.println("ERROR - ProgramIdentifier");
+	}
+	
+	private void variableIdentifier()
+	{
+		if(s.peek().equals("VariableIdentifier"))
+		{
+			s.pop();
+			s.push("MP_IDENTIFIER");
+			identifier();
+		}
+		else
+			pw.println("ERROR - VariableIdentifier");
+	}
+	
+	private void functionIdentifier()
+	{
+		if(s.peek().equals("FunctionIdentifier"))
+		{
+			s.pop();
+			s.push("MP_IDENTIFIER");
+			identifier();
+		}
+		else
+			pw.println("ERROR - FunctionIdentifier");
+	}
+	
+	private void booleanExpression()
+	{
+		if(s.peek().equals("BooleanExpression"))
+		{
+			s.pop();
+			s.push("Expression");
+			expression();
+		}
+		else
+			pw.println("ERROR - BooleanExpression");
+	}
+	
+	private void ordinalExpression()
+	{
+		if(s.peek().equals("OrdinalExpression"))
+		{
+			s.pop();
+			s.push("Expression");
+			expression();
+		}
+		else
+			pw.println("ERROR - OdrinalExpression");
+	}
+	
+	private void identifierList()
+	{
+		if(s.peek().equals("IdentifierList"))
+		{
+			s.pop();
+			s.push("IdentifierTail");
+			s.push("MP_IDENTIFIER");
+			st.addToken(lookAhead, nest);
+			identifier();
+			identifierTail();
+		}
+		else
+			pw.println("ERROR - IdentifierList");
+	}
+	
+	private void identifierTail()
+	{
+		if(s.peek().equals("IdentifierTail"))
+		{
+			s.pop();
+			switch(lookType){
+			case "MP_COMMA":
+				s.push("IdentifierTail");
+				s.push("MP_IDENTIFIER");
+				s.push("MP_COMMA");
+				match(s.peek());
+				st.addToken(lookAhead, nest);
+				identifier();
+				identifierTail();
+				break;
+			default:
+				break;
+			}
+		}
+		else
+			pw.println("ERROR - IdentifierTail");
+	}
+	
+	private void identifier()
+	{			
+		if(s.peek().equals("MP_IDENTIFIER"))
+		{
+			match(s.peek());
+		}
+		else
+			pw.println("ERROR - Identifier");
+	}
+}

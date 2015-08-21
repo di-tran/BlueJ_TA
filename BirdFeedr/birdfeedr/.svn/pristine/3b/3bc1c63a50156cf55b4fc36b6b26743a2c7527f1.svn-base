@@ -1,0 +1,173 @@
+2015-01-31 14:07:06 
+
+Chirp: met and implemented the example extension.
+  Created another extension to pull up JOption Pane.
+  Ran into a small problem with windows.
+
+Github: Release planning and iteration planning.
+
+---
+Wei: go over what went well and what did not work well.
+
+
+  Peer programming worked well b/c they could get information
+    accrossed quickly.
+
+Di: Liked how we were iterating.
+   Felt like we were making progress until they hit user directories.
+  More design. How to design the extension in general.
+  Spend more time on design.
+
+Nathan: Liked the progress. Jumping into it.
+  Did not like the slopping code.
+  Spend more time cleaning the code up and organizating it.
+
+
+Josh: where did you make the most progress?
+
+Di: outside of class. Met the day after.
+
+
+Josh: I liked learning about XP.
+      I liked learning about Refactoring, JavaGit, JGit.
+
+Miguel: Could have spent more time on the project.
+
+Wei: More time outside of class.
+
+Thomas: We spent time in class working on the extension.
+
+Josh: anything else.
+
+Wei: I don't think there is anything else.
+
+
+Questions:
+
+How is the process model of each subgroup shown in the notebook?
+
+Josh: We don't want to wait till the last minute to work on the notebook.
+
+Wei: Keeps a personal notebook and records decisions.
+  Push that into our documents folder like a project journal.
+  Subgroups keep their own Journal.
+  
+Josh: Di you want to add to that?
+
+Di: How are we going to document this?
+  If we are can ship jar files then add the thinking process for each.
+  It would be better to work on project notebook.
+
+Josh: Miguel anything?
+
+
+Miguel: Nope.
+
+Nathan: We are not following a process model.
+   Getting to know the process models.
+   Process model is not concrete.
+
+Wei: Closest process model is closet to Agile.
+
+Nathan: Purpose of process model is to complete a project.
+   If we spend more time on process model than on the actual work
+     then it is like a leach.
+
+Wei: Choose the process model that works for us.
+  It helps us when we don't know what to do.
+
+  We start working and choose the process model that fits us.
+  We are trying to be philosopher.
+
+
+Josh:  I think this has 
+
+Josh: Let the project Chirp be success and Git be a failure.
+
+Di: Project Git got things accomplished with the user stories.
+
+Wei: Prj Git wished they got their hands dirty.
+   Now one group has experience Project Management and other group has
+  experience in getting dirty.
+    Now one group can rely on the other.
+
+Di: Wants to ship the extension to everyone in class.
+   Get practice on learning how to ship.
+
+   Asssume we will do a presentation on Monday.
+
+Nathan: Good controlled environment.
+
+
+Wei: likes Di's idea b/c we get experience w/ maintainence.
+
+Thomas: It touches on the practice of the deployment phase.
+
+Nathan: its like a focus group.
+
+Miguel: Are we suggesting presenting the Chirp extension?
+
+Wei: Yes, but also deployment.
+
+
+Thomas: Idea: Since prj Git is not done and we had a different style of
+  iterations. Prj Git continues its iteration.
+  Both subgroups are working a making progress forward.
+  It allows us continue with our iteration style.
+
+Wei & Di & Nathan & Miguel: Agree.
+
+Nathan: Another week of expereience and we can do risk analysis later.
+
+
+Josh: We formed tasks from the release planning draft.
+  We need 10 hours together.
+
+Di: Primary problem getting time together.
+
+Wei: Divide into peer groups.
+
+Josh: What's peer groups? is it like pairs?
+
+Wei: Kind of.
+
+Wei: AFter project Chirp finishes distribution to address the time issues.
+
+
+Josh: Would we continue or help project Chirp?
+
+
+Josh: To rest of the group: can we find time to meet?
+
+Thomas: Can't do Sunday b/c of super bowl.
+
+Wei: Offers his help. Free tomorrow.
+
+Josh: Miguel can we match schedules?
+
+Miguel: Saturday today and Tuesday.
+
+
+Josh: Can we do this afternoon and Tuesdays afternoon.
+
+Miguel: That works.
+
+Josh: Ill send you guys a calendar invite.
+
+Wei: Is willing to help.
+
+Wei: Will deal with practicing, maintaining. and presenting in front of the
+
+  class.
+
+Thomas: One suggestion for Chirp: send an email to Jody and the class
+  to take time for a presentation.
+
+Wei & Di: Agree.
+
+Wei: That would give them time to install BLuej
+
+Nathan: We have 3 months left.
+
+Meeting adjourned.
+2015-01-31 14:58:21 

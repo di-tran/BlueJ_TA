@@ -1,0 +1,23 @@
+2015-04-20 14:04
+
+DECISIONS
+
+ACCOMPLISHMENTS
+- Project notebook structure proposed.
+- Version 2 of presentation created.
+- ToC created in Google Drive
+- Monkey tested extensions and logged issues in Redmine.
+- Fixed up build.xml so it builds naturally
+
+TO DO
+Rehearse presentation.
+
+UNANSWERED QUESTIONS
+
+RAW NOTES
+T: Do we need to print ALL of our team meeting notes? Print 2 - 3 from beginning, middle & end?
+Biggest thing to be done is to run through the source code and check commenting, and to do some testing. We’ve done spawn tests, but not full in testing. 
+
+Testing: D/W
+Presentation: T/N
+Artifact Collection: M/J

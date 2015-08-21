@@ -1,0 +1,2 @@
+The report below shows the size of project in lines of code.
+It shows each files size and the total size of the extension.

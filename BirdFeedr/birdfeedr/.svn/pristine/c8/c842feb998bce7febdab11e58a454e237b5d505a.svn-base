@@ -1,0 +1,293 @@
+2015-02-25  9:53:31 
+
+Created project Git and Project Chirp as learning projects.
+
+We wanted to learn more about BlueJ extensions.
+
+Project Git used the Distributed Extreme Programming (DXP) process model.
+
+The first step was the release planning Game.
+ The goal of the release planning game is to produce user stories and estimate times.
+
+Our user stories:
+
+1. As a user, I would like to save my work to a git repository on my computer. TIME 1 WEEK
+2. As a user, I would like to use Github with my BlueJ project. TIME 2 WEEKS
+3. As a user, I would like to revert to a commit that I made earlier. TIME 3 WEEKS
+4. As a user, I would like to create a new branch.  TIMES 2 WEEKS
+5. As a user, I would like to checkout a repository using Git. TIME 1 DAYS but it overlapps with other user stories
+6. As a user, I would like to commit to a repository using Git. TIME 1 DAYS but it overlapps with other user stories
+7. As a user, I would like to use a Git repository in BlueJ with a GUI. TIME 0.2 WEEKS
+8. As a user, I would like to save my work to a git repository on a remote computer. OVERLAPPS WITH #2. Possible combine.
+
+
+After the release planning game comes the iteration planning game.
+
+  The goal is to plan tasks that will fit into a week.
+
+We came up with these tasks:
+
+Create an extension base that proves that we can create a BlueJ extension. TIME ESTIMATED 1 HOUR.
+Find a way to talk to Git. This would be a research task. I bet there is an API that will do it. TIME ESTIMATE 4 HOURS
+Create a quick demo that proves Java can talk to Git. TIME ESTIMATE 0.5 HOURS
+Create a plugin with menu items for git. i.e. initialize, commit. TIME ESTIMATE 2 HOURS
+Create a unit test for initialization. TIME ESTIMATE 2 HOURS
+Create a unit test for committing.. TIME ESTIMATE 2 HOURS
+Implement initialization. TIME ESTIMATE 1 HOURS
+Implement committing. TIME ESTIMATE 1 HOURS
+
+
+The first week of Jan 25 to 31
+ - Project Chirp reached its goals.
+ - Project Git did not.
+
+Project Git should have set expectations for that week.
+  That is, there should have been task delegation.
+  and planned times to meet.
+  Since project Git did not allocate scheduled hours, tasks did not get completed.
+
+The first week of Feb.
+ - Project Chirp Presented their project status and transitioned into the
+  deployment phase.
+
+Project Git met its goals and actually surpassed them.
+
+The second week of Feb.
+ - Project Chrip closed their project.
+ - Team members from project Chirp switched their efforts to the Presentation.
+ - Project Git prepared to close the project by documenting
+   and unit testing.
+ - The entire team began focusing on the Presentation.
+ - The team created a vision statement.
+
+What we learned:
+ - A vision statement defines the broad direction a team goes.
+ - A project or business objective defines the specific steps towards that direction.
+ - We need a vision statement to keep our team on track so that when we feel lost we can reread it.
+ 
+The third week of Feb.
+ - Team Birdfeedr researched, rehearsed, and designed their presentation.
+ - Team Birdfeedr created a list of projects to fit under its vision statement.
+
+The fourth week of Feb.
+ - The Team finished creating a list of projects.
+ - Rehearsed their presentation.
+ - Gave their presentation.
+ - Reflected on the feedback we will receive.
+ - Choose a project.
+ - Selected a specific project.
+2015-02-25 10:08:57 
+2015-02-25 10:09:22 
+
+(Revising)
+2015-02-25 10:11:52 
+2015-02-25 10:15:15 
+
+Feb 7 Project Git Status Report.
+
+Status: Documenting.
+Estimated Completion: By the end of this weekend.
+
+Tasks on Todo List:
+Document each class.
+Document the build.xml.
+(optional) Create a wiki page.
+Create a README.
+Accomplishments:
+Implemented the Commit Feature.
+We had to add untracked files.
+Then commit the rest with the commit-all feature.
+Ran into and resolved a problem of opening an existing repository.
+Implemented the init Feature.
+Utilized the porcelain git API
+Implemented the push Feature.
+Miguel implement the push feature. Miguel, would you want to talk about the work that went into this?
+Implemented the clone Feature.
+Miguel implement the clone feature. Miguel, would you want to talk about the work that went into this?
+Created unit tests for the Init feature.
+The test checks for the .git folder before and after.
+Created unit tests for the Commit feature.
+The test reads the status report before and after.
+Created unit tests for the Push feature.
+Miguel implemented unit testing.
+Created unit tests for the Clone feature.
+Miguel implemented unit testing.
+Refactored design.
+Put menu actions into its own package.
+Put Git functions into its own package and class.
+Resolved problem: Java not being able to call JGit while inside the extension.
+The build.xml combines the JGit classes into the extension Jar.
+
+
+Status Report Feb 14
+
+Created a vision statement:
+To inspire people to reach their computer science dreams by providing tools that help them overcome the barriers to programming.
+
+Brought unity back to the team.
+
+Created two new policies.
+
+Concluded project Git.
+
+Created a vision document.
+
+Feb 18 Meeting Summary
+
+Decisions:
+We want our presentation to be entertaining so it captivates the audience yet have valuable content as well.
+The bad group should always go first.
+Narrators should have the most detailed script.
+We don't need a handout.
+Questions will be at the end.
+At the conclusion, reiterate the benefits of pair programming and the key points from each pair.
+Use simple code examples that the good and bad pairs can talk about.
+The beginning of the presentation will talk generally about pair programming and the rest of the presentation will cover good and bad pair examples.
+Our presentation will be divided into blocks of good and bad.
+Our blocks will have an intro, demo, ask audience what was wrong for the bad pair, and narrator explains the lessons learned.
+
+Accomplishments:
+We created a presentation plan.
+We made a lot of decisions about the presentation.
+We had a brief rehearsal.
+We decided how to position our good and bad pair in the room.
+Learned more about pair programming.
+
+Task Delegation:
+Di will get the presentation structure done by Saturday.
+Josh and Nate will prepare generic scripts for the "good pair".
+Di and Wei will prepare generic scripts for the "bad pair."
+Miguel and Thomas will prepare their specific scripts.
+
+Plan:
+Saturday we will meet. I (Josh) may not be able to make it.
+Saturday we should have presentation structure and scripts. The scripts should then be merged into one central script.
+Monday the power point should be finished and we will rehearse.
+Tuesday will make our presentation and scripts better.
+Wednesday we will present.
+
+
+Good Pair Generic script:
+
+Expert-expert increasing each other's productivity:
+
+(one person introduces the task)
+i.e. Our boss wants to make the Fibonacci function.
+(other person asks if the function should be recursive)
+(one person comments on the inefficiency of a recursive fib function with large numbers)
+(other person suggests that the recursive function could remember previous fib numbers)
+(one person says that's is a great idea b/c it increases efficiency)
+
+Expert-novice with the novice learning and sharing his creativity:
+
+(expert introduces the task)
+(Novice asks how to get started)
+(expert explains how to use the divide and conquer principle)
+(Novice verbally applies the principle)
+(Expert compliments the novice on his progress)
+(Expert also adds his analysis)
+(Novice suggests how to improve the idea using his own creativity)
+
+Novice-novice both learning
+
+(One person introduces the topic)
+(other person identifies parts that he is unsure about)
+(One person explains to other person the parts he understands)
+(One person also raises questions about parts he is unsure about)
+(other person explains to the one person the parts he understands)
+(Both compile a list of questions to ask their coach)
+
+
+
+2/21/15 Meeting summery
+
+What we did:
+
+                *Compared the three script's and their cohesiveness with each other, discussed some critiques on improvements, mostly agreed with cohesiveness.
+
+                *Reviewed presentation slides agreed with format.
+
+                *Talked about presentation flow, like:
+
+                                -Who will say what(what narrators say and when audience participates)
+
+                                -What slide will be shown when and how(showing major points after each act is complete)
+
+                                -Agreed to hold questions till the end.
+
+Things to do:
+
+Narrator scripts needs some more details like
+
+                *Add segment to allow the actors to be Introduced in the introduction.
+
+                *Describe the three scenarios in the introduction before the blocks are acted out.
+
+                *Describe switching between driver/navigator in explanation of pair programming.
+
+                *Stronger Transitions between scenarios, like explaining how an expert novice pair could occur in a pair programming environment. i.e. intern working                  with a veteran at a company.
+
+                *Hash out conclusion.
+
+Fill in PowerPoint Slides:
+
+                *Narrators fill in summery and explanation slides.
+
+                *Good team fills in good point slides.
+
+                *Bad team fills in bad point slides.
+
+                *Review completed slides.
+
+Rehearse presentation on Monday.
+
+
+
+
+Feb 23 Meeting Summary
+
+Accomplishments
+Filtered inappropriate projects.
+Rehearsed twice.
+Planned Tuesday and Wednesday.
+Presentation was timed at 10 min 45 secs not including audience response.
+Plan
+Tuesday
+Presentation artifacts will have been polished and proofread.
+Wednesday
+Rehearse 30 min before class.
+Presentation.
+Reflect on our presentation feedback.
+Discuss our next presentation.
+Assignments
+(Optional) Each person thinks of an additional project.
+Each person picks their favorite project.
+Each person writes a very short (< 150 word) personal informal report to support their favorite.
+Nate will work on the cast slide and animations.
+Di, Wei, Josh are doing Quality Assurance.
+Thomas is working on the transitions.
+Miguel is polishing the narrator script.
+Decisions
+Stage Props
+Good pair uses Nate's PC.
+Handicap desk.
+Bad pair is bring both PC's
+We use main computer for the presentation.
+Everyone brings their computers as backups.
+Stage Orientation
+Good pair stage left.
+Bad pair stage right.
+Project Ideas
+OpenGL (pending further scoping).
+Multi-thread visualization.
+Java interpreter window.
+Animation clip that provides user support (pending further scoping).
+Nate's Plan B -- If the vision statement fails then we can fall back and work on Git and make it really nice.
+Presentation
+Nate and I need to be a little more free style with our parts.
+Add transitions b/t scenarios i.e. b/t expert-expert and expert-novice.
+Thomas will introduce each programmer and their role.
+Thomas will introduce each actor at the beginning.
+Miguel will give a quick overview at the beginning and set the audience's expectations for the layout and participation.
+
+2015-02-25 10:24:02 

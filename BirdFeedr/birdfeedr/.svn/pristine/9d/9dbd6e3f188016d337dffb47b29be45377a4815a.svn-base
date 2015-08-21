@@ -1,0 +1,1 @@
+java -cp ".;..;junit-4.10.jar" TestRunner

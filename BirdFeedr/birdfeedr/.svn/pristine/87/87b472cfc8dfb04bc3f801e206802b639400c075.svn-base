@@ -1,0 +1,20 @@
+Our product, BlueJ TA, is a BlueJ extension that aids in the learning process by providing
+programming exercises for students to complete and verify in real-time. The following 
+section describes the elements that as a whole compose our product. Other than the BlueJ 
+extension menus, our project was split into three major modules: the JUnit test runner, 
+the .xml reader, and the set of graphical user interfaces. We also created some side auxiliary 
+artifacts to aid the main project, such as sample exercise files to be shipped with the product 
+and a build file to help with the cleaning and jaring of the product.
+
+
+
+
+
+
+
+
+
+
+
+
+

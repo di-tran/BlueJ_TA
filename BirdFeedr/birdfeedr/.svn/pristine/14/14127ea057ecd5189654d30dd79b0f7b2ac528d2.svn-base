@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="27.0" layoutY="24.0" prefHeight="27.0" prefWidth="338.0" text="Title">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="39.0" layoutY="392.0" mnemonicParsing="false" text="Run Test" />
+      <Label layoutX="27.0" layoutY="64.0" prefHeight="25.0" prefWidth="338.0" text="Test Results:" AnchorPane.bottomAnchor="361.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="64.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Circle fill="#ff1f1f" layoutX="37.0" layoutY="239.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ff1f1f" layoutX="37.0" layoutY="174.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fill="#ff1f1f" layoutX="37.0" layoutY="305.0" radius="14.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="101.0" layoutY="166.0" text="Test 1" />
+      <Label layoutX="101.0" layoutY="231.0" text="Test 2" />
+      <Label layoutX="101.0" layoutY="297.0" prefHeight="17.0" prefWidth="62.0" text="Test 3" />
+   </children>
+</AnchorPane>

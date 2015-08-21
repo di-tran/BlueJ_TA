@@ -1,0 +1,338 @@
+2015-04-06 14:16
+
+W
+I read patch notes first. We should include them.
+
+T
+Use TTB - Trunk tags branchs
+
+W
+Take messages from log possible?
+
+T
+Manually
+
+J
+— I can do it —
+
+W
+Doing this gives us a metric.
+We should keep a stable version
+
+T
+TTB takes care of that.
+
+J
+So we’re waiting for ‘if you can get a draft presentation done as a presentation.’
+
+JP
+Yes, then you’re asking audience to watch presentation twice.
+You can prepare part of it as a full presentation, and then compress it in the final.
+But theres limited value in presenting a draft, except for you.
+Question for you, aprchitecture wise:
+I know you have a custom xml parser. Are you still doing that?
+
+T
+Yes
+
+JP
+My concern is (not from class perspective, but maintainence perspecitve) I have to maintain it.
+I’d prefer, even if it was overkill, to use library routines, even if they weren’t as good.
+That way I won’t have to maintain it.
+But I have no qualms from a class perspective
+
+W
+? Hard copy?
+
+JP
+Not necessary, but should be easily transferrable to a hard copy.
+Navigable. Tabs maybe. Needs to be straight forward.
+
+J
+Difference between notebook / portfolio
+
+JP
+One is a track of personal contribution to learning, with reflections on contributions & learning associated with this course.
+Other is a documented process for the team personally.
+You also have the product which is fully documented.
+What is you, and what is the team?
+Artifacts can be shared between the three deliverables.
+
+D
+Wei will cover me.
+(Wei)
+
+N
+
+W
+I agree. Need to do more documentating, esp. if we split up the work.
+We should also answer those two questions.
+
+J
+I think we can always document later.
+Our deadline for end of week is load feature, & redesign and document.
+
+N
+Nothing funner than deleting a method.
+
+(getting miguel & thomas up to date)
+
+J
+What if we could do two presentations. Take a piece of our pres in prep for our final pres.
+Thomas, you 
+
+T
+The only svn refactoring would be going to ttb.
+Where the files go to? That’s a minor issue compared to how they’re deployed?
+
+W
+Inside the jar?
+
+J
+You can put anything in the jar and there’s alos a way to read files in the jar.
+
+W
+Tests stored inside the jar can’t be changed easily.
+
+T
+Exercise file shouldn’t change after package.
+
+J
+Exercise should be duplicated from extension, so it can be reset.
+
+W
+This won’t cause the caching issue, right? 
+(no)
+
+T
+Keep in jar, reference in jar, solves those problems.
+
+W
+Jar just needs to be installed.
+
+J
+Even easier than that … it doesn’t matter. You can do it eiter way.
+We don’t have to worry about that quite yet.
+Start working on that and then redesign, etc.
+
+W
+Prioritize the deadline. Everything after that is cleanup.
+
+J
+This should be feasible. By Wednesday, we can get it done.
+
+W
+Can’t get it done, I have tests.
+
+J
+Split into pairs.
+
+W
+Two pairs, one on each question. Come back and share what was found.
+
+N
+Two groups of 3? Or 2 groups of 2 and one group for pres
+
+W
+We can’t do the draft thing anymore.
+
+J
+Still want to do the 15th.
+People that are busy this week can work on pres.
+Di and Wei on pres.
+Josh & Nate on load button
+Miguel & Thomas on exercise location.
+
+W
+Vision statement
+How to make a BlueJ extension
+Your audience and you?
+Meet back at 2:50
+Come back at 3.
+
+(recess)
+
+D
+
+T
+4 & 5 go together.
+2 is extremely risk
+
+N
+Out of left field.
+
+M
+1 & 5
+
+N
+I recommend 5, it’s fresher.
+
+T
+1 is narrower.
+
+W
+Team meetings I like more. We’ve been doing them more often.
+Vision statements are one time thing.
+It did help us, but not fresh enough.
+
+
+
+W
+Much of it can be applied to the final presentation
+
+T
+Vision is more applicable.
+
+M
+Vision has hard time with content
+
+W
+— make to do list —
+
+JP
+Clearly you’re providing a build that builds outside of bluej
+You’re going to provide an outside xml file.. right?
+
+W
+We should try to work around 6
+
+T
+Refactor should solve
+
+M
+To change it you have to reinstall
+You can check extension api and see if compatible with this version
+
+W
+Make popup that invalidates it.
+
+T
+Refactorable with 1.6
+I don’t know how familiar you are with annotating java.
+It’s just changing from using a scanner to putting annotations inside object
+If you put an-, and unmartial, you can map them out.
+
+W
+Progress on two questions?
+
+T
+Starting to look into bluej preferences where we can read in uri or path.
+TGoes towards grand scheme of ex. in public location
+
+W
+Already built in.
+What happens after load?
+
+N
+Not yet.
+
+M
+Another issue.
+Let’s say they load an exercise, close BlueJ and open it.
+exercise will still be there, but bluej won’t know that it’s an exercise.
+When you load, they will createa new project.
+
+W
+If we’re able to, we can call a class with specific clas sname.
+If we call by class name
+
+M
+It would save
+
+W
+Best option to clear exercise?
+
+M
+Best option is to save it somewhere and save the path.
+It’d be annoying to keep pointing to that location.
+
+T
+We could also define constraints, make it  clear that when you close bluej, it’s cleaned.
+
+N
+terminate feature delets the project, solves that problem.
+
+M
+What if it’s a big exercise? Can’t reload it.
+
+T
+Given the amount of time, we could just clear it.
+We could go back later and have someone save it.
+
+W
+It’s out of our scope.
+
+M
+Still good to know.
+
+W
+Create a button that says ‘this is an exercise’, which restarts the process and makes it become an exercise button. This is out of scope.
+
+Decision:
+Document that the problem exists, and is in the backlog.
+
+W
+As a reflection, how did you like split and return
+
+T
+I like it, lets us tackle more issues together.
+
+W
+Lots of decisions made today.
+1. Pres topic
+2. ‘Exercise state lost’ bug
+3. Exercise location defined by user.
+
+J
+I am working on trying to get extension to compile for 1.6. Fulfilled.
+
+N
+When do we refactor? After these features are done.
+
+T
+I estimate a half hour for the parser. Could take me longer because I’m used to martialling first.
+
+W
+Whole thing could take up to monday 13th. 
+
+J
+What are we doing between now and wednesday?
+
+W
+DW doing pres
+T M doing prefs pane. 
+NJ doing load button.
+
+T
+Who wants to learn annotations?
+I can refactor parser in my sandbox.
+
+Decision:
+Load button will follow Nates diagrams in his sandbox.
+
+— Wei & Di come up with a message.
+
+Wednesday’s Agenda
+- review nate’s load button
+- progress
+- report to stakeholder about progress and what we’re expecting
+
+2015-04-06 15:48
+
+Di's talk:
+So the thing we have to cover today is the 2 questions:
+Where do the exercise live?
+What happens after clicking the Load button?
+
+Lots of documenation work to do.
+Personally don't feel like it's there yet.
+
+Acheive those 2 questions then doing documentation, portfollio, project notebook.
+
+presentation ideas:
+
+1. making a vision statement.
+2. presentation on presentations. High risk High reward
+3. knowing your target demographics. Knowing stakeholders
+5. defining goals and success.
+5. Team meetings

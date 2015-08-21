@@ -1,0 +1,42 @@
+import java.net.URL;
+import java.util.ResourceBundle;
+import javafx.fxml.Initializable;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+/**
+ * Write a description of class FXMLTestDocumentController here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class FXMLTestDocumentController implements Initializable
+{
+    @FXML
+    private Button runButton;
+    private Exercise exercise;
+    
+    
+    /**
+     * Called whenever a button or menu item is pressed, and calls a function
+     * depending on the button/item pressed.
+     *
+     * @param event the calling event
+     */
+    @FXML
+    private void handleButtonAction(ActionEvent event) {
+        if(event.getSource().equals(runButton)){
+       
+        }
+    }
+    
+    /**
+     * 
+     */
+    @Override
+    public void initialize(URL url, ResourceBundle rb) {
+    	if(StateManager.currentExercise != null){
+    		exercise = StateManager.currentExercise;
+    	}
+    }
+}

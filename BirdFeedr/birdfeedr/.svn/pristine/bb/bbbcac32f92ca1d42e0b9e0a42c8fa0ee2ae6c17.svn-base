@@ -1,0 +1,17 @@
+public class LabelGenerator {
+
+    private static LabelGenerator labelGenerated;
+    private int nextLabel = 0;
+
+    public static synchronized LabelGenerator getLabelGenerated() {
+        if (labelGenerated == null) {
+            labelGenerated = new LabelGenerator();
+        }
+        return labelGenerated;
+    }
+
+    public String getLabel(){
+        return "L" + nextLabel++;
+    }
+
+}

@@ -1,0 +1,6 @@
+ . Create a Jar file and set the main class to "Main" based
+   on the manual at http://www.bluej.org/doc/bluej-ref-manual.pdf
+   Note: leave all options unchecked.
+
+ . Install the extension based on the directions
+    at http://www.bluej.org/extensions/extensions.html

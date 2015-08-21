@@ -1,0 +1,25 @@
+2015-02-01 16:48:21 
+Major Decisions:
+
+Chirp switches to the deployment stage.
+
+Project Git continues with Release and Iteration planning.
+
+Josh, Miguel will try to match schedules Sat, Mon, Tue, Wed.
+
+
+
+Major problems:
+
+Project Git did make much progress, but, that is probably
+ because there was not time for team members to work together.
+
+  We will try to solve this by setting up time to work together.
+
+
+What we learned:
+
+  The most progress was made outside of class for project chirp.
+  Project Git learned alot about the DXP Process model.
+
+2015-02-01 16:59:22 

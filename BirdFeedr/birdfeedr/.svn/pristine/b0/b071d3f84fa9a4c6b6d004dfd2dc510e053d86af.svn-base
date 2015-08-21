@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=event
+comment0.target=void\ handleButtonAction(javafx.event.ActionEvent)
+comment0.text=\r\n\ Called\ whenever\ a\ button\ or\ menu\ item\ is\ pressed,\ and\ calls\ a\ function\r\n\ depending\ on\ the\ button/item\ pressed.\r\n\r\n\ @param\ event\ the\ calling\ event\r\n
+comment1.params=url\ rb
+comment1.target=void\ initialize(java.net.URL,\ java.util.ResourceBundle)
+comment1.text=\r\n\ Used\ to\ initialize\ the\ GUI\r\n\r\n\ @param\ url\ unused\r\n\ @param\ rb\ unused\r\n
+comment2.params=ov\ old_val\ new_val
+comment2.target=void\ changed(javafx.beans.value.ObservableValue,\ Exercise,\ Exercise)
+comment3.params=
+comment3.target=java.util.ArrayList\ getExercises()
+comment3.text=\r\n\ Returns\ an\ arraylist\ of\ all\ available\ exercises.\r\n\ \r\n\ @return\ The\ list\ of\ exercises\r\n
+numComments=4

@@ -1,0 +1,8 @@
+Project: Thread Visualization.
+Times Estimate: 6 Weeks.
+Relevance: High
+Difficulty: Moderate
+
+There is something called the JVM Tools Interface that allows programs to view the state of the JVM including memory pool, threads, memory objects and much more. This project would also be helpful to people who want to understand threading.
+
+http://docs.oracle.com/javase/7/docs/platform/jvmti/jvmti.html

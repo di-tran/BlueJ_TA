@@ -1,0 +1,13 @@
+
+/**
+ * Write a description of class StudentWork here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class StudentWork {
+   
+    public int add(int a, int b){
+        return Adder.add(a, b);
+    }
+}

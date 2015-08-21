@@ -1,0 +1,86 @@
+2015-04-18 14:01
+
+AGENDA
+x Check refactoring progress
+x Discuss presentation
+? Plan out next few weeks
+
+DECISIONS
+- Complete presentation by Wednesday, present on 27th
+- Begin work on final presentation on Wednesday 20th
+- doc folder inside src folder of project will be deleted.
+- Debug meeting after this meeting.
+- Inquire about presenting on Wed. 22nd. If that doesn’t work, we present on Mon. 27th. Prepare for 22nd regardless of which date is accepted.
+- Meet @1:00PM Monday to work / rehearse.
+
+ACCOMPLISHMENTS
+- Bought hard materials for project portfolio
+- Code stayed same, but moved into folders during refactor.
+- Miguel began working on javadoc
+
+UNANSWERED QUESTIONS
+
+TO DO
+- Schedule presentation work time between now and Monday, rehearse Monday.
+
+RAW NOTES
+Presentation is in two parts: process & project.
+
+M: When is the JUnit test being executed?
+N: Check Exercise class for execute method.
+M: Exercise not launched. Is it even being called?
+
+J: Javadoc shouldn’t be stored in repo. 
+M: I’m working on javadoc in the source code.
+
+J: Make sure errors must be noted. If it’s graded right now, I say it deserves a C. What’s most important is the individual portfolios. So by Monday we should start shifting gears.
+We should get our presentation cranked out too.
+
+W: I originally planned for it to be done on Monday so we could rehearse M/W. 
+
+N: Proj. Notebook & Final Presentation can be worked on simultaneously.
+W: Would assist each other. Proj. notebook helps final presentation.
+
+J: Monday: .5 hours rehearse
+1 - 1.5 hours project prep / inv. portfolio prep.
+
+J: I’m using LaTeX.
+J: Permission to heavily modify build in Nate’s sandbox? I want build file to create jar & move it in extension folder. BlueJ would be responsible for compiling src and stuff. 
+This is b/c it takes extra time for build to compile.
+N: Whole point of build is as an alternative to BlueJ.
+J: BlueJ should be doing more of the work.
+
+W: Story or standard intro?
+T: Story will draw audience in.
+W: Vision statement is broad; mission statement is the how. 1st half of our statement IS vision statement, mission statement includes all of it. We could tell audience the difference between the two.
+
+W: Does our audience know enough that we can skip the vision statement?
+N: I think they created a vision statement, but I’m not sure.
+T: Err on the safe side.
+
+W: Do we want key message to be about vision statement or mission statements?
+We created a mission statement, but called it a vision statement
+J: Keep the focus on our personal experience, and deliver pertinent information to keep people on track, and focus on how it will help the audience.
+
+W: If we put information in the handout, we won’t have enough info to talk about.
+
+W: Refactor team meeting notes?
+
+n: Proj. Notebook SOFT COPY - Sunday, May 3rd, 4PM.
+   Product - Sunday, May 3rd, 4PM.
+   Final Presentation - Monday, May 4th. 
+   Proj. Notebook HARD COPY - Monday, May 4th.
+   Ind. Portfolio - Tuesday, May 5th, 3PM.
+
+W: 
+Mon. 20: @1PM, 1 hr rehearse; 2 hours proj. notebook prep / inv. portfolio prep.
+Wed. 22: .5 hours watch Dynamix presenation / 1.5 hrs documentation
+Sat. 25: Ind. Portfolios. / Project Notebook / Team Building
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mon. 27: .5 hours presenting; 1.5 hours
+Wed. 29: 
+Sat. 2: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Sun. 3: Proj. Note. SOFT & Product DUE, 4PM
+Mon. 4: Final Pres., Proj. Note. HARD COPY DUE
+Tue. 5: Ind. Portfolio DUE

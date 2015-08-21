@@ -1,0 +1,72 @@
+import JUnitRunner.JUnitRunner;
+import JUnitRunner.TestListener;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+
+/**
+ * JUnit Runner Demo
+ *
+ * @author Nathan
+ */
+public class JUnitRunnerDemo implements TestListener {
+
+    private JUnitRunner runner;
+
+    public JUnitRunnerDemo() {
+
+        runner = new JUnitRunner();
+        runner.setTestListener(this);
+
+        String usercode = load(new File("UserDemoCode.txt"));
+        String junitCode = load(new File("JUnitDemoCode.txt"));
+        System.out.println("Starting Up");
+        try {
+            runner.run(usercode, junitCode);
+            Thread.sleep(10000);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        System.out.println("Exiting");
+        System.exit(0);
+    }
+
+    @Override
+    public void testStarted() {
+        System.out.println("Test Started");
+    }
+
+    @Override
+    public void testEnded(String results) {
+        System.out.println("Results:\n" + results);
+        System.out.println("Exiting");
+        System.exit(0);
+    }
+
+    public static void main(String[] args) {
+        new JUnitRunnerDemo();
+    }
+
+    /**
+     * Loads the file contents into a text string
+     *
+     * @param file the file to load
+     * @return a string containing the files contents
+     */
+    private static String load(File file) {
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            String text = "";
+            String newLine = System.lineSeparator();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                text += line + newLine;
+            }
+            reader.close();
+            return text;
+        } catch (Exception e) {
+            System.err.println("Failed to open file: <" + file + ">, " + e);
+        }
+        return null;
+    }
+}

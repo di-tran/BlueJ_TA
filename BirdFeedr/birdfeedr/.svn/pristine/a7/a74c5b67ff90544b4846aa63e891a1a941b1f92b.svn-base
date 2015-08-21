@@ -1,0 +1,83 @@
+
+2015-03-18 14:13:08
+
+JP Talked to faculty about ext.
+ Expected to hear of:
+  - Coding bat.
+     -- does a great job with method level problems with a self contained
+        context.
+  - Practice it.
+
+Liked be able to not sign in.
+
+Practice it had better problems.
+
+
+Value to a bluej would be integration w/ IDE as intended.
+  - Full class
+  - Multiple class.
+  - Imports
+  - Javadoc.
+  - Surrounded framework could be provided.
+
+
+Using inner nest classes to do this.
+
+STill doing the same problems but through the IDE
+
+
+Wei: It was hard to guess how to integrate.
+   Moved the run button.
+
+Multiple listboxes in GUI vs Multiple questions.
+
+ and also no GUI for the question.
+
+
+Wei: Some of his colleges expectations might be out of scope.
+
+Josh: What does it look like and what does it do?
+  Maybe we could divide into groups and do presentations.
+  and when we get back we could change.
+
+Josh: I got two close to be done.
+
+Josh: Propose.
+  Our project could produce the class files with the problems.
+  and a dialog showing the results of a test.
+
+  What will you do and what do you need.
+
+Wei: needs the parser code and compiler code.
+   Thomas needs to upload his code by Sat meeting.
+   Nate needs eventually upload his code eventually.
+   Something in the middle that loads up everything in a folder.
+   
+   We will have a folder with exercises that we will be loading files.
+    We might also have this in the repository.
+    So it might need a link and a subfolder.
+
+  Three people on the 
+
+Thomas: Lets do one Wednesday next week.
+
+Saturday's agenda:
+ - Roundtable report.
+ - Presentation practice.
+
+
+Decisions:
+ - Committed to making a product that produces the source code and
+   checks the student's owkr.
+
+Delegation:
+ - Di, Josh will be working on the presentation.
+ - Nate, Thomas, Miguel, and Wei will do coding.
+
+
+JP Comments:
+  It might be okay if were navigational or code editting.
+  Users learning a new interface could take away from blueJ.
+
+We present on Wednesday.
+2015-03-18 15:53:41

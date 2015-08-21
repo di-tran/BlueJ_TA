@@ -1,0 +1,28 @@
+<project name = "JUnitRunner" basedir = "." default = "main">
+
+    <property name = "src.dir" value = "src"/>
+    <property name = "classes.dir" value = "dist"/>
+    <property name = "lib.dir" value = "lib"/>
+
+    <property name = "main-class" value = "JUnitRunnerDemo"/>
+
+    <path id = "classpath">
+        <fileset dir="${lib.dir}" includes="**/*.jar"/>
+    </path>
+
+    <target name = "clean">
+        <delete dir ="${classes.dir}"/>
+    </target>
+
+    <target name = "compile">
+        <mkdir dir = "${classes.dir}"/>
+        <javac includeantruntime="false" srcdir = "${src.dir}" destdir = "${classes.dir}" classpathref = "classpath"/>
+    </target>
+
+    <target name = "run" depends = "compile">
+        <java jar= "${jar.dir}/${ant.project.name}.jar" fork = "true" dir = "${jar.dir}"/>
+    </target>
+
+    <target name = "main" depends = "clean, compile"/>
+
+</project>

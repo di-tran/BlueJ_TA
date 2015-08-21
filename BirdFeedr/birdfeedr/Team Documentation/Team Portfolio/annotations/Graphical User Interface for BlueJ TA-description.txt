@@ -1,0 +1,11 @@
+BlueJ TA used a total of three different graphical user interfaces coded using JavaFX. 
+Where the first was used to allow a user to pick their exercise, the second 
+was used to display descriptive info about an exercise to the user, and the third 
+was used to deliver test results to the user after execution of an exercise.
+
+We decided to use JavaFx to create these GUI's because of the ease of creation with 
+the tools available as well as the ease of maintained of the code. We arrived at three distinct
+GUI's with one feature per GUI because it seemed in-line with BlueJ's design nature.
+
+The following artifacts consists of three images showing the three different 
+windows used within BlueJ TA.

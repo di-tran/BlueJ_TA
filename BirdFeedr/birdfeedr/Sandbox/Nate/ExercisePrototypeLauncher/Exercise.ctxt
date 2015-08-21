@@ -1,0 +1,18 @@
+#BlueJ class context
+comment0.params=projName\ userTemplateCode\ testCode
+comment0.target=Exercise(java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.params=bClass
+comment1.target=javax.swing.JMenuItem\ getMenuItem(bluej.extensions.BClass)
+comment2.params=e
+comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
+comment3.params=
+comment3.target=void\ run()
+comment4.params=bClass
+comment4.target=boolean\ isValid(bluej.extensions.BClass)
+comment5.params=
+comment5.target=void\ launch()
+comment6.params=
+comment6.target=boolean\ isLaunched()
+comment7.params=
+comment7.target=java.lang.String\ execute()
+numComments=8

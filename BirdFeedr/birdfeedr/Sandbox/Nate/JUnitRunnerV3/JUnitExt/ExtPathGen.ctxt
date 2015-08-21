@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=bluej\ jarName
+comment0.target=java.lang.String\ gen(bluej.extensions.BlueJ,\ java.lang.String)
+comment1.params=bluej
+comment1.target=java.lang.String\ getSystemExtDir(bluej.extensions.BlueJ)
+comment2.params=bluej
+comment2.target=java.lang.String\ getUserExtDir(bluej.extensions.BlueJ)
+comment3.params=bluej
+comment3.target=java.lang.String\ getProjExtDir(bluej.extensions.BlueJ)
+numComments=4

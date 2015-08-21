@@ -1,0 +1,59 @@
+
+2015-02-23 14:05:49
+
+
+Todo:
+ANimation of slides
+QA of artifacts i.e. artifacts.
+
+
+Agenda:
+ -Presentation
+ -Projects.
+
+Props:
+ -Good pair uses Nate's PC.
+ -Handicap desk.
+
+ -Good pair left. or house right.
+
+Projects:
+  Open GL is too general: yah pending futher investigation.
+  Tutor: nay b/c of scope pending Nate's plan B.
+  Mobile: nay does not overcome barrier's to programming.
+  Git: nay
+  Explore logs:  nay b/c we not helping people reach their dreams.
+    -Does not help people overcome barriers to programming.
+ Method Executor: nay b/c its not inspiring and its more like a test tool.
+ Big O analyzer:  nay
+ Multi-thread: yah visualizing threads would help people with that barrier.
+ Java interpretter for BlueJ: yah.
+ Animation clip that provides support: yah.
+   pending further investigation.
+ 
+Nate's Plan to reframe the vision statement and work on Git and make a really nice extension.
+
+
+Accomplishment: Filtered out projects.
+
+Plan:
+  Tuesday do a little research on each topic.
+  Wednesday choose a project.
+
+Individual:
+  Assignments  everyone comes up with a informat 150 word report on their favorite topic.
+2015-02-23 14:43:27
+
+2015-02-23 14:55:40
+
+
+On Wednesday, talk about presentation results, talk about new presentation, and decide project.
+
+Presentation time
+
+
+Miguel: time presentation.
+
+Nate: might take shorter.
+
+2015-02-23 15:01:36

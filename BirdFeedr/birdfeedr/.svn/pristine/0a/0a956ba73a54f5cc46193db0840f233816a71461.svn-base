@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="600.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <MenuBar prefHeight="29.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleButtonAction" text="Save" />
+                  <MenuItem mnemonicParsing="false" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Edit">
+              <items>
+                  <MenuItem disable="true" mnemonicParsing="false" text="Add Exercise" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleButtonAction" />
+                  <MenuItem disable="true" mnemonicParsing="false" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <SplitPane dividerPositions="0.23076923076923078" layoutY="28.0" prefHeight="473.0" prefWidth="600.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ListView fx:id="list" layoutX="1.0" layoutY="-2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="473.0" prefWidth="133.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="471.0" prefWidth="422.0">
+               <children>
+                  <TextArea fx:id="textArea" layoutX="14.0" layoutY="236.0" prefHeight="149.0" prefWidth="408.0" />
+                  <Button fx:id="submitButton" layoutX="24.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Button" />
+                  <Label fx:id="descriptionLabel" alignment="TOP_LEFT" layoutX="14.0" layoutY="71.0" prefHeight="82.0" prefWidth="207.0" text="test long" textOverrun="CLIP" wrapText="true" />
+                  <Label fx:id="titleLabel" layoutX="14.0" layoutY="21.0" text="Label">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="examplesLabel" layoutX="14.0" layoutY="174.0" text="Label" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+    </children>
+</AnchorPane>

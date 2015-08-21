@@ -1,0 +1,15 @@
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+  
+public class JUnitDemoCode {
+
+	@Test
+	public void testA() {
+		assertEquals("add(1, 2) = 3", add(1, 2), 3);
+	}
+
+	@Test
+	public void testB() {
+		assertEquals("add(5, 6) = 11", add(5, 6), 11);
+	}
+}

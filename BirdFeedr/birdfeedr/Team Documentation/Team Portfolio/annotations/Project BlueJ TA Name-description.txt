@@ -1,0 +1,6 @@
+The name of the extension we made was called BlueJ TA because of the main function of the
+extension was to act as a teacher's assistant to help teacher teaches and students learn Java
+within BlueJ. To come up with this name we applied a naming heuristic to eliminate and reform
+various name ideas to decide the final product name. 
+
+The following artifacts consist of the meeting notes that where taken during the name meeting.

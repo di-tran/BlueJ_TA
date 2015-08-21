@@ -1,0 +1,15 @@
+Design Ideas
+1. Where should exercises be saved?
+- User chooses a location to save the exercise, since a new project will be created.
+	(OR)
+- User creates a new project, extension checks if it is empty so to populate it and not use 
+	exisiting project.
+
+2. How would the Java files be generated?
+- XML file holds the name of the Java files that need to be created and the information 
+	that will be in the files.
+	(OR)
+- Java files already generated with each exercise.
+
+3. How will extension information be saved?
+- Create a way to save all necessary information into the User BlueJ library folder.

@@ -1,0 +1,26 @@
+import java.io.File;
+import org.junit.runner.Result;
+
+/**
+ * JUnitRunner Interface
+ * 
+ * @Assumptions
+ * Assumes JUnit class is precompiled.
+ * Assumes Junit test is in the same directory as the current project.
+ * Assumes the users class has the correct names and methods.
+ * 
+ * @Authors Di, Nathan, Wei, Miguel, Thomas, Josh
+ */
+public class Interface {
+  
+    /**
+     * Runs Junit Test from specified file, and returns the results object containing the results.
+     * 
+     * @param f the JUnit test class to run
+     * @Returns the result of the JUnit Test
+     */
+    public Result test(File f){
+        Result result = JUnitRunner.runTest(f);
+        return result;
+    }
+}

@@ -1,0 +1,153 @@
+import java.io.File;
+import bluej.extensions.*;
+import java.awt.Frame;
+
+import Runner.*;
+
+/**
+ * Write a description of class Exercise here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class Exercise {
+    
+    public String projName;
+    
+    public String userCodeName;
+    public String userCode;
+    
+    public String testCodeName;
+    public String testCode;
+
+    public File testFile = null; 
+    public BPackage exercisePkg = null; 
+    
+    /*------*/
+    
+    public String title, description, hint, sampleAnswer;
+    public String examples = "es";
+    public String[] examplesA;
+    
+    public Exercise() {
+    }
+    
+    public Exercise(String title, String desc, String example) {
+        this.title = title;
+        this.description = desc;
+        this.examples = example;
+    }
+    
+    public void setValues(String t, String d, String h, String s, String[] e){
+        title=t;
+        description=d;
+        hint=h;
+        sampleAnswer=s;
+        examplesA=e;
+    }
+    
+    public String getTitle(){
+        return title;
+    }
+    
+    public String getDescription(){
+        return description;
+    }
+    
+    public String getHint(){
+        return hint;
+    }
+    
+    public String getSampleAnswer(){
+        return sampleAnswer;    
+    }
+    
+    public String[] getExamples(){
+        return examplesA;
+    }
+    
+    @Override
+    public String toString() {
+        return this.title;
+    }
+    
+    /*------------*/
+    
+    public void launch() {
+        BlueJ bluej = StateManager.blueJ;
+        FileUtil.closeProj(bluej, projName);
+        File exerciseTempDir = new File(StateManager.getTempDir(), projName + "_Files");
+        FileUtil.deleteDir(exerciseTempDir);
+        exerciseTempDir.mkdir();
+        File projDir = new File(exerciseTempDir, projName);
+        BProject bproj = bluej.newProject(projDir);
+
+        Frame frame = null;
+        try {
+            BPackage bpkg = bproj.getPackage("");
+
+            frame = bpkg.getFrame();
+            frame.getComponent(0).setVisible(false);
+
+            FileUtil.save(new File(projDir, userCodeName + ".java"), userCode);
+            FileUtil.save(new File(projDir, testCodeName + ".java"), testCode);
+            
+            bpkg.newClass(userCodeName);
+            BClass bTestClass = bpkg.newClass(testCodeName);
+            
+            bpkg.compileAll(true);
+
+            testFile = new File(exerciseTempDir, testCodeName + ".class");
+            FileUtil.copy(bTestClass.getClassFile(), testFile);
+            bTestClass.remove();
+            
+            exercisePkg = bpkg;
+        } catch (Exception ex) {
+            System.err.println("Error: " + ex);
+        }
+        if (frame != null) {
+            frame.getComponent(0).setVisible(true);
+            frame.toFront();
+        }
+    }
+
+    public String execute(){
+        if(!isLaunched()){
+            return "Exercise not Launched";
+        }
+        String msg;
+        try{
+            File excDir = exercisePkg.getDir();
+            ResultHolder holder = StateManager.getRunner().runTest(excDir, testFile);
+            holder.waitForResults(); //put wait for results flag in? (out of scope)
+            msg = holder.getData();
+        }catch(Exception e){
+            msg = e.getMessage();
+        }
+        return msg;        
+    }
+    
+    public boolean isLaunched(){
+        return testFile != null && exercisePkg != null; 
+    }
+    
+    /*
+    /**
+     * Just an idea to let the Exercise handel the menuitem 
+    public JMenuItem getMenuItem(BClass bclass){
+        return null;
+    }
+    */
+    
+    /*
+    public void printExercise(){
+        System.out.println("Title: "+title);
+        System.out.println("Description: "+description);
+        System.out.println("Example 1: "+examples[0]);
+        System.out.println("Example 2: "+examples[1]);
+        System.out.println("Example 3: "+examples[2]);
+        System.out.println("Hint: "+hint);
+        System.out.println("Sample Answer: "+sampleAnswer);
+    }
+    */
+}

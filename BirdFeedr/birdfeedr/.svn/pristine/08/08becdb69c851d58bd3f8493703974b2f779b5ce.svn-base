@@ -1,0 +1,339 @@
+2015-03-14 14:16:47
+
+BEGIN WEI'S NOTES
+
+Agenda:
+
+Each person reports on the progress they made.
+Discuss the process model.
+If the process model is ready then we can make a final decision to use the model.
+Choose a specific presentation topic.
+(As time permits) Plan the upcoming week.
+Plan the status update message.
+
+Miguel worked on the GUI. Currently fixing a window's compatibility issue.
+Created the list area for exercises. 
+
+Nate created basic junit runner, 2 design documents proposals (detailed design of junit runner and Upper level design),
+researched compilers in general, and researched how to implement the compiler into a bluej extension.
+
+Thomas got a working xml parser created.
+
+Wei talked to the professors and found out more about individual portfolios, improvements to interpersonal communication, and tying him in more.
+
+Josh and Di worked on the process model together. Created a custom tailored process model for us.
+Pulled elements from XP, incremental , and iterative models. Multiple increments for pairs to work on.
+Each has an interaction as well. Might include release planning phase from XP later on. Process model is still in draft phase.
+Iteration planning includes dividing user stories, prioritizing those tasks, estimates for time for those tasks, select subset of tasks to work on.
+iterations after that. Currently missing characteristics in the process model draft at the moment. Process model gives an idea of what group should do.
+Di wishes to clean up the model at a later time. Draft right now so it's malleable.
+
+Biggest concern to process models is that it'll leech off our progress instead of help it.
+
+Process model should serve us and not the other way around.
+
+Question: does this affect our overhead?
+
+Nate: if we can run through it and have no issues, then it's a good process model to send in.
+Josh: we could just tell jody it's a draft.
+
+Di: Need to spend time as a group to plan out releases and go through the model formally to check for overhead.
+
+Wei: In the short run it'll slow us down, but in the long run it'll help us out.
+
+Thomas: Try it out before making a decision.
+
+Miguel: agrees with Thomas
+
+Tried out process model
+
+Everything needs internal and external verification.
+
+Worked on User story complexity metrics spreadsheet and User Stories.csv
+
+Need a way to synchronize google drive with our SVN.
+
+A way to address user stories dependence with one another.
+
+END WEI'S NOTES
+
+Thomas: Has a working XML parser.
+   Just two calls everything else is done internally.
+   Easy to integrate and move forward.
+
+Wei: Worked on the repository and the readme's
+   We are missing an extension an extension jar.
+   Missing ctxt.
+
+Thomas: Class files should not be in repositories.
+
+Josh: Typically we don't include products of the build in the repo.
+    The jar file is in +libs folder.
+
+Wei: Show JP the good stuff and bad stuff.
+   I talked to him about the individual portfolios.
+   Anything that we do could be an artifact including a pic of us at the pub.
+   Annotate: this was a team builder and this is why it is important.
+     What this is and how it was useful.
+   I tested miguel's build and could not get it to work on windows.
+
+Wei: JP said there is no way you could switch projects.
+   He expects a result.
+   Told him about how everybody is working on something.
+   He said wow we are doing a lot of stuff.
+   He was happy overall.
+   Our biggest issue is communication
+   We have hard time communicating to each other.
+   Getting ideas to each other's head.
+   It sounds like we are jumping to conclusions.
+   When I make a decision, then I forget what went processes went into it.
+   Conveying a decision w/ more backup.
+   I feel like we have a bunch of good ideas well enough.
+
+Josh: If people conveyed their ideas w/ support then would that solve the problem.
+
+Wei: It might create another problem.
+   I have been thinking about metrics.
+   That will probably be his next question.
+   How people see those message.
+   It takes us about a week to make 3 decisions.
+   Before we were having trouble with this.
+   Do the math, it will take us years.
+
+   If we do research for every decision then it will take us too long.
+
+Josh: At least show the reasoning why.
+
+Di: our next item is to discuss the process  model.
+
+  We pulled elements from incremental and iterative process model.
+
+Josh: Incremental means that the project is divided into slice.
+
+Wei: there will be multiple
+
+Josh: Are there any questions?
+
+Di: It gives us an idea what we are going to do and how long we are going 
+  to do this for.
+
+  Are there any questions?
+
+Wei: Tangent: Stuff in process model is mainly for others outside to know
+  An outsider could be told our status.
+
+Josh: Its a facade of organization.
+
+WeI: Other expect us to do something a stick to it.
+  If user stories get cut off then people know why.
+
+Josh: This process model could be improved over time.
+
+Di: event though our process model represents us well.
+   If we find that it constrains us then we change us.
+
+Nate: I don't want it to be a leech.
+
+Miguel: This was pretty much what I was thinking.
+
+Thomas: Process model sounds good to me.
+     Agrees with Nate.
+
+Di: It should serve us instead of us serving it.
+
+Nate: What is design map?
+
+Josh: Its the one that a Nate and Di came up.
+
+      We could present this to JP as draft.
+
+      The question is how does this process model affect our overhead.
+
+Nate: We are kind of already in the process model already.
+
+Wei: I think we are closer.
+     We have not done any of the planning.
+
+Nate: its load and run that we would be working with.
+
+Wei: If we can run through then its a good process model.
+
+Di: I am looking at additional things we would need to do.
+   We would need to do the release planning game.
+   We would need to time for that and mapping out increments.
+   We have informally picked users stories.
+   We are kind of all over the place in this process model.
+   We have created the prototypes.
+
+Josh: We could just say that the priorities are done and we need to do
+   the estimated time.
+   and verify with the customer.
+
+Wei: In the long run this would be good, but, it would take additional time
+   to orientate.
+   We can show JP how long it takes to do each thing.
+   It helps us plan time constraints.
+   Slow us down in the short run.
+
+Thomas: We can theorize but not actually.
+
+Miguel: Agrees w/ Nate.
+
+Josh: Would you like to use it for.
+
+Di: Can you define that.
+
+Josh: Nate, what does that mean?
+
+Nate: Try it out.
+
+Di: so this means that we would need to estimate user stories and verify
+  that with customer on monday.
+
+Josh: Should we run through the agenda.
+
+Wei: Yes.
+
+Nate: Yes.
+
+
+Josh: The plan
+  - send the process model draft to JP.
+  - Monday we do the planning.
+
+Wei: Status Update.
+  - Josh would be the speaker.
+  - We created a draft for the process model.
+  - Miguel created the list area for the exercises in the GUI.
+    --Has an 
+  - Nate created JUnit runner.
+    --Researched compilers and integration.
+  - Thomas researched XML parsing.
+  - Wei talked to professor about inv portfolios and interpersonal communication.
+  - Wei learned about how tabulation can affect views on different computers.
+  - Di, Josh worked on the process model drafts.
+  - As a team, we learned about team process model.
+  - Nate made proposal design documents.
+     -i.e. a detailed design of the JUnit runner and an upper level design
+      of the project w/ conenctions betweeen components.
+  - Thomas created a demo or the XML parser.
+    --prototype.
+  - Wei created an the root readme draft.
+
+Di: Lets call a break.
+   3:30?
+
+2015-03-14 15:17:44 
+2015-03-14 15:40:26 
+
+Josh: WE will send an email to JP saying this is draft process model.
+
+Nate: Running through exposes errors and removes ambiguity.
+
+Wei: Finished the readme and will close the readme. It will be committed.
+
+Josh: In the release planning, we estimate th time per story and justify it.
+
+Di: Check out Nate's design.
+
+Di: Should we map the components to the user story.
+   Tally up components for users stories.
+
+Josh: So user story of selecting exercises gets a score of 5.
+
+Josh: Internal verification means that another member of the team verifies.
+      External verification means JP verifies.
+
+Di: Evaluate each user stories invidually w/o the context of the other story.
+
+Josh: For each one lets think about how we can test these.
+
+Josh: We should have parrellel SVN and Google Drive folders.
+
+Nate: I am fine with that.
+
+Josh: Confused about As a user, I want to see examples of the exercises.
+
+Josh: I get an error javafx.Application not found.
+  So apparently the JavaFX is not in the +libs.
+
+Josh: The purpose of this activity was to give our test.
+
+Wei: The exercise loaders have already
+
+Nate: is this activity helping us.
+
+Wei: Yes, because we can see how these stories move together
+   and dependencies.
+
+Miguel: I think this is helpful. We can see what needs to be done.
+
+Josh: Our process model needs a way to address user stories dependencies.
+   There is no documentation specifying dependencies.
+
+Wei: I have dependecies in the Justification.
+
+Josh: It might be nice to give each user story an ID.
+
+Wei: The highest prioty is one b/c it is the largest and other user stories
+  depend on and the ID is #1.
+     Its the most independent user story.
+
+Miguel: Agrees w/ Wei.
+
+Nate: A good way to priotize would be to walk up a user scenario.
+
+  Thus, ID #1 would be first.
+
+Josh: Does our process model tell us what comes next.
+
+Nate: will we do more than user story at a time.
+
+Josh: Yes. b/c of incrementation.
+
+Wei: All of them are based off #1.
+    #1 is independent.
+    #2 is based on #1
+    #3 is based on #1,6
+
+Nate: I think everything is dependent on #2 but #1.
+      and #2 depends on #1
+
+Josh: so #6 is priority b/c users want feedback.
+
+Wei: #4,5 are like the icing and they may be done towards the end.
+    #3 is stuff on the GUI.
+    #1 is working inside the GUI.
+
+Nate: Priotization has been based on user preference.
+   Alt prioritation would be risk and time.
+
+Nate: so we did release planning minus customer verification.
+  It took a little long b/c of confusion
+  but those may be ironed out.
+
+Wei: Orientation to the process model can slow us down.
+
+Josh: If we did send verify the result of the release planning
+  then we would send him a list of user stories w/ their estimated times.
+  in a sorted order. We would tell him what subset we would be working on.
+
+Nate: so on Monday, we would be testing Increment planning.
+
+Wei: say that we have a draft and we will see if it works in our favor.
+
+Nate: I would like to try and use that with current project.
+
+Josh: in the mean time we could use tasks to organize what we will do.
+
+Josh: We would have to manage JP's expectations if our process models.
+     changes.
+
+Wei: we should we reiterate that we are making progress in other areas
+  as well.
+
+
+Nate: It would be nice to have aproduct by spring break.
+
+In this meeting we tested th release planning phase of our formal process model.
+2015-03-14 17:09:00 

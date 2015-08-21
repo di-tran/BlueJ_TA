@@ -1,0 +1,72 @@
+Last Edited: 3-18-2015 at 4:10 PM
+Current active project: BlueJ_CodingBat
+
+Location of java source files: ..\BlueJ_CodingBat\Bluej CodingBat\src
+
+Currently the best way to create the jar for Project BlueJCodingBat is to use BlueJ to create it.
+Creating it in any other way may cause the extension to fail.
+
+===============================================================================
+Manual build instructions:
+
+Note: Replace [and anything inside]
+1. Create manifest.txt with following text inside: 
+Main-Class: [Your startup file. No file extension]
+2. Move manifest.txt to your extension's .class files
+3. Open command prompt and navigate to your .class files
+4. Type in the follow command prompt argument to build: 
+jar cmf manifest.txt [Name of jar file].jar *.class
+5. The Bluej extension .jar file should be in your current directory.
+
+More information at: http://www.bluej.org/extensions/writingextensions.html
+
+===============================================================================
+Installing an extension into BlueJ: 
+
+Drop the extension jar file into the extension folder for bluej to install.
+Instructions on creating the jar file above.
+
+For all users of this system in all projects.
+
+<BLUEJ_HOME>/lib/extensions (Unix),
+or <BLUEJ_HOME>\lib\extensions (Windows),
+or <BLUEJ_HOME>/BlueJ.app/Contents/Resources/Java/extensions 
+(Mac, Control-click BlueJ.app and choose Show Package Contents)
+
+For a single user for all projects.
+
+<USER_HOME>/.bluej/extensions (Unix), 
+or <USER_HOME>\bluej\extensions (Windows), 
+or <USER_HOME>/Library/Preferences/org.bluej/extensions (Mac)
+
+More information at: http://www.bluej.org/extensions/extensions.html
+
+===============================================================================
+Structure of repository:
+
+Location:		           Explanation:
+_______________________________________________________________________________
+|birdfeedr		        -- Top most directory.
+1.| Projects                      -- Our projects
+  2.| BlueJ_CodingBat(Active)       -- Folder for Project Bluej CodingBat.
+    3.| BlueJ CodingBat               -- Project Folder for BlueJ CodingBat.
+      4.| src                           -- Source code for Bluej CodingBat.
+    3.| Possible Templates            -- Code Templates.
+    3.| Documentation	              -- Project Bluej Coding Documentation.
+  2.| Chirp(Inactive)               -- Folder for Project Chirp.
+    3.| Dist                          -- Distribution of Project Chirp.
+    3.| src                           -- Java source files for project Chirp.
+    3.- Exploration Summary.txt       -- Experience gained from Project Chirp.
+  2.| Github(Inactive)              -- Folder for Project Git.
+    3.| Documents                     -- Project GitHut documentation.
+    3.| Git-Extension                 -- source files for Project Git.
+    3.| Sample Project
+1.| Sandbox                       --  Folders for individual members' use.
+  2.| (Group member's name)         -- Folder for individual member's use.
+  2.- Readme.txt 	            -- A description of the Sandbox.
+1.| Team Documentation            -- Team Birdfeedr's group documentation.
+  2.| Meeting Notes                 -- Notes from group meetings. (informal)
+  2.| Presentations                 -- Presentations.
+  2.| Weekly Summary                -- Weekly status updates. (formal)
+  2.- Birdfeedr Policies.txt        -- A text file for group policies.
+1.- Readme.txt                    -- This file.

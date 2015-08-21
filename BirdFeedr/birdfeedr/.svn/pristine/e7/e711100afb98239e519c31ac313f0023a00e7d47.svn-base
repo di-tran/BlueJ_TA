@@ -1,0 +1,31 @@
+import bluej.extensions.BlueJ;
+import bluej.extensions.Extension;
+
+public class Main extends Extension {
+
+	/**
+	 * return the name of the extension
+	 */
+	public String getName() {
+		return "Coding Practice Extension";
+	}
+
+	/**
+	 * Return the version of this
+	 */
+	public String getVersion() {
+		return "1L";
+	}
+
+	public boolean isCompatible() {
+		return true;
+	}
+
+	/**
+	 * executes on bluej startup
+	 */
+	public void startup(BlueJ blueJ) {
+		blueJ.setMenuGenerator(new MenuBuilder());
+	}
+
+}

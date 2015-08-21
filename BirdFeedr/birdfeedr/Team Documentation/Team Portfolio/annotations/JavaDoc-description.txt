@@ -1,0 +1,7 @@
+The BlueJ TA project utilizes Java Doc to describe key aspects of the program
+and how it functions. Where Java doc is a standard documentation format to add documentation 
+directly to the code of a program, describing classes methods and variables. We decided to 
+add this documentation to our code to help increase the understandability of our project 
+with the added compatibility of backed in documentation.
+
+The following artifacts consists some samples of the Java doc for BlueJ TA.

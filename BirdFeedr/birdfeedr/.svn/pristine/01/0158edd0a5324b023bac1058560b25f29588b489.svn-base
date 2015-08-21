@@ -1,0 +1,47 @@
+<!-- Created with http://dillinger.io/ . -->
+
+# BlueJ Git Extension
+#### Description
+The BlueJ Git Extension allows BlueJ users to integrate with [Git](http://git-scm.com/).
+
+#### Getting started
+List ant targets.
+```
+ant -p
+```
+Build the project
+```
+ant compile
+```
+Install the extension
+```
+ant install-ext
+```
+Run BlueJ and read the note
+```
+ant run
+```
+Note: if ant produces an error then check the corresponding local.property.OS where "OS" is the name of your operating system. Ensure that the bluej.dir property points to lib/ folder of BlueJ.
+
+Generate documentation
+```
+ant doc
+```
+#### Directory Structure
+<pre style = "line-height:1.2">
+Git-Extension
+├───build               --- Build generated classes.
+├───dist                --- Build generated Jar.
+├───lib                 --- Jar dependencies.
+├───results             --- Build generated test reports and debug logs.
+├───src                 --- Java sources.
+│   ├───Actions         --- Menu Actions.
+│   ├───Exceptions      --- Git Extension Exceptions.
+│   └───Helpers         --- Simplifies talking to BlueJ and JGit.
+└───test                --- Unit tests.
+</pre>
+
+#### Authors
+ - Miguel Roman-Roman
+ - Josh Gillham
+ - Thomas MacariFolder PATH listing

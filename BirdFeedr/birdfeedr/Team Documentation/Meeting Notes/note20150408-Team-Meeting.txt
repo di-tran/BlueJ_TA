@@ -1,0 +1,74 @@
+2015-04-08 14:06
+
+DECISIONS
+- We decided to refactor the extension so it will work with Java 1.6, regardless
+of whether the school’s machine images were updated.
+- The URI will not be implemented; it’s out of scope.
+- A new window will open that contains the exercise description.
+- XMLScanner class will be physically changed.
+- Exercise class will have additional methods defined.
+- Title of the exercise name will be the project name. 
+- Open source Creative Commons license included:
+	- redistribution / remixing okay, but credit must be given and noncommercial only
+
+ACCOMPLISHMENTS
+Nate demonstrated his prototype:
+- When Launch exercise is clicked, a new project / window is opened.
+- The project is created into a temp folder, that is deleted on reopen.
+- Its contents is cleared every time BlueJ reopens, or an exercise is loaded.
+- Makes multiple temp folders so multiple projects are allowed to be opened.
+- BlueJ’s compiler is used to compile the test class.
+Exercise location setter is implemented and completed.
+Josh successfully built the project in Windows using a .bat file
+We started reviewing our best and worst team moments.
+
+FURTHER QUESTIONS
+Where is the exercise description going to be?
+
+TO DO
+Everyone should walk through the whole extension after its refactored 
+Move the CCLicense from Google Drive to SVN
+Continue to reflect on past team meeting experiences.
+
+RAW NOTES
+Need to share load button design (Nate’s sandbox.)
+
+Start implementing features & refactoring.
+
+Thomas decided with Dr. Paul’s suggesting: a UI section twhere a user can specify a local storage space or a URI for a remote storage space.
+
+J will continue working on the build. He created a .bat file. 
+
+We need to understand the parser and the GUI
+
+How team meetings can unify a team; use team meetings to unify a team.
+
+What license should our extension be under?
+
+If the intent is to be open source, a license is needed in the product. 
+You can say this is in the public domain.
+Should appear in high level documentation and in the source code.
+Doesn’t need to be everywhere, but needs to persist.
+Creative commons can work. It will recommend the correct wording / restrictions / etc.
+BlueJ wants to put restrictions because they intend to control what they’re releasing. 
+
+What were our best moments in general?
+Our vision
+Our teamname
+Our first design iteration on the smartboard
+Thomas’s jokes
+When Wei bought drinks for everyone
+Nate shows his stuff
+Showing up Git and Chirp to each other
+Getting members back
+
+What were our worst moments in general?
+Two weeks about process models
+Deciding our project
+Losing two members
+Chirp / Git reuniting
+When we started using Google Hangouts instead of Skype
+Using Google Drive when we had SVN
+Second presentation
+
+Starting key messages:

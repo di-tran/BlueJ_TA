@@ -1,0 +1,39 @@
+
+2015-01-28 14:09:40
+
+Wei: wants waterfall b/c of the documents
+
+SVN REPO
+
+  Chirp -- project chirp source code.
+  Github -- github extension.
+  Documentation -- Notes.
+    Meeting Notes/ - duh
+
+ Sandbox/ -- individual information, source code.
+
+--
+
+Task: maybe get admin access.
+
+Di & Wie: wiki is about the introducing someone two the project.
+
+Wei: start working an assess time on project.
+  Use to estimate.
+
+Wei: next week earliest we should finish Monday.
+  Next Next Wednesday.\
+
+Di: Construct policy document.
+
+Josh: Expected results for sat.
+Wei:
+
+Jody: take smaller steps.
+Agile wants to get things running right away.
+
+Water fall -> gather requirements, design, code, maintain.
+
+Iteration should be one week.
+
+2015-01-28 15:00:49

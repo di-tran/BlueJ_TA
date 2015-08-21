@@ -1,0 +1,57 @@
+2015-04-13 14:10
+
+DECISIONS
+Team building @ 12:00, April 25th on campus. 
+Brand new Java class is XML Reader.
+Variables are no longer public; they are private.
+Presentation deadline the 27th 
+
+ACCOMPLISHMENTS
+Thomas’s XML Parser is refactored to use public APIs, but not integrated
+Thomas refactored the XML Parser
+Presentation topic created: How Decisions Affect the Team? This was originally “How Do Decisions Affect the Team,” but without a metric, it was put down.
+Build works on Mac. 
+
+UNANSWERED QUESTIONS 
+What is our message?
+
+TO DO
+- Nate’s progress for today.
+- Continue exploring accessing exercises in JAR.
+
+RAW NOTES
+Refactoring = clean code that everyone can understand.
+
+Exercises need to be placed in .jar.
+
+The team will split
+D & T XML
+W & M Presentation
+J Build
+N Exercise Generation
+
+No form is filled out: IDE needs to be used with Notepad to create an XML file.
+
+14:36
+
+15:30
+
+Regarding licenses…
+JP: When you do work for a class, who owns the work? When you do work for a university, who owns the work?
+Who owns copyright for a class assignment that was created with university resources?
+What is a professor allowed to do with your IP (final exam answers, etc.)
+Who owns the IP when something is created in the class?
+
+Only issue is the non-commercial example: if another group of students extends our
+current extension and those students have a grant, and MSUDenver likes it and wants to
+charge a fee to do that, but they can’t b/c of licensing fees - is that right?
+
+Do all team members have to agree when granting copying permissions?
+Or is it individual control?
+
+Most BlueJ extensions can be decompiled with the Windows Debugger.
+
+Presentations on copyright? Message would be “Should you copyright your school property?”
+J: Take care to deliver this pres
+T: Message can come out of research
+J: Let’s try to stick to one idea so we don’t move in a circle of ideas that returns to the first idea.

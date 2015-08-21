@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=XMLScanner()
+comment0.text=\n\ \n
+comment1.params=p
+comment1.target=Exercise\ getContents(java.nio.file.Path)
+comment1.text=\n\ \n
+comment2.params=
+comment2.target=void\ readFile()
+comment2.text=\n\ \n
+comment3.params=
+comment3.target=void\ getContents()
+comment3.text=\n\ \n
+numComments=4

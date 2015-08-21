@@ -1,0 +1,7 @@
+The JUnit Runner is a subset of code in BlueJ TA that runs a compiled JUnit test with 
+a variety of dynamically created user classes. This is done by using the JUnitCore 
+run feature from the JUnit API within BlueJ's user VM. Along with other elements of the
+project this aspect of BlueJ TA evolved over many different iterations to fix bugs 
+and accommodate changes in requirements.
+
+The following artifacts consists of the code that encompasses JUnit Runner.

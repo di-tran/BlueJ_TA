@@ -1,0 +1,45 @@
+rem This file will install the JAR in Windows.
+rem Assuming the classes have been compiled in BlueJ.
+
+rem Construct class path with the JARs.
+set CP=".
+for /R ./+libs %%a in (*.jar) do call :build %%a
+set CP=%CP%"
+echo %CP%
+
+
+
+rem Set local variables.
+set outJar=%CD%\CodingPractice.jar
+set tempMFFile=Manifest.mf
+set mainClass=Main.class
+set libPath=+libs
+set extPath=%USERPROFILE%\bluej\extensions
+
+rem Create manifest.
+echo Main-Class: Main> %tempMFFile%
+
+rem Make jar
+jar -cfm  "%outJar%" %tempMFFile% *.class Exercises\*
+pushd ..\BlueJCodingBat_Resources\
+jar -uf  "%outJar%" Exercises\*
+popd
+
+rem Remove manifest.
+del %tempMFFile%
+
+rem Copy the jars into the extensions folder.
+if not exist "%extPath%" mkdir "%extPath%"
+copy "%outJar%" "%extPath%"
+rem XXX don't copy bluejext.jar
+for /R ./+libs %%a in (*.jar) do copy "%%a" "%extPath%"
+
+
+
+rem Exit.
+goto :EOF
+
+rem Concatenates the path.
+:build
+set CP=%CP%;%*
+goto :EOF

@@ -1,0 +1,6 @@
+main.class=Main
+jar.name=CodingBat.jar
+# The source and target level should be 1.7 to be compatible with BlueJ.
+source.level=1.6
+target.level=1.6
+debug.mode=on

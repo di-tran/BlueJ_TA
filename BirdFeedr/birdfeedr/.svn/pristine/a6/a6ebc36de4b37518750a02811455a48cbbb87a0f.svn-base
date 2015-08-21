@@ -1,0 +1,504 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Stack;
+
+public class CodeGenerator {
+
+	private String fileName = "genCode.txt";
+	private SymbolTable st;
+	private BufferedWriter o;
+	private Stack<String> ts;
+	private Stack<String> ls;
+	private Stack<String> el;
+	private Stack<String> ll;
+	private Stack<String> fl;
+	private int register;
+	
+	public CodeGenerator(SymbolTable a){
+		st=a;
+		ts = new Stack<String>();
+		ls = new Stack<String>();
+		el = new Stack<String>();
+		ll = new Stack<String>();
+		fl = new Stack<String>();
+		register = 0;
+	}
+
+	public void buildFile(){
+		try{
+			o = new BufferedWriter(new FileWriter(fileName));
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+	public void close(){
+		try{
+			o.flush();
+			o.close();
+		} 
+		catch(IOException ie){
+			ie.printStackTrace();
+		}
+	}
+
+	//Sets up register to handle initial states
+	public void setupP(){
+		if(!ErrorHandler.errorsExist()){
+			write("PUSH D0");
+			write("MOV SP D0");
+			register = 0;
+		}
+	}
+
+	public void setup(String s){
+		if(st.getToken(s).getLex().equals("Function"))
+		{
+			write("ADD SP #1 SP");
+			ts.push(st.getToken(s).getLex());
+		}
+		int level = st.getToken(s).getNest()+1;
+		
+		write("PUSH D"+level);
+		register = level;
+	}
+
+	public void start(String s){
+		if(!ErrorHandler.errorsExist()){
+		
+		String temp=st.getToken(s).getType();
+		int size;
+		switch(temp){
+		case "MP_INTEGER_LIT":
+			size=4;
+			break;
+		case "MP_FLOAT_LIT":
+			size=8;
+			break;
+		case "MP_STRING":
+			size=32;
+			break;
+		default:
+			size=8;
+			break;
+		}
+		write("ADD SP #"+size+" SP");
+		}
+		else
+		{
+			System.out.println("Error has occured before start");
+		}
+	}
+	
+	public void end(String s){
+		if(!ErrorHandler.errorsExist()){
+		
+			String temp=st.getToken(s).getType();
+			int size;
+			switch(temp){
+			case "MP_INTEGER_LIT":
+				size=4;
+				break;
+			case "MP_FLOAT_LIT":
+				size=8;
+				break;
+			case "MP_STRING":
+				size=32;
+				break;
+			default:
+				size=8;
+				break;
+			}
+			write("SUB SP #"+size+" SP");
+
+			if(st.getToken(s).getNest() != 0)
+			{
+				write("RET");
+			}	
+		}
+		else
+		{
+			System.out.println("Error has occured before end");
+		}
+	}
+
+	private void finished(){
+		if(!ErrorHandler.errorsExist()){
+			write("POP D0");
+			write("HLT");
+		}
+	}
+
+	public void writeParameter(){
+		if(!ErrorHandler.errorsExist()){
+			write("WRTS");
+		}
+		else
+		{
+			System.out.println("Error has occured before writeParameter");
+		}
+	}
+
+	public void readParameter(String s){
+		if(!ErrorHandler.errorsExist()){
+			SymbolToken sym = st.getToken(s);
+			if(sym.getType().equals("Paramter"))
+				write("RD (D"+sym.getNest());
+			else
+				write("RD (D"+sym.getNest());
+		}
+		else{
+			System.out.println("Error has occured before readParameter");
+		}
+	}
+	
+	
+							
+
+
+	public void neg(){
+		if(!ErrorHandler.errorsExist()){
+			if(ts.peek() == "MP_BOOLEAN")
+			{
+				String l1 = LabelGenerator.getLabelGenerated().getLabel();
+				String l2 = LabelGenerator.getLabelGenerated().getLabel();
+				 write("BEQ -1(SP) #0 "+l1);
+                		write("SUB SP #1 SP");
+                		write("PUSH #0");
+                		write("BR "+l2);
+                		write(l1+":");
+                		write("SUB SP #1 SP");
+                		write("PUSH #1");
+                		write(l2+":");
+			}
+			else
+			{
+				ErrorHandler.logError("Cannot be a non-bool");
+			}
+		}
+		else
+		{
+			System.out.println("Error has occured before neg");
+		}
+	}
+
+	public void addop(String operator){
+		if(!ErrorHandler.errorsExist()){
+			String s1 = ts.pop();
+			String s2 = ts.pop();
+			
+			switch(operator) {
+				case "MP_PLUS":
+					if(s1.equals(s2))
+					{
+						write("ADDS");
+						ts.push(s1);
+					}
+					else
+					{
+						System.out.println("adding operators are not of the same type");
+					}
+					break;
+
+				case "MP_MINUS":
+					if(s1 == s2)
+					{
+						write("SUBS");
+						ts.push(s1);
+					}
+					else
+					{
+						System.out.println(s1);
+						System.out.println(s2);
+						System.out.println("subtraction operators are not of the same type");
+					}
+					break;
+
+				case "MP_OR":
+					if(s1 == s2)
+					{
+						write("ADDS");
+						write("PUSH #0");
+						ts.push(s1);
+						ts.push(s2);
+						compare("MP_NEQUAL");
+					}
+					else
+					{
+						System.out.println("OR operators are not of the same type");
+					}
+					break;
+	
+				default:
+					System.out.println("Error has occured in Addop");
+			}
+		}
+	}
+
+	public void mulop(String operator){
+		if(!ErrorHandler.errorsExist()){
+			String s1 = ts.pop();
+			String s2 = ts.pop();
+			
+			switch(operator) {
+				case "MP_TIMES":
+					if(s1 == s2)
+					{
+						write("MULS");
+						ts.push(s1);
+					}
+				case "MP_MOD":
+					if(s1 == s2)
+					{
+						String l1 = LabelGenerator.getLabelGenerated().getLabel();
+						String l2 = LabelGenerator.getLabelGenerated().getLabel();
+						write(l1+":");
+						write("BLT -2(SP) -1(SP) "+l2);
+						write("SUB -2(SP) -1(SP) -2(SP)");
+						write("BR "+l1);
+						write(l2+":");
+						write("SUB SP #1 SP");
+						ts.push(s1);
+					}
+					else
+					{
+						System.out.println("multiplying operators are not of the same type");
+					}
+					break;
+				case "MP_AND":
+					if(s1 == s2)
+					{
+						write("MULS");
+						ts.push(s1);
+					}
+					else
+					{
+						System.out.println("multiplying operators are not of the same type");
+					}
+					break;
+				default:
+					System.out.println("Error has occured in Mulop");
+			}
+		}
+	}
+
+	private void write(String s){
+		try{
+			o.write(s);
+			o.newLine();
+			o.flush();
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}
+	}
+	
+	public void optionalSign(String sign){
+		if(!ErrorHandler.errorsExist()){
+			try{
+				switch(sign){
+					case "MP_PLUS":
+						break;
+					case "MP_MINUS":
+						write("NEGS");
+						break;
+					default:
+						break;
+				}
+			}
+			catch(Exception e){
+				e.printStackTrace();
+			}
+		}
+	}
+
+	public void compare(String string){
+		if(!ErrorHandler.errorsExist()){
+			String s1 = ts.pop();
+			String s2 = ts.pop();
+			boolean error = true;
+			
+			if(!ErrorHandler.errorsExist()){
+				String l1 = LabelGenerator.getLabelGenerated().getLabel();
+				String l2 = LabelGenerator.getLabelGenerated().getLabel();
+				
+				if(s1.equals(s2)){
+					error = false;
+					
+					switch(string){
+						case "MP_EQUAL":
+							write("BEQ -2(SP) -1(SP) "+ l1);
+							break;
+						case "MP_LTHAN":
+							write("BLT -2(SP) -1(SP) "+ l1);
+							break;
+						case "MP_GTHAN":
+							write("BGT -2(SP) -1(SP) "+ l1);
+							break;
+						case "MP_LEQUAL":
+							write("BLE -2(SP) -1(SP) "+ l1);
+							break;
+						case "MP_GEQUAL":
+							write("BGE -2(SP) -1(SP) " + l1);
+							break;
+						case "MP_NEQUAL":
+							write("BNE -2(SP) -1(SP) " + l1);
+							break;
+						default:
+							error = true;
+							System.out.println("Error occurs in Relational Operator");
+					}
+				}
+				if (!error) {
+                    			write("SUB SP #2 SP");
+                    			write("PUSH #0");
+                    			write("BR " + l2); 
+                    			write(l1 + ":");
+                    			write("SUB SP #2 SP");
+                    			write("PUSH #1"); 
+                    			write(l2 + ":");
+                    			ts.push("MP_BOOLEAN");
+		                }
+			}
+		}
+	}
+
+	public void branchBegin() {
+		if(!ErrorHandler.errorsExist()){
+			String l1 = LabelGenerator.getLabelGenerated().getLabel();
+			ls.push(l1);
+			write("BR "+l1);
+		}
+	}
+	
+	public void beginLabel(){
+		if(!ErrorHandler.errorsExist()){
+			String l1 = ls.pop();
+			write(l1+":");
+		}
+	}
+
+	public void ifThenState(){
+		if(!ErrorHandler.errorsExist()){
+		fl.push(LabelGenerator.getLabelGenerated().getLabel());
+		el.push(LabelGenerator.getLabelGenerated().getLabel());
+		write("BEQ -1(SP) #0 " + fl.peek());
+		write("SUB SP #1 SP");
+		}
+	}
+
+	public void endIf(){
+		if(!ErrorHandler.errorsExist()){
+			write(el.pop() + ":");
+		}
+	}
+
+	public void elseState(){
+		if(!ErrorHandler.errorsExist()){
+			write(fl.pop() + ":");
+			write("SUB SP #1 SP");
+		}
+	}
+	
+	public void breakToEnd(){
+		if(!ErrorHandler.errorsExist()){
+			write("BR " + el.peek());
+		}
+	}
+
+	public void repeatState(){
+		if(!ErrorHandler.errorsExist()){
+			ll.push(LabelGenerator.getLabelGenerated().getLabel());
+			write("PUSH #0");
+			write(ll.peek() + ":");
+			write("SUB SP #1 SP");
+		}
+	}
+
+	public void endRepeat(){
+		if(!ErrorHandler.errorsExist()){
+			write("BEQ -1(SP) #0 " + ll.pop());
+			write("SUB SP #1 SP");
+		}
+	}
+	
+	public void startWhile(){
+		if(!ErrorHandler.errorsExist()){
+			ll.push(LabelGenerator.getLabelGenerated().getLabel());
+			write(ll.peek() + ":");
+		}
+	}
+
+	public void whileState(){
+		if(!ErrorHandler.errorsExist()){
+			ll.push(LabelGenerator.getLabelGenerated().getLabel());
+			write("BEQ -1(SP) #0" + ll.peek());
+			write("SUB SP #1 SP");
+		}
+	}
+	
+	public void endWHile(){
+		if(!ErrorHandler.errorsExist()){
+			String l1 = ll.pop();
+			String l2 = ll.pop();
+			write("BR " + l2);
+			write(l1 + ":");
+			write("SUB SP #1 SP");
+		}
+	}
+	
+	
+	public void startFor(String s){
+		if(!ErrorHandler.errorsExist()){
+			ll.push(LabelGenerator.getLabelGenerated().getLabel());
+			write(ll.peek() + ":");
+			pushVar(s, 'n', 0);
+		}
+	}
+
+	public void forState(){
+		if(!ErrorHandler.errorsExist()){
+			ll.push(LabelGenerator.getLabelGenerated().getLabel());
+			write("BEQ -1(SP) #0" + ll.peek());
+			write("SUB SP #1 SP");
+		}
+	}
+		
+	public void endFor(String s, String oper){
+		if(!ErrorHandler.errorsExist()){
+			String l1 = ll.pop();
+			String l2 = ll.pop();
+			
+			pushVar(s, 'n', 0);
+			
+			switch(oper){
+				case "MP_LEQUAL":
+					write("PUSH #1");
+					write("ADDS");
+					break;
+				case "MP_GEQUAL":
+					write("PUSH #-1");
+					write("ADDS");
+					break;
+				default:
+					System.out.println("Error has occured in endFor");
+			}
+		assign(s);
+		write("BR " +l2);
+		write(l1 + ":");
+		write("SUB SP #1 SP");
+		}
+	}
+	
+	private void pushVar(String lex, char y, int x)
+	{
+		write("PUSH SP");
+	}
+	
+	private void assign(String s)
+	{
+		
+	}
+}

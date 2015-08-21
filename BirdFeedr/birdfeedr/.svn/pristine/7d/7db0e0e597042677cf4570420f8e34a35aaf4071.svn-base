@@ -1,0 +1,122 @@
+
+2015-02-25 15:22:05
+
+
+Di and Nate have been pulled out of project Birdfeedr.
+
+They need to determine the feasibility of using an antanna
+  to ping a cheap.
+
+Thomas: don't bother them, but, keeping them in the loop.
+
+Josh: Continue to send meeting summaries.
+
+Thomas: Send weekly summaries to JP and them.
+
+Thomas: when do you go on the clock for that.
+  So you are not going off the clock now.
+  Is there anything you would like to present.
+
+Josh: On the other hand, you guys could participate in the meeting.
+
+Di: Offer informal reports on project ideas.
+
+Nate: be sure to transfer artifacts.
+
+Di: Lets talk about ideas.
+  Some ideas talk need access to the editor.
+  Clippy requires the editor.
+  Big risky. Out of scope.
+  Likes interpreter.
+
+Thomas: Build hooks b/t IDE BlueJ and Java REPL
+
+Josh: use an interpreter.
+
+Di: likes Thread visualization.
+  Not sure if he likes OpenGL.
+
+Thomas: JP did not like OpenGL.
+
+Di: Likes picking up Git, but, we would have to invoke final decision policy.
+
+Wei: really likes the interpretter.
+  and thread visualization.
+
+Nate: Those two ideas. Interpretter.
+
+Miguel: Can we use the technology?
+
+Nate: need to make GUI.
+
+  
+2015-02-25 15:34:22
+
+
+Nate: what if it is bad choice?
+
+Thomas: then the feasibility report fails. We step back and rechoice.
+  How do manage and minimize these choices?
+
+Nate: Interpretter would be easy and risk would be user interface.
+    Thread visualizer needs GUI access to runtime, object, locks.
+    Need access to the runtime machine.
+
+Thomas: Java has hooks into event watchers.
+
+Nate: If we did go back to the git then people have experience.
+  Add all features of Git Pull, commit.
+  Consider available time minus presentation time.
+     minus people's weekly time.
+
+Thomas: Visualizer. likes idea of heap and stack.
+  Differentiate b/t stack, heap visualizer and thread visualizer.
+
+Wei: What if we have interpretter extension that can visualize threads?
+
+Thomas: We got this done quicker then lets add to that.
+  Seems like a negative.
+  Lets add to that.
+
+Wei: each one could be an iteration.
+
+Thomas: that comes out of our analysis.
+  Why don't we say this?
+  Add to the feasibility an analysis of adding a thread visualizer.
+  Develope reports on all three.
+
+
+Josh: Each person takes a feasbility.
+
+JP: make sure you get a validity check with me.
+   I can be talked into things
+
+
+Thomas: Send ideas JP way then feasibility.
+
+Ideas:
+  Interpretter.
+  Thread Visualizer.
+  Stack visualizer.
+  Offline Java docs.
+
+JP: Sounds okay.
+  Nothing exciting.
+  Propose it in a way that contextualize.
+  How is this helping the average programmer.
+  Visualizing threads is not bad.
+  What do early students struggle with.
+
+  They don't know how to do design.
+  They don't know what quality code.
+  THey have trouble debugging.
+  Tools identifies nouns, verbs, attributes.
+
+
+Thomas: Send small questionaire to see what they struggle.
+
+Thomas: making a questionaire.
+
+Miguel, Wei: talking to a variety of people to find out why programming
+  is difficult.
+2015-02-25 16:03:59

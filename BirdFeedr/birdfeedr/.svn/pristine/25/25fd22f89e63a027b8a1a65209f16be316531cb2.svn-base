@@ -1,0 +1,43 @@
+Class documentation
+<---- javadoc command: ---->
+C:\Program Files\Java\jdk1.7.0_67\bin\javadoc.exe
+-author
+-version
+-nodeprecated
+-package
+-noindex
+-notree
+-nohelp
+-nonavbar
+-source
+1.7
+-classpath
+C:\Program Files (x86)\BlueJ\lib\bluejcore.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\Program Files (x86)\BlueJ\lib\bluejext.jar;C:\Program Files (x86)\BlueJ\lib\junit-4.8.2.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-core.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-device.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-gpio-extension.jar;C:\Program Files (x86)\BlueJ\lib\userlib\pi4j-service.jar;C:\Users\Nathan\Desktop\Code\src\+libs\bluejext.jar;C:\Users\Nathan\Desktop\Code\src\+libs\jfxrt.jar;C:\Users\Nathan\Desktop\Code\src\+libs\junit-4.8.2.jar;C:\Users\Nathan\Desktop\Code\src
+-d
+C:\Users\Nathan\Desktop\Code\src\doc
+-encoding
+windows-1252
+-charset
+windows-1252
+-docletpath
+C:\Program Files (x86)\BlueJ\lib\bjdoclet.jar
+-doclet
+bluej.doclet.doclets.formats.html.HtmlDoclet
+C:\Users\Nathan\Desktop\Code\src\Extension\GUI\FXMLExerciseDocumentController.java
+<---- end of javadoc command ---->
+Loading source file C:\Users\Nathan\Desktop\Code\src\Extension\GUI\FXMLExerciseDocumentController.java...
+Constructing Javadoc information...
+javadoc: warning - Multiple sources of package comments found for package "bluej.extensions"
+Standard Doclet version 1.7.0_67
+Building tree for all the packages and classes...
+Generating C:\Users\Nathan\Desktop\Code\src\doc\Extension\GUI\FXMLExerciseDocumentController.html...
+Generating C:\Users\Nathan\Desktop\Code\src\doc\Extension\GUI\package-frame.html...
+Generating C:\Users\Nathan\Desktop\Code\src\doc\Extension\GUI\package-summary.html...
+Generating C:\Users\Nathan\Desktop\Code\src\doc\constant-values.html...
+Building index for all the packages and classes...
+Building index for all classes...
+Generating C:\Users\Nathan\Desktop\Code\src\doc\allclasses-frame.html...
+Generating C:\Users\Nathan\Desktop\Code\src\doc\allclasses-noframe.html...
+Generating C:\Users\Nathan\Desktop\Code\src\doc\index.html...
+Generating C:\Users\Nathan\Desktop\Code\src\doc\stylesheet.css...
+1 warning

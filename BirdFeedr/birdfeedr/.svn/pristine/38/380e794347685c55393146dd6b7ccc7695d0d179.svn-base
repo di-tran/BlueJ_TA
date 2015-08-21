@@ -1,0 +1,2 @@
+Design proposal containing possible workflow between the main extension and the JUnitRunner module. The diagram also includes class cards and detailed outlines of method calls, returns and read/write access between modules. The diagram helped the team understand how the JUnit runner would eventually be connected to the main program and get us ready and prepared
+The following artifact is a diagram detailing how the JUnit module would work class by class and how it will fit into the main project.

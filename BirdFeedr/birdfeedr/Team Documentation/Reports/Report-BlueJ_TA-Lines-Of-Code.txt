@@ -1,0 +1,16 @@
+  399 ../../Projects/BlueJ_TA/Code/src/Extension/BackEnd/Exercise.java
+  151 ../../Projects/BlueJ_TA/Code/src/Extension/BackEnd/FileUtil.java
+   74 ../../Projects/BlueJ_TA/Code/src/Extension/BackEnd/RemoveThread.java
+   75 ../../Projects/BlueJ_TA/Code/src/Extension/BackEnd/runner/JRunner.java
+  353 ../../Projects/BlueJ_TA/Code/src/Extension/BackEnd/StateManager.java
+   76 ../../Projects/BlueJ_TA/Code/src/Extension/BackEnd/XMLReader.java
+  127 ../../Projects/BlueJ_TA/Code/src/Extension/GUI/DescriptionGUI.java
+   94 ../../Projects/BlueJ_TA/Code/src/Extension/GUI/ExerciseListGUI.java
+   91 ../../Projects/BlueJ_TA/Code/src/Extension/GUI/FXMLDescriptionDocumentController.java
+  110 ../../Projects/BlueJ_TA/Code/src/Extension/GUI/FXMLExerciseDocumentController.java
+  100 ../../Projects/BlueJ_TA/Code/src/Extension/GUI/FXMLTestResultsDocumentController.java
+  128 ../../Projects/BlueJ_TA/Code/src/Extension/GUI/TestResultsGUI.java
+   77 ../../Projects/BlueJ_TA/Code/src/Extension/Main.java
+   94 ../../Projects/BlueJ_TA/Code/src/Extension/MenuBuilder.java
+  157 ../../Projects/BlueJ_TA/Code/src/Extension/Preferences.java
+ 2106 total

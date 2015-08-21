@@ -1,0 +1,6 @@
+main.class=GitExtension
+jar.name=GitExtension.jar
+# The source and target level should be 1.7 to be compatible with BlueJ.
+source.level=1.7
+target.level=1.7
+debug.mode=on

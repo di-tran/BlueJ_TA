@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=b
+comment0.target=void\ setUp(bluej.extensions.BlueJ)
+comment1.params=
+comment1.target=bluej.extensions.BlueJ\ getBlueJ()
+comment2.params=
+comment2.target=java.io.File\ getTempFileDir()
+comment3.params=
+comment3.target=Runner.JUnitRunner\ getRunner()
+comment4.params=
+comment4.target=void\ setDefaultExercise()
+comment5.params=
+comment5.target=Exercise\ getExercise()
+numComments=6

@@ -1,0 +1,10 @@
+Instructions:
+Compile both classes as normal.
+
+How to use:
+Use Interface's test() method, passing in a compiled test.class file.
+
+Assumptions:
+- Assumes JUnit class is precompiled
+- Assumes Junit class is in current project directory
+- Assumes classes that the user makes has the right names and methods

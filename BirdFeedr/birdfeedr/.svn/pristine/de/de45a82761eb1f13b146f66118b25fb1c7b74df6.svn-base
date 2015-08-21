@@ -1,0 +1,86 @@
+<project>
+    <property file = "local.properties"/>
+    <property name = "build.dir" location = "build"/>
+    <property name = "compile.dest.dir" location = "${build.dir}/classes"/>
+    <property name = "dist.dir" location = "dist"/>
+    <property name = "jar.name" value = "myTestExt.jar"/>
+    <property name = "main.class" value = "TestExtension"/>
+    <property name = "source.dir" location = "src"/>
+    <property name = "results.dir" location = "results"/>
+<!-- set the operating system test properties -->
+  <condition property="isMac">
+    <os family="mac" />
+  </condition>
+
+  <condition property="isWindows">
+    <os family="windows" />
+  </condition>
+
+  <condition property="isUnix">
+    <os family="unix" />
+  </condition>
+
+    <target name = "set-env-w" if = "isWindows">
+        <property name = "user.bluej.dir" location = "${user.home}/bluej"/>
+    </target>
+    <target name = "doMac" if = "isMac">
+        <property name = "user.bluej.dir" location = "${user.home}/Library/Preferences/org.bluej/extensions"/>
+    </target>
+    <target name = "set-env" depends = "set-env-w,doMac">
+        <property name = "user.bluej.dir" location = "${user.home}/.bluej"/>
+        <property name = "ext.dir" location = "${user.bluej.dir}/extensions"/>
+        <property name = "jar.file" location = "${dist.dir}/${jar.name}"/>
+        <property name = "ext.file" location = "${ext.dir}/${jar.file}"/>
+        <property name = "bluej.log.file" location = "${user.bluej.dir}/bluej-debuglog.txt"/>
+    </target>
+    <target name = "clean" depends = "set-env">
+        <delete dir = "${ext.file}"/>
+        <delete file = "${dist.dir}"/>
+        <delete dir = "${build.dir}"/>
+        <delete dir = "${results.dir}"/>
+    </target>
+    <target name = "prebuild">
+        <mkdir dir = "${dist.dir}"/>
+        <mkdir dir = "${compile.dest.dir}"/>
+        <mkdir dir = "${results.dir}"/>
+    </target>
+    <target name = "compile" depends = "set-env,prebuild">
+        <fail unless = "bluej.dir"/>
+        <javac srcdir = "${source.dir}" destdir = "${compile.dest.dir}" 
+         debug = "on">
+            <classpath>
+                <pathelement path = "${compile.dest.dir}"/>
+                <file file = "${bluej.dir}/bluejext.jar"/>
+            </classpath>
+            <!--<compilerarg value="-Xlint"/>-->
+        </javac>
+    </target>
+    <target name = "jar" depends = "compile">
+        <jar destfile = "${jar.file}">
+            <fileset dir = "${compile.dest.dir}" includes="*.class"/>
+            <manifest>
+                <attribute name = "Main-Class" value = "${main.class}"/>
+            </manifest>
+        </jar>
+    </target>
+    <target name = "copy" depends = "jar">
+        <mkdir dir = "${ext.dir}"/>
+        <copy file = "${jar.file}" todir="${ext.dir}"/>
+    </target>
+    <!-- Run the program. -->
+    <target name = "run" depends = "copy">
+        <fail unless = "bluej.dir"/>
+        <java jar = "${bluej.dir}/bluej.jar"
+         fork = "true"
+         failonerror = "true" >
+            <classpath>
+                <pathelement path = "${compile.dest.dir}"/>
+                <fileset dir = "${java.home}/lib/" includes = "tools.jar"/>
+            </classpath>
+        </java>
+        <concat>
+            <fileset file = "${bluej.log.file}"/>
+        </concat>
+        <copy file = "${bluej.log.file}" todir = "${results.dir}" />
+    </target>
+</project>

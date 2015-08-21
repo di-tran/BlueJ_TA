@@ -1,0 +1,41 @@
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+public class SymbolTable
+{
+	private  HashMap<String, SymbolToken> hm;
+	private Iterator<String> i;
+	
+	public SymbolTable()
+	{
+		hm=new HashMap<String, SymbolToken>();
+	}
+	
+	/* Adds a token to the symbol table into the hashmap.
+	 * The key is the lex of the given Token.
+	 * The nesting flag is used to help keep track of what type
+	 * of identifier the given token is.
+	 */
+	public void addToken(Token t, char nest)
+	{
+		hm.put(t.getLex(), new SymbolToken(t, nest));
+	}
+	
+	public SymbolToken getToken(String s)
+	{
+		return hm.get(s);
+		
+	}
+	
+	public void printTable()
+	{
+		Set<String> key=hm.keySet();
+		i=key.iterator();
+		while(i.hasNext())
+		{
+			String temp=i.next();
+			System.out.println(temp+", "+hm.get(temp).getType()+", "+hm.get(temp).getNest());
+		}
+	}
+}

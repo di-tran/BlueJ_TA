@@ -1,0 +1,48 @@
+
+2015-03-09 14:09:12
+
+Thomas: did the research.
+  XML would be the easiest.
+  Java's built in DOM and Sax parsing.
+  Java can write XML.
+Thomas: Using the Document building factory.
+   in Javax.xml.parsers
+2015-03-09 14:28:58
+
+2015-03-09 15:38:29
+
+
+TOC
+
+Thomas: will write a readme.
+
+  Inside the project there will be a Git folder.
+
+Today summary:
+  -We got notes about JP to make it in a state that it is runnable.
+
+Decisions:
+  -Restructure repository so that its readable.
+
+Delegation:
+  -Wei is working on the top level readme.
+  -Thomas is restructuring.
+
+
+Todo:
+  -Project needs to be runnable.
+  -Build file needs to be complete.
+  -Wiki.
+  -Internal documentation.
+
+
+Accomplishments: Wei, Thomas, Miguel made XSD and initial XML
+  for file formats.
+  To test the parser.
+
+Delegation:
+  -Miguel will do internal documentation
+  -Di will do the wiki.
+  -Josh will do the build.
+
+2015-03-09 15:48:29

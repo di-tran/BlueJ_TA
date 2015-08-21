@@ -1,0 +1,184 @@
+<project name = "BlueJ-Git-Extension" default = "run" basedir = ".">
+    <property file = "project.properties"/>
+    <property name = "build.dir" location = "build"/>
+    <property name = "compile.dest.dir" location = "${build.dir}/classes"/>
+    <property name = "dist.dir" location = "dist"/>
+    <property name = "source.dir" location = "src"/>
+    <property name = "source.test.dir" location = "test"/>
+    <property name = "results.dir" location = "results"/>
+    <property name = "lib.dir" location = "lib"/>
+    <property name = "doc.dir" location = "doc"/>
+    <property name = "jgit.classes.dir" location = "${lib.dir}/jgit-classes"/>
+
+    <!-- Locates JGit. -->
+    <pathconvert property="jgit.jar.file" setonempty="false" pathsep=" ">
+        <path>
+            <fileset dir="${lib.dir}" includes="org.eclipse.jgit*.jar" />
+        </path>
+    </pathconvert>
+
+    <!-- Detects JGit jar. -->
+    <condition property="jgit.jar.exists">
+        <resourcecount when="greater" count="0">
+            <fileset file="${jgit.jar.file}"/>
+        </resourcecount>
+    </condition>
+
+    <!-- Detects Mac. -->
+    <condition property="isMac">
+        <os family="mac" />
+    </condition>
+
+    <!-- Detects Windows. -->
+    <condition property="isWindows">
+        <os family="windows" />
+    </condition>
+
+    <!-- Detects Unix. -->
+    <condition property="isUnix">
+        <os family="unix" />
+    </condition>
+
+    <!-- Loads Windows properties. -->
+    <target name = "windows-props" if = "isWindows">
+        <property file = "local.properties.windows"/>
+    </target>
+
+    <!-- Loads Mac properties. -->
+    <target name = "mac-props" if = "isMac">
+        <property file = "local.properties.macOSX"/>
+    </target>
+
+    <!-- Loads Unix properties. -->
+    <target name = "unix-props" if = "isUnix">
+        <property file = "local.properties.unix"/>
+    </target>
+    
+    <!-- Sets properties that depend on OS specific properties. -->
+    <target name = "set-env" depends = "windows-props,mac-props,unix-props">
+        <property name = "user.bluej.dir" location = "${user.home}/.bluej"/>
+        <property name = "ext.dir" location = "${user.bluej.dir}/extensions"/>
+        <property name = "jar.file" location = "${dist.dir}/${jar.name}"/>
+        <property name = "ext.file" location = "${ext.dir}/${jar.name}"/>
+        <property name = "bluej.log.file"
+                  location = "${user.bluej.dir}/bluej-debuglog.txt"/>
+    </target>
+
+    <!-- Delete build-generated files. -->
+    <target name = "clean" depends = "set-env"
+            description = "Removes build-generated files.">
+        <delete file = "${ext.file}"/>
+        <delete dir = "${dist.dir}"/>
+        <delete dir = "${build.dir}"/>
+        <delete dir = "${results.dir}"/>
+        <delete dir = "${doc.dir}"/>
+    </target>
+
+    <!-- Create folders needed for the build. -->
+    <target name = "prebuild"
+            description = "Creates build dependencies.">
+        <mkdir dir = "${dist.dir}"/>
+        <mkdir dir = "${compile.dest.dir}"/>
+        <mkdir dir = "${results.dir}"/>
+    </target>
+
+    <!-- Compile sources. -->
+    <target name = "compile" depends = "set-env,prebuild"
+            description = "Compiles Java sources.">
+        <fail unless = "bluej.dir"/>
+        <fail unless = "jgit.jar.exists"/>
+        <javac srcdir = "${source.dir}" destdir = "${compile.dest.dir}" 
+         debug = "${debug.mode}" source = "${source.level}"
+         target = "${target.level}">
+            <classpath>
+                <pathelement path = "${compile.dest.dir}"/>
+                <file file = "${bluej.dir}/bluejext.jar"/>
+                <fileset dir = "lib/" includes = "*.jar"/>
+            </classpath>
+            <!--<compilerarg value="-Xlint"/>-->
+        </javac>
+    </target>
+
+    <!-- Builds the jar file and includes JGit classes.-->
+    <target name = "jar" depends = "compile"
+            description = "Creates the extension Java jar file.">
+        <echo message = "Note: building the jar may take a minute the first time."/>
+        <jar destfile = "${jar.file}">
+            <fileset dir = "${compile.dest.dir}" includes="**/*.class"/>
+            <zipfileset excludes="META-INF/**/*" src="${jgit.jar.file}"/>
+            <manifest>
+                <attribute name = "Main-Class" value = "${main.class}"/>
+            </manifest>
+        </jar>
+    </target>
+    <target name = "install-ext" depends = "jar"
+            description = "Puts the Java jar into the user's extension folder.">
+        <mkdir dir = "${ext.dir}"/>
+        <copy file = "${jar.file}" todir="${ext.dir}"/>
+    </target>
+
+    <!-- Runs the program. -->
+    <target name = "run" depends = "install-ext"
+            description = "Runs BlueJ">
+        <fail unless = "bluej.dir"/>
+        <java jar = "${bluej.dir}/bluej.jar"
+         fork = "true"
+         failonerror = "true" >
+        </java>
+        <concat>
+            <fileset file = "${bluej.log.file}"/>
+        </concat>
+        <copy file = "${bluej.log.file}" todir = "${results.dir}" />
+    </target>
+    
+    <!-- Compiles test cases. -->
+    <target name = "compile-test-cases" depends="compile"
+            description = "Compiles test cases.">
+        <javac srcdir = "${source.test.dir}" destdir = "${compile.dest.dir}"
+                debug = "${debug.mode}">
+            <classpath>
+                <pathelement path = "${compile.dest.dir}"/>
+                <file file = "${bluej.dir}/bluejext.jar"/>
+                <fileset dir = "lib/" includes = "*.jar"/>
+            </classpath>
+            <!--<compilerarg value="-Xlint"/>-->
+        </javac>
+    </target>
+    
+    <!-- Runs test units. -->
+    <target name = "run-all-test-cases" depends = "compile-test-cases">
+        <mkdir dir = "${results.dir}"/>
+        <junit printsummary = "yes" haltonfailure = "false"
+            showoutput = "true" failureproperty = "junit.failed" >
+            <!-- When usefile is true tests will be only reran as needed.-->
+            <formatter type = "plain" usefile = "false"/>
+            <classpath>
+                <pathelement path = "${compile.dest.dir}"/>
+                <file file = "${bluej.dir}/bluejext.jar"/>
+                <fileset dir = "lib/" includes = "*.jar"/>
+            </classpath>
+            <batchtest todir="${results.dir}">
+                <fileset dir="${source.test.dir}">
+                    <include name="**/*Test*.java" />
+                </fileset>
+            </batchtest>
+        </junit>
+        <fail if = "junit.failed"/>
+    </target>
+    
+    <!-- Runs all test cases. Really just a shortcut to run-all-test-cases. -->
+    <target name = "test" depends = "run-all-test-cases"
+        description = "Runs unit tests for all test classes."/>
+    <!-- Generates Java Docs -->
+    <target name = "doc" depends = "compile"
+        description = "Generates Java documentation.">
+        <javadoc sourcepath = "${source.dir}" destdir = "${doc.dir}">
+            <classpath>
+                <pathelement path = "${compile.dest.dir}"/>
+                <file file = "${bluej.dir}/bluejext.jar"/>
+                <fileset dir = "lib/" includes = "*.jar"/>
+            </classpath>
+        </javadoc>
+    </target>
+    
+</project>

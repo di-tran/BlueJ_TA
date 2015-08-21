@@ -1,0 +1,136 @@
+
+2015-03-12 14:17:03
+
+Di and Josh in a meeting.
+
+So incremental is about dividing the work.
+
+Di: User stories help us define our increment?
+  What do we do and how long do we do it
+  After a increment, we go back to our user stories and repick.
+
+Josh: We are already kind of incremental.
+
+Di: Our design allows us to work on different classes.
+
+Josh: How will we communicate internally and how often?
+
+Di: We have three meetings a week. MW in class and Saturday at 2 PM.
+
+Josh: When will we communicate with customer?
+
+Di: Right now we communicate once a week.
+
+Wei: (talked to JP) He likes the work we are doing, but,
+  does not feel like he is in the loop.
+
+Josh: We know events that we will communicate.
+
+Di: We want to communicate when set an increment?
+    We communicate with them at the beginning of the project.
+
+Josh: Do we need the customer to verify.
+
+    our user stories?
+
+Di: I think that would be great.
+
+Di: we can priotize and they can verify user stories.
+
+Di: Do we need to consider how increments fit together?
+
+Josh: when we try to fit the incremental peices together
+
+Di: Should we do it ffrequently?
+
+
+Di: Each time create something significant the customer verifies it.
+   Tell each person that they can send their completed work to the customer.
+
+Josh: What do we do if User stories change.
+
+Di: A user story has not been approved and the customer does not want it.
+    We have a user story in development and the customer does not want it.
+      --Stop and shift focus to the new stories.
+      --Fail safe: our user stories our not final.
+
+Josh: It sounds like each artifact including user stories are seperate
+   artifacts.
+
+Di: This happens in someone's head automatically.
+
+  For the same of simplicity, we can just make an arrow.
+
+
+Josh: how will we maintain coding styles?
+
+Di: Not sure that fits in the process model?
+
+Backlog: Coding styles
+
+Di: Put it after testing and before delivery.
+  Almost like a coding review.
+
+Backlog: Integration
+Backlog: Artifact Iterations.
+
+Josh: How will ensure that the product may be built from source?
+
+Di: we can put that in our testing phase?
+
+  This occurs to me that we need to internally verify a component.
+
+Josh: Each completed work needs to be tested thoroughly.
+
+DI: for a parse, we need make sure it compiles and works.
+  Then does it integrate with other components.
+  Then does it adhere to our styling.
+
+Josh: Documentation.
+
+Backlog: documentation.
+
+Josh: How do we plan the entire project.
+
+Thought: How do plan the increments?
+
+Di: I like the release planning game.
+
+   Its nice b/c we can give them the plan and justify what we are doing
+   and set the customer expectations.
+
+   You can add them to the release planning?
+
+Josh: How do we design increments?
+
+Di: Two ways: devide it by users stories.
+    Divide by design.
+
+   Advantages of the design is priorities.
+   Advantages is the design is that it is easy to peice together.
+
+   We could take the user tories and figure out what classes align.
+   For example, I want to see theresults of my compilation
+  so you would have to work on the GUI and teststers.
+
+  Divide into classes for user stories.
+  and divide up based on those class that cover users stories.
+
+Di: An iterative process is repeated.
+  Incremented is divided
+
+Di: We check our status as compared to our release plan.
+
+Josh: So might have to readjust the iteration plan.
+
+
+Josh: So if an increment is a set user stories
+      then what is an iteration?
+2015-03-12 15:19:04
+
+2015-03-12 15:22:40
+
+
+Josh: So an iteration seeks to make progress towards a user story.
+
+2015-03-12 15:45:03

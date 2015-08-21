@@ -1,0 +1,50 @@
+annotations/Redmine:gen/birdfeedr/Team Documentation/Team Portfolio/Artifacts/Tools/RedmineArtifact.pdf:Tools
+annotations/Subversion SVN:gen/birdfeedr/Team Documentation/Team Portfolio/Artifacts/Tools/SVNartifact.pdf:Tools
+annotations/Google Drive::Tools
+annotations/Gmail:gen/birdfeedr/Team Documentation/Team Portfolio/Artifacts/Tools/GmailArtifact.pdf:Tools
+annotations/Google Hangouts:gen/birdfeedr/Team Documentation/Team Portfolio/Artifacts/Tools/Google Hangouts Screenshot.png:Tools
+annotations/JavaFX::Tools
+annotations/BlueJ:gen/birdfeedr/Team Documentation/Team Portfolio/Artifacts/Tools/BlueJ Artifact.gdoc:Tools
+annotations/Latex:gen/birdfeedr/Team Documentation/Team Portfolio/Artifacts/Tools/Latex.png:Tools
+annotations/Project Chirp:gen/birdfeedr/Projects/Chirp/Exploration Summary.txt:Exploration
+annotations/Project Git::Exploration
+annotations/Surveys:gen/birdfeedr/Projects/BlueJ_TA/Documentation/Survey/*:Exploration
+annotations/Team Meeting Notes:gen/birdfeedr/Team Documentation/Meeting Notes/note*.txt:Communication
+annotations/Status Reports:gen/birdfeedr/Team Documentation/Reports/Status-Report-*.pdf:Communication
+annotations/Email Threads:gen/birdfeedr/Team Documentation/Reports/Email-Thread-2015-*.pdf:Communication
+annotations/Presentation 1:gen/birdfeedr/Team Documentation/Presentations/Presentation 1/P1 Pair Programming Presentation.pdf:Communication
+annotations/Presentation 2:gen/birdfeedr/Team Documentation/Presentations/Presentation 2/Design Patterns.pdf:Communication
+annotations/Presentation 3:gen/birdfeedr/Team Documentation/Presentations/Presentation 3/Presentation 3 v2.pptx.pdf:Communication
+annotations/Final Presentation:gen/birdfeedr/Team Documentation/Presentations/Final Presentation/*.pdf:Communication
+annotations/Project BlueJ TA Name:gen/birdfeedr/Team Documentation/Meeting Notes/note-20150123Team-Meeting.txt,gen/birdfeedr/Team Documentation/Reports/Email-Thread-2015-01-23-CS4260-MW2-group-requests.pdf:Documentation
+annotations/Project BlueJ TA User Stories:gen/birdfeedr/Projects/BlueJ_TA/Documentation/User Stories.csv:Documentation
+annotations/READMEs:gen/birdfeedr/ Team Documentation/**/README*,gen/birdfeedr/Projects/**/README*,gen/birdfeedr/README*:Documentation
+annotations/JavaDoc:gen/birdfeedr/Projects/BlueJ_TA/Documentation/doc/**/*.pdf:Documentation
+annotations/BlueJ TA Backend File Flow Proposals:gen/birdfeedr/Sandbox/Nate/BackEnd_FileFlow_Proposals*:Design
+annotations/Proposed BlueJ TA Design for first Iteration:gen/birdfeedr/Sandbox/Nate/DesignProposalDocs/Proposed BlueJ Codingbat Design iteration 1.pdf:Design
+annotations/Proposed JUnitRunner Design v1:gen/birdfeedr/Sandbox/Nate/DesignProposalDocs/Proposed JUnitRunner Design v1.pdf:Design
+annotations/Proposed BlueJ TA Design for Graphical User Interfaces:gen/birdfeedr/Projects/BlueJ_TA/Documentation/Designs/**/*:Design
+annotations/Vision Statement Heuristic::Process
+annotations/User Stories:gen/birdfeedr/Projects/BlueJ_TA/Documentation/UserStories.pdf:Process
+annotations/Meeting Summaries:gen/birdfeedr/Team Documentation/Reports/Meeting-Summary*.pdf:Process
+annotations/Software Development Life Cycle - Iterative and Incremental Model::Process
+annotations/BlueJ TA:gen/birdfeedr/Projects/BlueJ_TA/Documentation/Tour/*:Product
+annotations/Source:gen/birdfeedr/Projects/BlueJ_TA/Code/**/*.java:Product
+annotations/Graphical User Interface for BlueJ TA::Product
+annotations/XML Parser for BlueJ TA::Product
+annotations/JUnitRunner for BlueJ TA::Product
+annotations/ANT Build File:gen/birdfeedr/Projects/BlueJ_TA/Code/build.xml:Product
+annotations/BlueJ TA Exercises:gen/birdfeedr/Projects/BlueJ_TA/Code/src/Extension/exercises/*:Product
+annotations/TimeSheet:gen/birdfeedr/Team Documentation/Reports/Hours*.pdf:Metrics
+annotations/End to end test::Metrics
+annotations/Size of product:gen/birdfeedr/Team Documentation/Reports/Report-BlueJ_TA-Lines-Of-Code.txt:Metrics
+annotations/Number of Commits:gen/birdfeedr/Team\ Documentation/Reports/Report-Commits.txt:Metrics
+annotations/Team Building @ British Bulldog:gen/birdfeedr/Team Documentation/Team Building/British-Bulldog.PNG:Team Building
+annotations/Team Building @ Euclid Hall:gen/birdfeedr/Team Documentation/Team Building/Euclid.jpg:Team Building
+annotations/Team Building in Monster:gen/birdfeedr/Team Documentation/Team Building/Monster.jpg:Team Building
+annotations/Time Log:gen/birdfeedr/Team Documentation/Team Portfolio/Artifacts/Tools/Spent Time - Redmine.pdf:Documentation
+annotations/Birdfeedr Process Model:gen/Team Documentation/BirdFeedr_Process_Model.pdf:Documentation
+annotations/Vision Statement:gen/Team Documentation/BusinessPlan.pdf:Documentation
+annotations/Project License:gen/Team Documentation/Creative Commons — Attribution-NonCommercial 4.0 International — CC BY-NC 4.0.pdf:Documentation
+annotations/Final Project Ideas:gen/Team Documentation/FinalProjectIdeas.pdf:Documentation
+annotations/Team Policies:gen/Team Documentation/Birdfeeder Policies.txt:Documentation

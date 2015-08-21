@@ -1,0 +1,7 @@
+Description:
+
+When you run this class it will show a main window that will allow child windows to spawn under it. 
+This class is mainly to demonstrate the possibility of tying multiple windows together safely within
+a single program.
+ 
+Also this is just a proof of concept and isn't fully documented.

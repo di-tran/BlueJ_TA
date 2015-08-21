@@ -1,0 +1,75 @@
+import java.awt.event.ActionEvent;
+
+import javax.swing.SwingUtilities;
+
+
+/**
+ * Write a description of class StateManager here.
+ * 
+ * @author Miguel Roman-Roman
+ * @author Wei Huang
+ * @author Di Tran
+ * @author Josh Gillham
+ * @author Nathan Witt
+ * @author Thomas Macari
+ * @version (03/21/2015)
+ */
+public class StateManager
+{
+	/** The current exercise chosen. */
+    public static Exercise currentExercise = null;
+    private static TestGUI testGUI = null;
+    public static DescriptionGUI descriptionGUI = null;
+    private static GUI gui = null;
+    
+    /**
+     * Creates the GUI showing the JUnit tests for the exercise.
+     */
+    public static void createTestGUI() {
+    	if (testGUI == null) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    testGUI = new TestGUI();
+                    testGUI.packGUI();
+                }
+            });
+    	} else if(!testGUI.isVisible()) {
+    		testGUI.setVisible(true);
+    	}
+    }
+    
+    /**
+     * creates the GUI for the description of the exercise.
+     */
+    public static void createDescriptionGUI() {
+    	if (descriptionGUI == null) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    descriptionGUI = new DescriptionGUI();
+                    descriptionGUI.packGUI();
+                }
+            });
+    	} else if(!descriptionGUI.isVisible()) {
+    		descriptionGUI.setVisible(true);
+    	}
+    }
+    
+    /**
+     * Creates the GUI for picking an exercise.
+     */
+    public static void createGUI() {
+    	if (gui == null) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    gui = new GUI();
+                    gui.packGUI();
+                }
+            });
+    	} else if(!gui.isVisible()) {
+    		gui.setVisible(true);
+    	}
+    }
+}

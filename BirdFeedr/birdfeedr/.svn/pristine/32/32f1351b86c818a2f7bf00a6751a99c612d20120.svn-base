@@ -1,0 +1,95 @@
+
+2015-03-02 14:17:14
+
+
+Josh: Maybe we choose
+
+Wei: we could have round robin rotation.
+
+Wei: we want to prototype to be more hands on. Touch and feel.
+
+Josh: characteristics.
+
+Josh: none of button should work.
+
+Wei: when you click that button it would do this.
+
+Josh: the UI expresses the visual interface and what it does for them.
+
+Miguel: goal of prototype.
+
+Wei: Conveyance.
+
+Miguel: We could present them an idea w/o a prototype.
+
+Wei: Goals: conveys what we want to do with project.
+    to get feedback
+
+Josh: we outsourcing the decision.
+   We should have a list of questions and things we want to get out 
+   of their feedback.
+
+Wei: maybe we should not do more than 3.
+
+We are all splitting up to work on designs.
+2015-03-02 14:39:47
+
+2015-03-02 15:14:36
+
+Thomas: likes the idea of codeback.
+
+Wei: the only problem is the scope.
+
+Thomas: we scope it down.
+
+   We set a framework of repository.
+   Instructors could load exercises and communicates with that.
+   A file system where you drop exercises.
+   We define how the exercises are built.
+   We have backend of how the exercises are built.
+
+
+Wei: Instructors make JUnit tests and we make a small framework.
+
+Thomas: define an XSD that professors stick.
+  Define a base framework.
+
+JOsh: it should be simple enough so that someone who knows how to use
+ a computer can use it.
+
+Everybody like the idea.
+
+Thomas: We have to scope it down.
+
+  Professors can add tests.
+  Testing our framework needs more than one test.
+
+Thomas: scoping is our biggest risk.
+  Before that our biggest risk was finding a project JP likes.
+  We have full control over scope.
+  Our previous risk we have no control over.
+
+Josh: We are being more more direct.
+  
+
+Goals:
+ Scope the project down.
+ Integrating into bluej.
+ Deck of cards.
+
+Wei, Thomas: Deck of cards.
+ 
+
+JOsh: what teachers see.
+
+Thomas: rights and priviledges.
+     do an exervicse.
+
+Wei, Miguel: will work on the add aspect.
+
+Thomas, Josh: add aspects
+
+These are due Wednesday b4 class.
+
+Thomas: shoot me an email with artifacts.
+2015-03-02 15:49:36

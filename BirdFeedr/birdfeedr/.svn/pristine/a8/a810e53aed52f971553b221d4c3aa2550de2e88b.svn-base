@@ -1,0 +1,112 @@
+package multiwindowexample;
+
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Toolkit;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+import java.util.ArrayList;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+/**
+ *
+ * @author Nathan
+ */
+public class MultiWindowExample extends JFrame implements ActionListener, WindowListener {
+
+    private static final Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+
+    private ArrayList<JFrame> children = new ArrayList<>();
+    private int totalChildrenSpawned = 1;
+    
+    private JButton spawnBtn, clearBtn;
+
+    public MultiWindowExample() {
+        super("Parent");
+        setSize(200, 200);
+        setResizable(false);
+        setLocationRelativeTo(null); //centers the jframe
+        setLayout(new FlowLayout()); //so buttons are next to eachother
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); //note this could be EXIT_ON_CLOSE but if this was within bluej it might close bluej as well, not 100% sure yet.
+        addWindowListener(this);
+
+        spawnBtn = new JButton("Spawn Child");
+        spawnBtn.addActionListener(this);
+        add(spawnBtn);
+
+        clearBtn = new JButton("Clear Children");
+        clearBtn.addActionListener(this);
+        add(clearBtn);
+
+        setVisible(true);
+    }
+
+    private void spawnChild() {
+        JFrame child = new JFrame("Child");
+        child.setSize(300, 100);
+        child.setResizable(false);
+        child.setLocation(
+                (int) (Math.random() * (dim.width - 300)),
+                (int) (Math.random() * (dim.height - 100)));
+
+        child.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        child.setLayout(new FlowLayout());
+        child.add(new JLabel("Im Child Number:" + totalChildrenSpawned++));
+
+        children.add(child);
+
+        child.setVisible(true);
+    }
+
+    private void closeChildren() {
+        while (!children.isEmpty()) {
+            children.remove(0).dispose();
+        }
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent ae) {
+        if (ae.getSource() == spawnBtn) {
+            spawnChild();
+        } else if (ae.getSource() == clearBtn) {
+            closeChildren();
+        }
+    }
+
+    @Override
+    public void windowOpened(WindowEvent we) {
+    }
+
+    @Override
+    public void windowClosing(WindowEvent we) {
+    }
+
+    @Override
+    public void windowClosed(WindowEvent we) {
+        closeChildren();
+    }
+
+    @Override
+    public void windowIconified(WindowEvent we) {
+    }
+
+    @Override
+    public void windowDeiconified(WindowEvent we) {
+    }
+
+    @Override
+    public void windowActivated(WindowEvent we) {
+    }
+
+    @Override
+    public void windowDeactivated(WindowEvent we) {
+    }
+
+    public static void main(String[] args) {
+        new MultiWindowExample();
+    }
+}

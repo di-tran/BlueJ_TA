@@ -1,0 +1,82 @@
+2015-04-25 12:24
+
+AGENDA
+- Rehearse
+- Final Presentation
+- Project Notebook
+- Individual Notebook
+
+DECISIONS
+- Final presentation draft to be started tonight
+- Everyone will stand fanning out, with three on the left and right.
+
+ACCOMPLISHMENTS
+- In BlueJ_Project -> Team Documentation -> Team Portfolio, the ToC and annotations
+- Documentation for source code complete
+- Began listing topics for final pres
+- Rehearsed presentation
+
+TO DO
+- Readmes need to be updated.
+
+UNANSWERED QUESTIONS
+
+RAW
+
+W: Pool
+
+M: I started annotations, in drive
+
+T: We’re at the point with the outline where we can just fill things out
+
+J So when using LaTeX, there’s a build file to build everything. I have a folder mapped to annotations and a folder mapped to the artifacts, and the document can be created by connecting these together.
+
+T I’ll probably be writing things up in word. We need someone to port from word to latex
+
+J Latex should be able to import.
+
+M We should be writing in google docs so theres no annotation redundancy.
+
+T Do it all in Miguel’s document, because Google Docs can track it. We can pull it down when we’re ready to publish it
+
+N We could make assignments
+
+J And it would take time for people to pull it down. If we had a folder layout, it’d be easier: everything would be mapped. Biggest concern: how do we get this done, really fast.
+Rough draft of final pres should be due this weekend. Final pres rough should be done by the 26th.
+
+T I’d rather work on the final when we’re done with our presentation.
+
+J But if we finish the rough this weekend, that’s less time. I’m a little stressed about that. I can start an outline of the final pres, and then we can revise it.
+
+PROCESS MODEL
+- We created user stories, and then code n fixed it.
+
+J I uploaded week by week notebook that we could use as an artifact
+
+T I’m going to take our smartboard pictures and make a flow diagram
+
+M What are we working on?
+
+W Don’t stress out out of the documents. The online copy is a placeholder for a hard copy, which is the definitive copy. He wants something online to know that it’s due.
+
+N Should we set up some systems to take care of the presentation. Like a process?
+
+J It needs to be organized.
+
+M List things we want to talk about for the presentation. Must relate to project & process.
+
+J Maybe our process is dichotomy. 
+
+W Shoot for 15 minutes. Not 20.
+
+T Does that include demo?
+
+M We should just do it, and however long it is, that’s how long it is
+
+D
+
+J Let’s flesh out some topics for the pres.
+
+T 2 of the 5 groups this semester had set roles; in ours we had people thrown wherever. 
+
+T We did not adhere to ONE process model. We took bits and pieces of different process models.

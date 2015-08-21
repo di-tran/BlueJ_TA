@@ -1,0 +1,269 @@
+2015-02-14 14:02:57 
+Product vision on the agenda
+
+General consensus to shelf project Git
+
+Wei: project git has lingered on unintentially.
+
+Miguel: shouldn't we come up with a vision statement and see if Git
+   fits under that.
+
+Wei: We need to work on our presentation.
+
+Nate: presentation and vision research could go together.
+
+Josh: we should be prioritzing by grade value.
+
+Wei: so the higher priority should be on vision.
+
+  Monday we could spend half on the vision
+  and the other half should be on the presentation.
+
+Di: so we should spend the rest of the time on the meeting on the vision.
+  lets move towards the vision.
+
+Wei: Extensions that faciliate learning for students and instructors.
+  that covers almost anything we could do on BlueJ.
+ Alternative: ext that specifically facilitate students and instructors.
+  pro -- we can ask students here and teachers.
+    so more contact with the client.
+
+Miguel: likes the 1st one b/c it gives us more freedom.
+
+Wei: A broad statement could come back to bite us  b/c
+  we don't have a sense of purpose..
+
+Miguel: if we get too narrow.
+
+Nate: groups last year had trouble with taking control of their own projects.
+
+SOURCE: http://www.changefactory.com.au/our-thinking/articles/the-components-of-a-good-vision-statement/
+
+Nate: we have our own vision statements. We just need to align them.
+
+
+Di: Do we all want to support the vision statement of helping students learn.
+
+Wei: I am.
+
+Nate: I think so. Teaching something you don't know and making something
+  you know easier.
+
+
+Di: BlueJ is meant as a learning experience first and a coding experience 2nd.
+
+Nate: Learning approaches should be like training wheels that people stop using.
+Wei: We could make a something like a paper clip from Word.
+
+Di: one of the major obstacles is the fear that I am jumping into something
+  I don't know.
+  Could we make an ext that overcomes that.
+
+Wei: The idea of coming up with a presentation similar to https://scratch.mit.edu/#
+  Similar to that but different.
+
+
+Josh: lets create a document to help us when we get confused.
+  One of the sections would have a vision statement.
+
+Wei: would we include decisions in that.
+
+Nate: maybe we failed at the coming together.
+
+Di: a vision should give people a picture.
+  Present tense.
+  Emotion.
+  Picture.
+  Expression.
+  Do not confuse with business goals.
+
+Josh: Students who love java haha.
+
+Wei: Simple. Evokes emotion. Summarizes with powerful phrase.
+   We make extensions that do things that are awesome.
+
+Di: Trying is putting us in the right mindset.
+
+Nate: We want to make a product that  when used by a CS student will enhance
+  their understanding.
+
+Wei: We make extensions that make learning java easy.
+
+Wei: I dream that our ext will make learning java easy.
+
+Di: Lets stay away from using ext.
+
+Wei: produce software to make learning Java easier.
+
+Miguel: Elicit the teaching of java in CS students.
+ elicit = draw out.
+
+Di: I will describe a pic in my head.
+  CS students approach CS students with an open mind and find it fun and rewarding.
+ Change the image from something imposible to fun and interactive.
+
+Josh: introduce more creativity.
+*Nate:
+
+Nate: programming college is very rule based.
+  I had fun being explorative and creative.
+
+Di: My drive was to make something and build.
+ The emotion was to build stuff.
+  but the rules get in the way.
+
+Nate: creative programmers are highly successful.
+
+Josh: We would like to inspire creativity in CS students.
+
+Wei: Inspire CS students to become better programmer.
+
+Di: We strive to remove to remove barriers of computer science to make it
+  a rewarding experience.
+2015-02-14 15:03:15 
+2015-02-14 15:07:54 
+
+The vision gives us a broad scope and direction.
+  It keeps us from getting confused.
+
+The project or business goals help accomplish that vision.
+
+Di: Leave everything we have worked on in a ready state or continue working?
+
+Conitnue working.
+
+Meeting break.
+2015-02-14 15:09:28 
+2015-02-14 15:12:26 
+
+Wei: the last 10 minutes we should prepare the atatus update.
+
+Wei: we need proper justification for vision statement.
+
+Josh: each barrier b/c a project.
+
+Di: i.e. Java syntax, compiler errors, bugs that show up.
+
+Nate: unnatural incorporations of the java syntax.
+
+Di: Differences b/t the way holiwood portrays CS and reality.
+
+Josh: students can't easily make connections b/t statements and behavior.
+
+WeI: remove the end: rewarding*
+
+Di: wants to keep rewarding in.
+
+Miguel: implies CS is not rewarding.
+
+Nate: we know a secret about CS.
+
+Josh: We strive to encourage education by give students over their learning experience.
+
+Josh: We seek to make programming a fun and interactive learning experience.
+
+Wei: Project idea: jargon library explains typical constructs i.e. int i = 0;
+ 
+Miguel: Simplify the teaching of computer science to students.
+
+
+Nate: Faciliate learning why? That is where the emotion.
+
+Josh: the current state is that most people drop CS classes.
+
+Josh: help people reach their dreams of computer science creativity
+  by removing the barriers that make learning programming difficult.
+
+Wei: to help people reach their dreams of computer science creativity by making the barriers of programming less difficult.
+
+
+Wei: This is what we want to do and this how we will do it.
+  What we want and how we want.
+
+Di: Lowers the barriers => we will make you easier.
+
+Miguel: You could also think of it as we lower it all the way.
+
+Nate: One makes the programmer stronger.
+
+Di: We do have the power to make it easier to learn.
+
+Nate: if we want them to learn then they will eventually need to tackle that
+   those goals.
+
+Wei: 2nd a little. We remove thE barriers and not their barriers.
+  make a reference to them.
+
+Josh: what are the state of the barriers to programming.
+
+Nate: we help them navigate the barriers to programming.
+
+Di: the tools help them overcome permentantly.
+
+Wei: I pick miguel's.
+
+Di: Should we be allowed to change this later?
+  If no then put weight on this being the right vision statement.
+
+Di: Lets get everyone's opinions.
+
+Josh: I think its down to the precision we need.
+
+Miguel: It encompasses everything.
+
+Nate: Its good. We never not want to make a tool
+
+Di: Based on the above reasons, I think its good.
+
+Vision Statement:
+
+To help people reach their computer science dreams by providing tools that help overcome barriers of programming.
+
+2015-02-14 16:02:39 
+2015-02-14 16:02:55 
+
+To inspire people to reach their computer science dreams by providing tools that help them overcome barriers of programming.
+
+Status update:
+
+---
+
+Nate: if we had a policy doc then people prefix a tangent with "this is a tanget".
+
+Di: a tanget should be done.
+
+Status update:
+
+Created our vision statement.
+   Our mission statement is ...
+
+Brought unity back to our team.
+
+Talked about issues dividing us.
+
+   philisophy -- con of splitting up is the difficulty rejoining.
+
+New policy for tangents.
+
+Closing out project Git.
+  Nate could explain why.
+  Nate -- git was not a bad project.
+    trying to run too fast.
+    the project was making the decisions.
+
+New policy about final decisions.
+    go into a final decision with consensus has to unanimous.
+    to break a decision we need unanimous decisions.
+
+Create a document to help us when we feel confused 
+  that includes the vision statement.
+--
+
+Update Thomas.
+
+Wei: make decision section in the document (vision document).
+
+Next class first half on presentations and 2nd half on project topics.
+  2nd half after the break.
+
+2015-02-14 16:29:45 

@@ -1,0 +1,1 @@
+This artifact is a set of user stories that the team came up with. We created user stories to serve as requirements for the project. The user stories helped the team scope down the extension’s functionalities to a concrete list of scenarios, and overall these stories allowed the team to share a common goal, even when the team split up.

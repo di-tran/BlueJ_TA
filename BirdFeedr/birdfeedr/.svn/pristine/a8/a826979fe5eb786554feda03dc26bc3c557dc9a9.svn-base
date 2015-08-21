@@ -1,0 +1,8 @@
+main.class=GitDemo
+jar.name==myTestExt.jar
+build.dir=build
+dist.dir=dist
+source.dir=src
+results.dir=results
+manifest.class.path=org.eclipse.jgit-3.6.2.201501210735-r.jar
+require.class=org.eclipse.jgit.api.InitCommand

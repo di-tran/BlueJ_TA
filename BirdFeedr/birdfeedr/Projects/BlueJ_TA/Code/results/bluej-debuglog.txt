@@ -1,0 +1,21 @@
+BlueJ run started: Tue May 05 02:51:08 MDT 2015
+BlueJ version 3.1.4
+Java version 1.8.0_20
+Virtual machine: Java HotSpot(TM) 64-Bit Server VM 25.20-b23 (Oracle Corporation)
+Running on: Mac OS X 10.10.2 (x86_64)
+Java Home: /Applications/BlueJ/BlueJ.app/Contents/Frameworks/jdk.framework/Versions/A/Contents/Home/jre
+----
+Detected language "english" based on iso639-2 code "eng"
+getExtensionsClass: jarFile=jfxrt.jar Manifest does not contain Main-Class attribute
+null
+ex: exercises/SortExercise.xml
+ex: exercises/PermutationExercise.xml
+Size: 2
+getExtensionsClass: jarFile=bluejext.jar Manifest does not contain Main-Class attribute
+getExtensionsClass: jarFile=jfxrt.jar Manifest does not contain Main-Class attribute
+getExtensionsClass: jarFile=junit-4.8.2.jar Manifest does not contain Main-Class attribute
+Opening project: /Users/Ditran/BirdFeedr/birdfeedr/Sandbox/Nate/BlueJ_TA(RefactorB)/src
+1430815870373: Listening for JDWP connection on address: 127.0.0.1:53938
+Connected to debug VM via dt_socket transport...
+Communication with debug VM fully established.
+BlueJ TA Terminated

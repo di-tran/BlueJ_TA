@@ -1,0 +1,71 @@
+2015-04-11 15:12
+PROJECT NAME MEETING!
+2015-04-11 16:10
+
+DECISIONS
+Birdfeedr is NOT the project name
+Send name BlueJ TA to Jody / team
+
+Title: BlueJ TA
+
+BLURB
+“BlueJ Teacher’s Assistant” supports beginning CS students and instructors by integrating practice problems with automated feedback into the BlueJ Java IDE.
+
+SUGGESTIONS
+BlueJ_CodingPractice
+1. Generic
+2. Underscore - hard to type when searching for extension
+3. 
+
+BlueJ Coding Practice
+
+Practice Problems via BlueJ: you’re going to practice what’s available
+1. It doesn’t provide enough meaning to the audience
+2. Doesn’t sound like an extension
+3. Sounds static
+
+Integrated Practice Problems Extension
+1. Makes it looks like it comes with everything
+2. Integrated into what?
+
+BlueJ Integrated Practice Problems
+
+Practice Problems with Feedback
+
+Tutor / Reviewer / tester / educator / trainer / mentor / checker / drill
+Analysis / 
+
+Programming Practices Extension
+
+Code T.A.
+
+CodeReviewr
+
+Exercise Reviewr
+1. What kind of exercises?
+2. Exercise is ambiguous
+3. 
+
+Code and Test
+
+BlueJ T.A.
+1. Implies it’s only for teachers
+2. Implies learning the BlueJ IDE
+3.
+
+BlueJTA
+BlueJ TA ODD
+BlueJ T.A. EVEN
+BlueJ Teacher’s Assistant
+
+
+
+
+
+Programming exercises extension
+Coding practice via BlueJ extensions
+CodingBird
+
+BlueB
+Code N Check
+CodingJ

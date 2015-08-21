@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ createTestGUI()
+comment0.text=\r\n\ Creates\ the\ GUI\ showing\ the\ JUnit\ tests\ for\ the\ exercise.\r\n
+comment1.params=
+comment1.target=void\ run()
+comment2.params=
+comment2.target=void\ createDescriptionGUI()
+comment2.text=\r\n\ creates\ the\ GUI\ for\ the\ description\ of\ the\ exercise.\r\n
+comment3.params=
+comment3.target=void\ run()
+comment4.params=
+comment4.target=void\ createGUI()
+comment4.text=\r\n\ Creates\ the\ GUI\ for\ picking\ an\ exercise.\r\n
+comment5.params=
+comment5.target=void\ run()
+numComments=6

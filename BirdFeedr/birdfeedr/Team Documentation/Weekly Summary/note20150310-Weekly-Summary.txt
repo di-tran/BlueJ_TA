@@ -1,0 +1,17 @@
+
+2015-03-10 22:52:58
+
+
+Monday
+ - JP announces that he would like to see deliverables from
+    each group since we were all agile. He said as agile
+    we should always have something running.
+ - He wanted to be able to build our repository from its source.
+ - Our group failed to have something ready to show him. This happened
+   because we did not even have our first iteration complete so
+   of course there was nothing to show.
+ - He went through our repository and told us that it was not ready
+   or in a ready state.
+ - Since he is our primary stake holder, we have devoted human resources
+   to making the repository better organized and documented.
+2015-03-10 22:57:22

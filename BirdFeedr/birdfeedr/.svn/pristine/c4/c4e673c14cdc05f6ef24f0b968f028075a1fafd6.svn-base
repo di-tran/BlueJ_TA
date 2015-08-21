@@ -1,0 +1,23 @@
+import java.awt.event.ActionEvent;
+
+import javax.swing.AbstractAction;
+
+import bluej.extensions.BPackage;
+
+public class CodingActions extends AbstractAction{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	public CodingActions(String menuName, BPackage bPackage){
+		putValue(AbstractAction.NAME, menuName);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+Exploration Summary: Team Chirp
+Jan. 29th, 2015
+
+SUMMARY OF KNOWLEDGE LEARNED:
+- BlueJ’s API is composed of events and listeners: if a certain event happens,
+  a listener can be implemented to find the event.
+- The API has a CompileListener interface and a CompileEvent class.
+- BlueJ’s default path for finding files differs depending on the OS it is installed on:
+  - In Windows, it defaults to its install directory
+  - In OSX, it defaults to the user’s home directory
+  - Use bluej.getSystemLibDir() and bluej.getUserConfigDir() to obtain 
+    the system’s default library directory and user config directory respectively.
+  - To obtain an absolute path to the library’s directory, use:
+    bluej.getSystemLibDir().getAbsolutePath() 
+
+EXTENSION VERSIONS:
+1. Implementation of SimpleExtension
+2. Creates JBox upon successful compile
+3. Creates JBox and plays designated .wav file upon successful compile

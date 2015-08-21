@@ -1,0 +1,406 @@
+2015-04-04 14:03
+
+Agenda:
+- Discuss backend design
+
+Josh
+I feel like we’ve made good progress. 
+
+W
+You guys just checking out the new Junit runner?
+(yes)
+J
+Noticed minor exemptions, but a result of build. 
+What we need to do is make an easy build system. 
+General design of classes could be … 
+For example, some things hardcoded in state manager. 
+
+N
+Tried swapping them with BlueJ calls already.
+
+J
+We proved that it works, let’s make everything more abstract.
+Refactoring is our next step.
+Lots of magic numbers.
+Make clean, beatuifl, error free code. Clean up the build.
+
+W
+Maybe apply checkstyle?
+(sure)
+
+J
+Apply design patterns too, maybe?
+When it’s loading exercises, should load from inside jar / local repo / etc. 
+Don’t implement that, but make design abstract enough that it can transition there.
+
+W
+Could use design patterns like wrappers for future implementations.
+
+J
+Let’s not rely on design patterns; let’s just clean it up.
+
+W
+A lot of stuff has been hardcoded - it had to be demoed.
+After demo we should clean this stuff up.
+Should be able to refactor it.
+
+J
+Let me show you guys something (screenshared)
+If I create a jar in bluej, and check “include bluej project files’ and I make that jar..
+It will actually take a while, because it will process a 15MB file. 
+But what I get is a jar file that includes lots of files.
+When it finishes itll be 6MB
+We’ll include everything like this .ctxt files, .bat files, .xml and even +libs folders.
+So this means if there’s a resource that you need access to, just put it in the jar and
+load it internally.
+Be aware of this feature & how we can use.
+
+W
+How do you want us to use it?
+
+J
+If there’s a file the extension needs to refer to, include it in the project folder
+and check ’include bluej project files’ to refer to it.
+For example, resources folder can be included if copied into proj. dir., bluej will make 
+jar including that folder
+
+N
+Disadvantage, can’t dynamically include more xml files
+
+J
+Need abstraction to make that work
+
+W
+We have prebuild exercises & external folder to create exercises?
+
+J
+No, I want to redesign and have it flexible enough to do both. 
+All included exercises live in jar.
+And maybe have a way to change repos.
+
+W
+Probably won’t get done tbh
+Have a few pre built exercises & load from repository.
+Should be able to do this with a redesign.
+
+J
+We’re not implementing it.
+
+W
+Just refactoring to implement in the future.
+
+Have an idea about exercise locations.
+Create a preference document, like in games, that saves preferences like where files would
+be loaded from.
+It could keep records of previously completed exerices.
+Out of scope but possible
+
+J
+Yes
+
+N
+BlueJ includes it.
+setextensionpropertystring() - sets property of extension into bluej repository.
+
+J
+That was my findings. Anyone else want to report theirs
+
+W
+Thinking about what happens after load.
+After putting load button, GUI pops up to load new exercise or new exercise
+Lets them go back or refresh whole exercise.
+
+J
+Sounds cool
+
+W
+Might not happen right after load. Would be good as a tools option.
+In same dropdown menu, as an option. 
+Might be out of scope, but follows load user story.
+Exercise location: aside from being inside our jar, could be in a local directory.
+In light of OSX/Windews differences… have code check OS before creating dir
+
+J
+
+N
+ExtensionPathGen
+
+W
+Create own dir. inside user/BlueJ wihch says ‘exercises’, loaded in there.
+pull from that folder specifically, and load it. If not, create new one.
+(liked)
+
+J
+Not a lot on my plate, but what about everyone else?
+
+W
+Algorithms test, psychology test, econ test all in this week. + This class.
+Should be free after this monday.
+
+D
+Directing. Plan rehearsals mondays / fridays. Will have this on plate through end of semester
+
+N
+Pretty free. Have a rigid bodies class, kind of easy. Test on monday.
+
+J
+Did you guys hear anything from others?
+
+W
+Miguel might have calc 3 test, can’t say for sure.
+
+N
+Report on what I’ve done:
+main concern - project can load and execute exercises.
+
+W
+na load through xml but hows test on junit runner? 
+
+N
+Not caching anymore.
+Runner should work if setup crrectly. Not tied to loading exercises at all.
+Has to be hoardcoded and in a specific spot.
+That part of backend - takes xml and makes a spot of junit to see - needs to be created.
+JUnit runner integrated, and design ideas proposed in the sandbox. 
+A little worried about the understanding of how this works is lacking; lack of bluej apis knowledge.
+
+W
+Tried looking for bluej accessors to junit
+
+N
+Runner uses BlueJ’s Junit jar. No need for manifest changes.
+
+J
+Worried that members don’t understand BlueJ API and how the code works?
+(Yeah)
+
+D
+I can attest to that.
+
+W
+A lot of it has to be connected to javafx. Many classes are javafx handiling.
+
+N
+GUIs and FXML are all 1-1, and actions are one to one. Every GUI has execute action.
+
+W
+Do you know a better way to do that?
+
+N
+Might be able to bake them in teh calsses as privates stacti. Will still exist, but not a node.
+
+J
+Since everybody’s busy… what if the busy people shift to the presentation?
+It could take a lot of work, but maybe if everybody has something to do, let’s put on a 
+presentation.
+Less work for all those people; more free people to design.
+Next presentation date undecided.
+
+W
+Can last presentation be a draft for the final?
+
+J
+That could be our EC presentation to get feedback.
+
+W
+We could do that.
+Presentation on vision statement?
+
+J
+Vision Pres
+Draft Pres
+
+N
+Time. 6 weeks?
+
+D
+4 weeks. Everything is due the 4th.
+
+J
+All of this month.
+
+N
+Worried about manhours. Presentations + notebooks + projects = lot of time.
+
+J
+Others might have time. I do. Nate does. Wei will. It’s plausible. Shoot for vision pres
+on 15th.
+Then present final pres on 29th for feedback.
+
+W
+Regardless, we have to do the final. Doing it right before allows feedback.
+Regardless of manhours & metrics, it still needs to be done.
+
+J
+Would be doing an extra presentation as extra credit. 
+How much to gain if we do this?
+
+W
+It would be good to practice.
+
+D
+Would this be approved?
+
+J
+What about last wednesdays pres.
+
+N
+I imagine final one to be about the final product.
+
+J
+I’d like to talk to him too.
+
+W
+I can swing by his office and ask about that.
+
+J
+Also ask for final pres advice.
+
+D
+Is everyone passionate about vision pres?
+
+W
+Even a left field pres would be okay as long as we’re passionate about it.
+
+J
+Our presentation should be something we relate to in a personal way.
+ie here are some pointers.
+
+D
+Vision statements stems from our personal experience.
+
+W
+How about BlueJ extension presentation?
+— I can make a draft. —
+
+D
+What’s next?
+
+J
+I wanted to get a feel for why we weren’t productive. 
+In our status we should say we were busy and didnt produce a lot of stuff.
+So that’s what we should do in our status.
+
+D
+what should our client expect
+
+J
+Our decision was to spend time redesigning.
+There are some issues that we can cover.
+That’s our direction
+
+N
+not a design issue because it doesnt exist yet.
+what happens fater load button pressed doesnt exist.
+no class that does anything.
+
+J
+Do we clean it up or design a load or do both?
+
+N
+At the end of the semester, I really want to make it run and demo-able.
+
+D
+I want to do both, but is that possible given our time
+
+W
+Yeah, but it depends on our time investment. Must be cleaned before adding more stuff..
+
+N
+Can be modulized. Someone can work on it while someone else cleans it up.
+
+W
+Risky - cleaning things up neglects the knowldege of the module. 
+Need prior info of the module.
+
+J
+How much more code would it take to create this load feature module?
+
+W
+One or two classes.
+
+N
+It wouldn’t be that much since compiler exists - would be part of that module
+Main issue is knowing waht to do. 
+Knowing what the module ..
+Wouldn’t take effort if you knew what to do.
+
+J
+Needs some research.
+
+N
+One line of code = 5 hours, as an example possibly.
+
+J
+Proposal: 11th to get load button working.
+
+N
+I like deadlines. (not sarcastic)
+
+W
+Currently, load button just loads exercises. What else should it do.
+Gui is making menu from xml files.
+Used to be able to, from state manager, remember loaded exercises.
+
+J
+Miscommunication?
+
+N
+Loads exercise, does nothing with it. Doesn’t create a new project.
+Doesn’t do anything that benefits the junit runner.
+
+W
+Seeing as how a lot of people are busy, the 11th is a good deadline. 
+
+J
+If we finish early, clean it up.
+The 11th is for a ready state. 
+
+W
+I made a draft / outline of our project notebook.
+For personal portfolio, hard copy needed? & Project notebook, pdf needed?
+
+J
+Another thing to ask Jody. Notebook or portfolio a physical copy?
+
+W
+11th deadline good for mentoring new people into code roles.
+will make a list of concerns, to place on GDrive. Under team documentation
+-> Things to consider.
+
+
+
+J
+Who wants to take circle notes on monday?
+
+W
+Two scribes? Notes can be compared and merged, and allows conversations.
+Redundant. But like big brother.
+Scribe and scriber’s scribe (only notes scribe’s speech).
+
+N
+Assignment of scribes as part of agenda.
+
+MONDAYS AGENDA
+Status update
+ask miguel / thomas for questions
+go over what needs to be done again
+pair programming on pres / backend design on load button
+
+End time: 2015-04-04 15:22
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Status Update
+
+- M/T integrated parser.
+- W reviewed pres with D/J
+- N looked at caching issues and solved them. New JUNit runner works.
+- Rehearsed, gave, and recieved feedback on presentation.
+- Reflected 
+- Started mishmashing hats. Me taking notes. 
+- decided to redesign backend
+- answer ‘where exercise files live’ and ‘what happens after ‘load’ clicked’
+- talked about future of project & class
+- set internal deadline for load button : april 11th.
+- talked about pres dates. 15th for new one; 29th for draft (if possible). 

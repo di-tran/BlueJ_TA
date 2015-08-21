@@ -1,0 +1,19 @@
+import static org.junit.Assert.assertEquals;
+import org.junit.Test;
+import org.junit.BeforeClass;
+
+public class TestClass {
+   
+    private static StudentWork student;
+    
+    @BeforeClass
+    public static void setup(){
+        student = new StudentWork();
+    }
+    
+    @Test
+    public void testAdd(){
+        assertEquals("1+2=3? ", student.add(1,2), 3);
+    }
+    
+}

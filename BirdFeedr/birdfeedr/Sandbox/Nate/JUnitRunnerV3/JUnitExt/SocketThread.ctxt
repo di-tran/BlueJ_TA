@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=port
+comment0.target=SocketThread(int)
+comment1.params=s
+comment1.target=SocketThread(java.net.Socket)
+comment2.params=
+comment2.target=void\ run()
+comment2.text=\r\n\ Reads\ incoming\ messages\ and\ stores\ them\ in\ the\ message\ buffer.\ Then\r\n\ notifies\ all\ objects\ waiting\ on\ this\ thread\ when\ it\ exits.\r\n
+comment3.params=
+comment3.target=java.lang.String\ readIn()
+comment3.text=\r\n\ Removes\ and\ returns\ the\ first\ message\ in\ the\ message\ buffer.\r\n\r\n\ @return\ the\ message\ from\ the\ message\ buffer,\ null\ if\ the\ buffer\ is\ empty.\r\n
+comment4.params=
+comment4.target=java.lang.String\ readInAll()
+comment4.text=\r\n\ Removes\ and\ returns\ all\ the\ messages\ in\ the\ message\ buffer\ as\ one\ string.\r\n\r\n\ @return\ the\ messages\ from\ the\ message\ buffer.\r\n
+comment5.params=msg
+comment5.target=void\ sendOut(java.lang.String)
+comment5.text=\r\n\ Sends\ the\ message\ out\ through\ this\ threads\ underlying\ socket.\r\n\r\n\ @param\ msg\ the\ message\ to\ send.\r\n
+comment6.params=
+comment6.target=void\ close()
+comment6.text=\r\n\ Closes\ this\ threads\ underlying\ socket,\ causing\ this\ thread\ to\ terminate.\r\n
+numComments=7

@@ -1,0 +1,158 @@
+import java.awt.event.ActionEvent;
+import javax.swing.SwingUtilities;
+import java.util.ArrayList;
+import java.io.File;
+import org.junit.runner.Result;
+import java.io.*;
+import javax.swing.*;
+
+
+/**
+ * Write a description of class StateManager here.
+ * 
+ * @author Miguel Roman-Roman
+ * @author Wei Huang
+ * @author Di Tran
+ * @author Josh Gillham
+ * @author Nathan Witt
+ * @author Thomas Macari
+ * @version (03/21/2015)
+ */
+public class StateManager
+{
+    /** The current exercise chosen. */
+    public static Exercise currentExercise = null;
+    public static TestGUI testGUI = null;
+    public static DescriptionGUI descriptionGUI = null;
+    public static GUI gui = null;
+    private static ArrayList<Exercise> exercises = null;
+    private static StateManager instance = null;
+    
+    /**
+     * 
+     */
+    private StateManager() {
+    }
+
+    /**
+     * 
+     */
+    private static void parseExercises() {
+      
+    }
+   
+    
+    /**
+     * 
+     */
+    private static void initialize() {
+        exercises =  new ArrayList<Exercise>(25);
+        String desc = "", ex = "";
+        for(int i = 0; i < 300; i++) {
+            desc = desc + "z";
+            ex = ex + "a";
+        }
+        //temporary
+        exercises.add(new Exercise("Fib" , desc, ex));
+        for(int i = 1; i < 25; i++) {
+            exercises.add(new Exercise("Exercise: " + i, "desc", "example"));
+        }
+        
+    }
+    
+     /**
+     * 
+     */
+    public static StateManager getInstance() {
+        if (instance == null){
+            instance = new StateManager();
+            initialize();
+        }
+        
+        return instance;
+    }
+    
+     /**
+     *  void?
+     */
+    public static Result runExerciseTests() {
+        //exercise needs to hold its location
+        
+        Interface tester = new Interface();
+        File file = new File("TestClass.class");
+        return tester.test(file);
+    }
+     
+    /**
+     * 
+     */
+    public static void testFile() {
+        Interface tester = new Interface();
+        File file = new File("TestClass.class");
+        
+        Result result = tester.test(file);
+        System.out.println("File: " + file.toString() + " , " + result.toString());
+        System.out.println("Result: " + result.getFailures().toString());
+    }
+    
+    /**
+     * 
+     */
+    public static ArrayList<Exercise> getExerciseList() {
+        if(exercises == null) {
+            initialize();
+        }
+        return exercises;
+    }
+    
+    /**
+     * Creates the GUI showing the JUnit tests for the exercise.
+     */
+    public static void createTestGUI() {
+        if (testGUI == null) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    testGUI = new TestGUI();
+                    testGUI.packGUI();
+                }
+            });
+        } else if(!testGUI.isVisible()) {
+            testGUI.setVisible(true);
+        }
+    }
+    
+    /**
+     * creates the GUI for the description of the exercise.
+     */
+    public static void createDescriptionGUI() {
+        if (descriptionGUI == null) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    descriptionGUI = new DescriptionGUI();
+                    descriptionGUI.packGUI();
+                }
+            });
+        } else if(!descriptionGUI.isVisible()) {
+            descriptionGUI.setVisible(true);
+        }
+    }
+    
+    /**
+     * Creates the GUI for picking an exercise.
+     */
+    public static void createGUI() {
+        if (gui == null) {
+            SwingUtilities.invokeLater(new Runnable() {
+                @Override
+                public void run() {
+                    gui = new GUI();
+                    gui.packGUI();
+                }
+            });
+        } else if(!gui.isVisible()) {
+            gui.setVisible(true);
+        }
+    }
+}

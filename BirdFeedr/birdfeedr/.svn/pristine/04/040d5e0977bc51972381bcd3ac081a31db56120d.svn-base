@@ -1,0 +1,54 @@
+<project name = "JUnitRunner" basedir = "." default = "main">
+
+    <property name = "src.dir" value = "src"/>
+    <property name = "classes.dir" value = "classes"/>
+    <property name = "jar.dir" value = "dist"/>
+
+    <property name = "lib.dir" value = "lib"/>
+
+    <property name = "main-class" value = "JUnitRunnerDemo"/>
+
+    <path id = "classpath">
+        <fileset dir="${lib.dir}" includes="**/*.jar"/>
+    </path>
+
+    <target name = "clean">
+        <delete dir ="${classes.dir}"/>
+        <delete dir ="${jar.dir}"/>
+    </target>
+
+    <target name = "compile">
+        <mkdir dir = "${classes.dir}"/>
+        <javac includeantruntime="false" srcdir = "${src.dir}" destdir = "${classes.dir}" classpathref = "classpath"/>
+    </target>
+ 
+    <target name = "jar" depends = "compile">
+        <mkdir dir = "${jar.dir}"/>
+        <manifestclasspath property = "jar.classpath" jarfile = "${ant.project.name}.jar">
+            <classpath refid = "classpath"/>
+        </manifestclasspath>
+
+        <jar destfile = "${jar.dir}/${ant.project.name}.jar" basedir = "${classes.dir}">
+            <manifest>	
+                <attribute name = "Main-Class" value = "${main-class}"/>
+                <attribute name = "Class-Path" value = "${jar.classpath}"/>
+            </manifest>
+        </jar>
+
+        <copy todir = "${jar.dir}/${lib.dir}">
+            <fileset dir = "${lib.dir}" includes = "**"/>
+        </copy>
+
+        <copy todir = "${jar.dir}">
+            <fileset dir = "demoCode" includes = "**"/>
+        </copy>
+    </target>
+
+    <target name = "run" depends = "jar">
+        <java jar= "${jar.dir}/${ant.project.name}.jar" fork = "true" dir = "${jar.dir}"/>
+    </target>
+
+    <target name = "main" depends = "clean, run"/>
+
+
+</project>

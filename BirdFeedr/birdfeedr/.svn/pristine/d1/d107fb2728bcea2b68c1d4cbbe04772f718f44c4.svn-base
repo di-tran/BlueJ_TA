@@ -1,0 +1,1261 @@
+------------------------------------------------------------------------
+r300 | jgillham | 2015-05-01 17:12:52 -0600 (Fri, 01 May 2015) | 1 line
+
+Updated the READMEs and styled.
+------------------------------------------------------------------------
+r299 | jgillham | 2015-05-01 16:45:29 -0600 (Fri, 01 May 2015) | 1 line
+
+Removed unprinted funny chars in log.
+------------------------------------------------------------------------
+r298 | jgillham | 2015-05-01 16:44:42 -0600 (Fri, 01 May 2015) | 1 line
+
+Added new READMEs for Project BlueJ TA.
+------------------------------------------------------------------------
+r297 | jgillham | 2015-05-01 16:38:11 -0600 (Fri, 01 May 2015) | 1 line
+
+Renamed root readme to README.
+------------------------------------------------------------------------
+r296 | jgillham | 2015-05-01 09:58:11 -0600 (Fri, 01 May 2015) | 1 line
+
+Wrote script to grab updates from Google drive, but, should be used with caution.
+------------------------------------------------------------------------
+r295 | jgillham | 2015-05-01 09:51:11 -0600 (Fri, 01 May 2015) | 1 line
+
+Added script to clean up junk files.
+------------------------------------------------------------------------
+r294 | jgillham | 2015-05-01 09:50:54 -0600 (Fri, 01 May 2015) | 1 line
+
+Added Google Drive file change report.
+------------------------------------------------------------------------
+r293 | jgillham | 2015-05-01 09:49:34 -0600 (Fri, 01 May 2015) | 1 line
+
+Added Sandbox files from Google Drive.
+------------------------------------------------------------------------
+r292 | jgillham | 2015-05-01 09:48:30 -0600 (Fri, 01 May 2015) | 1 line
+
+Cleaned up *.class *.ctxt in my sandbox.
+------------------------------------------------------------------------
+r291 | jgillham | 2015-05-01 09:46:09 -0600 (Fri, 01 May 2015) | 1 line
+
+Added Team Documentation from Google Drive.
+------------------------------------------------------------------------
+r290 | jgillham | 2015-05-01 09:44:46 -0600 (Fri, 01 May 2015) | 1 line
+
+Added project documentation from Google Drive.
+------------------------------------------------------------------------
+r289 | jgillham | 2015-05-01 09:35:49 -0600 (Fri, 01 May 2015) | 1 line
+
+Uploaded Presentation 2.
+------------------------------------------------------------------------
+r288 | jgillham | 2015-05-01 09:29:13 -0600 (Fri, 01 May 2015) | 1 line
+
+Added PDFs for Presentation 1.
+------------------------------------------------------------------------
+r287 | jgillham | 2015-05-01 09:27:27 -0600 (Fri, 01 May 2015) | 1 line
+
+Uploaded Presentation 3.
+------------------------------------------------------------------------
+r286 | jgillham | 2015-05-01 09:19:20 -0600 (Fri, 01 May 2015) | 1 line
+
+Moved folders into BlueJ TA Documentation.
+------------------------------------------------------------------------
+r285 | jgillham | 2015-05-01 09:10:48 -0600 (Fri, 01 May 2015) | 1 line
+
+Deleted files in my own folder.
+------------------------------------------------------------------------
+r284 | nwitt | 2015-04-30 16:42:27 -0600 (Thu, 30 Apr 2015) | 1 line
+
+Edited the examples in SortExercise.xml to be in brackets.
+------------------------------------------------------------------------
+r283 | jgillham | 2015-04-30 15:53:34 -0600 (Thu, 30 Apr 2015) | 1 line
+
+Added screenshots showing GUI.
+------------------------------------------------------------------------
+r282 | nwitt | 2015-04-29 15:38:39 -0600 (Wed, 29 Apr 2015) | 1 line
+
+Added some diagrams depicting execution of a test in BlueJ TA.
+------------------------------------------------------------------------
+r281 | dtran | 2015-04-29 00:05:34 -0600 (Wed, 29 Apr 2015) | 1 line
+
+Added meeting notes for 4/27
+------------------------------------------------------------------------
+r280 | whuang | 2015-04-29 00:05:15 -0600 (Wed, 29 Apr 2015) | 1 line
+
+Edited the Readme.txt file to better represent our SVN and a note about using the ant build file instead of manually building the project.
+------------------------------------------------------------------------
+r279 | mroman | 2015-04-28 17:27:32 -0600 (Tue, 28 Apr 2015) | 1 line
+
+created JavaDoc html documents. modified Javadoc for some classes
+------------------------------------------------------------------------
+r278 | jgillham | 2015-04-27 16:00:43 -0600 (Mon, 27 Apr 2015) | 1 line
+
+Created a report for the lines of code of each project.
+------------------------------------------------------------------------
+r277 | dtran | 2015-04-25 16:31:29 -0600 (Sat, 25 Apr 2015) | 1 line
+
+Added notes for 4/22
+------------------------------------------------------------------------
+r276 | dtran | 2015-04-25 16:30:16 -0600 (Sat, 25 Apr 2015) | 1 line
+
+Added today's meeting notes.
+------------------------------------------------------------------------
+r275 | jgillham | 2015-04-23 12:58:27 -0600 (Thu, 23 Apr 2015) | 1 line
+
+Fixed the build issue with Macs.
+------------------------------------------------------------------------
+r274 | jgillham | 2015-04-23 09:39:42 -0600 (Thu, 23 Apr 2015) | 1 line
+
+Uploaded note book entries that summarize progress.
+------------------------------------------------------------------------
+r273 | mroman | 2015-04-22 13:47:39 -0600 (Wed, 22 Apr 2015) | 1 line
+
+made small changes to Javadoc and renamed GUI windows
+------------------------------------------------------------------------
+r272 | mroman | 2015-04-22 13:25:13 -0600 (Wed, 22 Apr 2015) | 1 line
+
+added Javadoc to most classes
+------------------------------------------------------------------------
+r271 | nwitt | 2015-04-22 13:05:45 -0600 (Wed, 22 Apr 2015) | 1 line
+
+Touched up some of the documentation in the JRunner and remove thread classes.
+------------------------------------------------------------------------
+r270 | nwitt | 2015-04-22 02:52:51 -0600 (Wed, 22 Apr 2015) | 1 line
+
+Fixed some documentation typos.
+------------------------------------------------------------------------
+r269 | nwitt | 2015-04-22 02:36:47 -0600 (Wed, 22 Apr 2015) | 3 lines
+
+Added some documentation to the JRunner, Exercise, and FileUtil classes. 
+Also refactored the Exercises execute method and added the RemoveThread as part of the refactoring.
+
+------------------------------------------------------------------------
+r268 | jgillham | 2015-04-21 18:55:03 -0600 (Tue, 21 Apr 2015) | 1 line
+
+Reverted to older build code to ensure Macs can build.
+------------------------------------------------------------------------
+r267 | nwitt | 2015-04-21 15:50:36 -0600 (Tue, 21 Apr 2015) | 2 lines
+
+Fixed the sort exercise bug. 
+Now checks ascending order as intended and the sample answer has been updated to fit this change as well. 
+------------------------------------------------------------------------
+r266 | jgillham | 2015-04-21 15:34:57 -0600 (Tue, 21 Apr 2015) | 1 line
+
+Major update to the build.xml. Linux support added.
+------------------------------------------------------------------------
+r265 | jgillham | 2015-04-20 16:04:30 -0600 (Mon, 20 Apr 2015) | 1 line
+
+Working on Java files to be outside of the xml.
+------------------------------------------------------------------------
+r264 | dtran | 2015-04-20 16:02:32 -0600 (Mon, 20 Apr 2015) | 1 line
+
+Added meeting notes for 4/20
+------------------------------------------------------------------------
+r263 | jgillham | 2015-04-20 15:36:04 -0600 (Mon, 20 Apr 2015) | 1 line
+
+Build uses special compile for the JRunner.
+------------------------------------------------------------------------
+r262 | jgillham | 2015-04-20 15:01:16 -0600 (Mon, 20 Apr 2015) | 1 line
+
+The compiled class needs to moved back into the secret folder.
+------------------------------------------------------------------------
+r261 | jgillham | 2015-04-20 14:57:05 -0600 (Mon, 20 Apr 2015) | 1 line
+
+Moved JRunner into the secret folder so that new developers are not confused.
+------------------------------------------------------------------------
+r260 | jgillham | 2015-04-20 14:39:00 -0600 (Mon, 20 Apr 2015) | 1 line
+
+Renamed project folder and moved in new refactor.
+------------------------------------------------------------------------
+r259 | jgillham | 2015-04-20 14:03:09 -0600 (Mon, 20 Apr 2015) | 1 line
+
+Updated build for new refactor.
+------------------------------------------------------------------------
+r258 | nwitt | 2015-04-20 04:50:57 -0600 (Mon, 20 Apr 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r257 | nwitt | 2015-04-20 04:43:50 -0600 (Mon, 20 Apr 2015) | 14 lines
+
+Added a re-factored version of the BlueJ TA project to my sandbox.
+
+Major Changes(from vers A):
+- Removed the runner package and extended the Exercise.java's execute method.
+- Added a JRunner class to be deployed during execution.
+- Test should now be able to launch and execute on windows and macs*. 
+(tested on one mac to be tested on more macs later).
+- New feature allows test to be stopped by reseting BlueJ's jvm.
+- New feature has less code to maintain.
+- Currently no build or bat files just the BlueJ project, to hopefully use joshes later.
+
+To install compile the .java files and move the JRunner.class file from the default package to the Extension/BackEnd/runner folder, then create a jar as normal. 
+(this is beacue the JRunner cant have a package header in order to work)
+
+------------------------------------------------------------------------
+r256 | nwitt | 2015-04-19 13:44:10 -0600 (Sun, 19 Apr 2015) | 1 line
+
+Switched the class.forname loading method in the TestRunner.java class to a url class loader and edited the JUnitRunner.java to accommodate this change to hopefully fix the mac execution issues. 
+------------------------------------------------------------------------
+r255 | jgillham | 2015-04-18 19:34:25 -0600 (Sat, 18 Apr 2015) | 1 line
+
+Copied build files to the main folder.
+------------------------------------------------------------------------
+r254 | jgillham | 2015-04-18 19:29:34 -0600 (Sat, 18 Apr 2015) | 1 line
+
+Cleaned up and documented build.xml.
+------------------------------------------------------------------------
+r253 | nwitt | 2015-04-18 19:18:12 -0600 (Sat, 18 Apr 2015) | 1 line
+
+Edited JUnitRunner.java to hopefully fix execute issues.
+------------------------------------------------------------------------
+r252 | nwitt | 2015-04-18 19:04:58 -0600 (Sat, 18 Apr 2015) | 7 lines
+
+Moved BlueJ_TA(RefactorA) to the main project folder.
+Fixes:
+- SortExercise.xml now test ascending order.
+- Exercise now launch on mac and windows.
+
+Bugs:
+- The execute test feature doesn't work on macs because the junit test file cant be seen by the JUnitRunners process. Currently looking into the -cp variable of the process builder in JUnitRunner.java.
+------------------------------------------------------------------------
+r251 | jgillham | 2015-04-18 17:26:41 -0600 (Sat, 18 Apr 2015) | 1 line
+
+build.xml launches a BlueJ on Mac better and the error on windows should be gone.
+------------------------------------------------------------------------
+r250 | jgillham | 2015-04-18 16:40:16 -0600 (Sat, 18 Apr 2015) | 1 line
+
+build.xml should work on Mac.
+------------------------------------------------------------------------
+r249 | jgillham | 2015-04-18 16:20:13 -0600 (Sat, 18 Apr 2015) | 1 line
+
+Fixed build.xml to work on MacOSX.
+------------------------------------------------------------------------
+r248 | jgillham | 2015-04-18 16:12:44 -0600 (Sat, 18 Apr 2015) | 1 line
+
+Fixed the build to work in more than one platform.
+------------------------------------------------------------------------
+r247 | dtran | 2015-04-18 15:58:11 -0600 (Sat, 18 Apr 2015) | 1 line
+
+Added meeting notes for 4/18
+------------------------------------------------------------------------
+r246 | jgillham | 2015-04-18 15:56:05 -0600 (Sat, 18 Apr 2015) | 1 line
+
+Created a build for Nate's refactor.
+------------------------------------------------------------------------
+r245 | nwitt | 2015-04-16 19:56:15 -0600 (Thu, 16 Apr 2015) | 1 line
+
+Added A re-factored version of the BlueJ TA program. and added Java doc to the JUnitRunner classes.
+------------------------------------------------------------------------
+r244 | jgillham | 2015-04-16 17:30:46 -0600 (Thu, 16 Apr 2015) | 1 line
+
+Upgraded the Windows batch files.
+------------------------------------------------------------------------
+r243 | jgillham | 2015-04-16 10:50:17 -0600 (Thu, 16 Apr 2015) | 1 line
+
+The extension will load exercises internal to the JAR.
+------------------------------------------------------------------------
+r242 | nwitt | 2015-04-15 21:51:51 -0600 (Wed, 15 Apr 2015) | 1 line
+
+Removed class and ctxt files from the runner and made the result output more readable.
+------------------------------------------------------------------------
+r241 | nwitt | 2015-04-15 21:38:52 -0600 (Wed, 15 Apr 2015) | 1 line
+
+removed dist for now
+------------------------------------------------------------------------
+r240 | nwitt | 2015-04-15 21:34:32 -0600 (Wed, 15 Apr 2015) | 1 line
+
+Added a dist folder for the extension jar
+------------------------------------------------------------------------
+r239 | nwitt | 2015-04-15 21:31:30 -0600 (Wed, 15 Apr 2015) | 4 lines
+
+A) Made it so examples are displayed in the guis.
+
+B) Refactored out coding actions and replaced it with just AbstractAction.
+
+------------------------------------------------------------------------
+r238 | nwitt | 2015-04-15 19:06:44 -0600 (Wed, 15 Apr 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r237 | nwitt | 2015-04-15 19:06:30 -0600 (Wed, 15 Apr 2015) | 1 line
+
+Typo in last message should be: "Exercises now launch when selected from the exercise list."
+------------------------------------------------------------------------
+r236 | nwitt | 2015-04-15 19:00:53 -0600 (Wed, 15 Apr 2015) | 1 line
+
+Exercises now not launch when selected from the exercise list. 
+------------------------------------------------------------------------
+r235 | jgillham | 2015-04-15 17:51:23 -0600 (Wed, 15 Apr 2015) | 1 line
+
+Working on refactoring.
+------------------------------------------------------------------------
+r234 | dtran | 2015-04-15 17:30:51 -0600 (Wed, 15 Apr 2015) | 1 line
+
+Added team meeting notes for 4/15
+------------------------------------------------------------------------
+r233 | nwitt | 2015-04-15 15:41:36 -0600 (Wed, 15 Apr 2015) | 1 line
+
+Fixed Preferences.java
+------------------------------------------------------------------------
+r232 | nwitt | 2015-04-15 15:26:00 -0600 (Wed, 15 Apr 2015) | 1 line
+
+Updated project, with Miguel and Thomas xml parser semei integrated in.
+------------------------------------------------------------------------
+r231 | mroman | 2015-04-15 15:06:37 -0600 (Wed, 15 Apr 2015) | 1 line
+
+fixed project. compiles now. possibly broke gui.
+------------------------------------------------------------------------
+r230 | nwitt | 2015-04-14 16:31:47 -0600 (Tue, 14 Apr 2015) | 1 line
+
+Fixed spelling error
+------------------------------------------------------------------------
+r229 | nwitt | 2015-04-14 16:21:39 -0600 (Tue, 14 Apr 2015) | 1 line
+
+Re added SortExercise.xml with fixes.
+------------------------------------------------------------------------
+r228 | nwitt | 2015-04-14 15:56:47 -0600 (Tue, 14 Apr 2015) | 1 line
+
+Removed SortExercise.xml to be fixed
+------------------------------------------------------------------------
+r227 | nwitt | 2015-04-14 15:41:55 -0600 (Tue, 14 Apr 2015) | 1 line
+
+Added two simple exercises to the exercise folder, complete with the code the program needs to make and run them.
+------------------------------------------------------------------------
+r226 | jgillham | 2015-04-13 23:11:38 -0600 (Mon, 13 Apr 2015) | 8 lines
+
+The build works on both windows and MAC with mixed revisions (see details).
+
+Details:
+The build is currently broken unless Exercises.java
+and FXMLDescriptionDocumentController.java are on revision 218.
+
+
+
+------------------------------------------------------------------------
+r225 | dtran | 2015-04-13 21:23:47 -0600 (Mon, 13 Apr 2015) | 1 line
+
+Added meeting notes for 4/13.
+------------------------------------------------------------------------
+r224 | jgillham | 2015-04-13 17:54:54 -0600 (Mon, 13 Apr 2015) | 1 line
+
+More.
+------------------------------------------------------------------------
+r223 | jgillham | 2015-04-13 17:54:37 -0600 (Mon, 13 Apr 2015) | 1 line
+
+More.
+------------------------------------------------------------------------
+r222 | jgillham | 2015-04-13 17:53:47 -0600 (Mon, 13 Apr 2015) | 1 line
+
+Latest changes.
+------------------------------------------------------------------------
+r221 | jgillham | 2015-04-13 16:42:27 -0600 (Mon, 13 Apr 2015) | 1 line
+
+Reverted working copy.
+------------------------------------------------------------------------
+r220 | jgillham | 2015-04-13 16:05:00 -0600 (Mon, 13 Apr 2015) | 1 line
+
+Committed work in progress.
+------------------------------------------------------------------------
+r219 | tmacari | 2015-04-13 15:32:58 -0600 (Mon, 13 Apr 2015) | 1 line
+
+Refactored XML Reader
+------------------------------------------------------------------------
+r218 | jgillham | 2015-04-13 14:49:29 -0600 (Mon, 13 Apr 2015) | 1 line
+
+Updated Mac build.
+------------------------------------------------------------------------
+r217 | dtran | 2015-04-11 16:40:28 -0600 (Sat, 11 Apr 2015) | 1 line
+
+Added meeting notes from name meeting
+------------------------------------------------------------------------
+r216 | dtran | 2015-04-11 15:12:32 -0600 (Sat, 11 Apr 2015) | 1 line
+
+Changed date and made small modifications to end of notes for 4/8.
+------------------------------------------------------------------------
+r215 | dtran | 2015-04-11 15:11:59 -0600 (Sat, 11 Apr 2015) | 1 line
+
+Added team meeting notes for 4/11.
+------------------------------------------------------------------------
+r214 | jgillham | 2015-04-11 14:42:23 -0600 (Sat, 11 Apr 2015) | 1 line
+
+Added clean script.
+------------------------------------------------------------------------
+r213 | jgillham | 2015-04-10 00:24:42 -0600 (Fri, 10 Apr 2015) | 1 line
+
+Updated the install script for Windows.
+------------------------------------------------------------------------
+r212 | nwitt | 2015-04-09 22:48:50 -0600 (Thu, 09 Apr 2015) | 5 lines
+
+Integrated what happens after the load button is pressed into the main project. with a hard coded exercise to be replaced after the xml parser is updated.
+
+Also Refractored the JUnit runner classes into their own package.
+Note) the windows .bat build doesn't wont work with the nested folder but i think this can be fixed relatively easily, the project can still be built using the export jar methods in bluej in the meantime)
+
+------------------------------------------------------------------------
+r211 | nwitt | 2015-04-08 22:10:45 -0600 (Wed, 08 Apr 2015) | 1 line
+
+Removed obsolete fragments around the source code.
+------------------------------------------------------------------------
+r210 | dtran | 2015-04-08 21:16:49 -0600 (Wed, 08 Apr 2015) | 1 line
+
+Added meeting minutes for 4/8 class time.
+------------------------------------------------------------------------
+r209 | jgillham | 2015-04-08 15:52:08 -0600 (Wed, 08 Apr 2015) | 1 line
+
+Windows install script now compiles.
+------------------------------------------------------------------------
+r208 | mroman | 2015-04-08 15:34:07 -0600 (Wed, 08 Apr 2015) | 1 line
+
+Added our extension to the Preferences tab in BlueJ. Users can now set the location of the exercises using this BLuej->Preferences->Extensions. The path is saved into StateManager.
+------------------------------------------------------------------------
+r207 | jgillham | 2015-04-08 14:56:35 -0600 (Wed, 08 Apr 2015) | 1 line
+
+Script installs extension on Windows.
+------------------------------------------------------------------------
+r206 | nwitt | 2015-04-08 13:05:35 -0600 (Wed, 08 Apr 2015) | 1 line
+
+Edited small feature in prototype exercise file, to hide the root pane when the project opens so the user cant see the test class compiling. 
+------------------------------------------------------------------------
+r205 | nwitt | 2015-04-08 02:31:48 -0600 (Wed, 08 Apr 2015) | 1 line
+
+Added a prototype extension that demonstrates what could happen after the load button is pressed, in this case when the launch menu item is pressed. (Will go over it in class if asked.)
+------------------------------------------------------------------------
+r204 | dtran | 2015-04-06 22:44:20 -0600 (Mon, 06 Apr 2015) | 1 line
+
+Uploaded notes for Monday, April 6th.
+------------------------------------------------------------------------
+r203 | jgillham | 2015-04-06 16:52:51 -0600 (Mon, 06 Apr 2015) | 1 line
+
+Created a script to install and build the program on mac.
+------------------------------------------------------------------------
+r202 | dtran | 2015-04-04 15:30:29 -0600 (Sat, 04 Apr 2015) | 1 line
+
+Added team meeting notes for april 4th, which includes Monday's agenda and rough status update.
+------------------------------------------------------------------------
+r201 | mroman | 2015-04-04 11:03:40 -0600 (Sat, 04 Apr 2015) | 1 line
+
+added my design ideas and created a small list of known issues/bugs
+------------------------------------------------------------------------
+r200 | jgillham | 2015-04-03 15:11:02 -0600 (Fri, 03 Apr 2015) | 1 line
+
+Adding extension xml's.
+------------------------------------------------------------------------
+r199 | jgillham | 2015-04-03 14:45:48 -0600 (Fri, 03 Apr 2015) | 1 line
+
+Created a Windows batch file that installs.
+------------------------------------------------------------------------
+r198 | nwitt | 2015-04-01 23:35:55 -0600 (Wed, 01 Apr 2015) | 1 line
+
+Added some diagrams and examples of how files can be stored by the extension in the local user lib, as well as what can happen after the load button is pressed.
+------------------------------------------------------------------------
+r197 | nwitt | 2015-04-01 20:29:32 -0600 (Wed, 01 Apr 2015) | 3 lines
+
+Edited Temp_Instructions.txt to accommodate creating the test class setup (this should be done programmatically by the extension at some point)
+
+As well as edited the RunnerThread.java for more descriptive error messages.
+------------------------------------------------------------------------
+r196 | nwitt | 2015-04-01 19:03:28 -0600 (Wed, 01 Apr 2015) | 3 lines
+
+Integrated the JUnit runner into the main project (note: hasn't been fully debugged yet, might have an unseen bugs)
+
+Read the Temp_Instructions.txt for more info on running a "test" test.
+------------------------------------------------------------------------
+r195 | mroman | 2015-04-01 16:21:46 -0600 (Wed, 01 Apr 2015) | 1 line
+
+Integrated parser. Also implemented opening of new BlueJ project
+------------------------------------------------------------------------
+r194 | nwitt | 2015-03-30 23:39:54 -0600 (Mon, 30 Mar 2015) | 1 line
+
+Added the final demo runner to sandbox
+------------------------------------------------------------------------
+r193 | nwitt | 2015-03-30 23:35:56 -0600 (Mon, 30 Mar 2015) | 1 line
+
+Refined JunitRunner down to the main classes to add/replace the old JunitRunner classes in the project.
+------------------------------------------------------------------------
+r192 | nwitt | 2015-03-30 22:51:26 -0600 (Mon, 30 Mar 2015) | 1 line
+
+Added newer version of JUnitRunner to be tied into project. 
+------------------------------------------------------------------------
+r191 | whuang | 2015-03-30 15:07:25 -0600 (Mon, 30 Mar 2015) | 1 line
+
+Modified strings for a better demo.
+------------------------------------------------------------------------
+r190 | tmacari | 2015-03-30 09:38:34 -0600 (Mon, 30 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r189 | whuang | 2015-03-28 13:10:52 -0600 (Sat, 28 Mar 2015) | 1 line
+
+refactoring part 2. This part is the actual source code. part 1 is renaming files.
+------------------------------------------------------------------------
+r188 | whuang | 2015-03-28 13:10:05 -0600 (Sat, 28 Mar 2015) | 1 line
+
+refactoring part 1.
+------------------------------------------------------------------------
+r187 | whuang | 2015-03-28 12:57:05 -0600 (Sat, 28 Mar 2015) | 1 line
+
+Refactored.
+------------------------------------------------------------------------
+r186 | whuang | 2015-03-28 12:56:32 -0600 (Sat, 28 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r185 | nwitt | 2015-03-28 12:49:08 -0600 (Sat, 28 Mar 2015) | 1 line
+
+Cleaned up sandbox a little.
+------------------------------------------------------------------------
+r184 | dtran | 2015-03-28 12:33:58 -0600 (Sat, 28 Mar 2015) | 1 line
+
+Added scribe screensharing policy.
+------------------------------------------------------------------------
+r183 | jgillham | 2015-03-27 17:29:25 -0600 (Fri, 27 Mar 2015) | 1 line
+
+New meeting notes.
+------------------------------------------------------------------------
+r182 | jgillham | 2015-03-27 03:58:15 -0600 (Fri, 27 Mar 2015) | 1 line
+
+Renamed Project Github to Project Git.
+------------------------------------------------------------------------
+r181 | mroman | 2015-03-25 19:10:14 -0600 (Wed, 25 Mar 2015) | 1 line
+
+Testing now works as an extension. Need to add junit jar into extension folder of BlueJ. Made small tweaks to gui's
+------------------------------------------------------------------------
+r180 | mroman | 2015-03-25 18:39:35 -0600 (Wed, 25 Mar 2015) | 1 line
+
+Worked on first iteration of implementing JUnitRunner. Only works when test classes are in same level as other classes. Currently does not work as an extension. Cannot find junit library. Works as a stand alone application.
+------------------------------------------------------------------------
+r179 | nwitt | 2015-03-24 16:23:19 -0600 (Tue, 24 Mar 2015) | 1 line
+
+Added demo JUnit test and user code
+------------------------------------------------------------------------
+r178 | nwitt | 2015-03-24 16:21:28 -0600 (Tue, 24 Mar 2015) | 1 line
+
+Added BUGLOG.txt to the JUnitRunner 
+------------------------------------------------------------------------
+r177 | nwitt | 2015-03-24 16:15:11 -0600 (Tue, 24 Mar 2015) | 1 line
+
+Added JUnit Runner, read the README.txt for more information to use. 
+------------------------------------------------------------------------
+r176 | dtran | 2015-03-23 21:41:22 -0600 (Mon, 23 Mar 2015) | 1 line
+
+Experimented with object creation and population given a separate process.
+------------------------------------------------------------------------
+r175 | nwitt | 2015-03-23 17:58:27 -0600 (Mon, 23 Mar 2015) | 1 line
+
+Added JUnitRunnerV4 with added classes, currently a work in progress.
+------------------------------------------------------------------------
+r174 | nwitt | 2015-03-23 12:25:35 -0600 (Mon, 23 Mar 2015) | 1 line
+
+Updated JUnitRunnerV3, still needs debugging/compiling/and class checking, as well as cleanup before passing to GUI. 
+------------------------------------------------------------------------
+r173 | nwitt | 2015-03-21 18:24:34 -0600 (Sat, 21 Mar 2015) | 1 line
+
+Fixed typo in JUintRunnerV2.JUnitRunnerDemo from addTestListener to setTestListener.
+------------------------------------------------------------------------
+r172 | whuang | 2015-03-21 14:49:41 -0600 (Sat, 21 Mar 2015) | 1 line
+
+Implemented StateManager. Currently only the exercise GUI and description GUI communicate. Still need to get Test GUI to work with he StateManager.
+------------------------------------------------------------------------
+r171 | nwitt | 2015-03-21 14:48:30 -0600 (Sat, 21 Mar 2015) | 1 line
+
+Added JUnitRunnerV3 bluej files (may or may not work)
+------------------------------------------------------------------------
+r170 | nwitt | 2015-03-21 14:24:28 -0600 (Sat, 21 Mar 2015) | 1 line
+
+Fixed Build File in JUnitRunnerV2
+------------------------------------------------------------------------
+r169 | whuang | 2015-03-21 13:44:04 -0600 (Sat, 21 Mar 2015) | 1 line
+
+Putting the stateManager implementation in the sandbox since we haven't checked Mac compatibility.
+------------------------------------------------------------------------
+r168 | nwitt | 2015-03-20 14:53:39 -0600 (Fri, 20 Mar 2015) | 1 line
+
+Re-factored some method names and delete file calls.
+------------------------------------------------------------------------
+r167 | nwitt | 2015-03-20 11:59:38 -0600 (Fri, 20 Mar 2015) | 4 lines
+
+Added JUnitRunner-V2, fixed inter process communication bug and child processes should no longer be orphaned when the parent process unexpectedly closes.
+
+This version hasn't been fully tested and may still have bugs. See the README.txt for more details about this project.
+
+------------------------------------------------------------------------
+r166 | mroman | 2015-03-19 19:26:31 -0600 (Thu, 19 Mar 2015) | 1 line
+
+Created Execute and Description GUI. Fixed choose an exercise gui. Implemented GUI's as Bluej extension. Realized we need a state manager. Still requires implementation of parser and compiler. When running using BlueJ not as an extension, must reset java virtual machine. Made small tweaks 
+------------------------------------------------------------------------
+r165 | nwitt | 2015-03-19 13:51:59 -0600 (Thu, 19 Mar 2015) | 1 line
+
+Removed JUnitRunnerV2 due to bad potential system issues, the StaticJunitRunner should still be safe to use.
+------------------------------------------------------------------------
+r164 | nwitt | 2015-03-19 12:25:30 -0600 (Thu, 19 Mar 2015) | 1 line
+
+altered thread testHandler thread daemon status. 
+------------------------------------------------------------------------
+r163 | nwitt | 2015-03-19 00:20:55 -0600 (Thu, 19 Mar 2015) | 4 lines
+
+Added JUnit Runner V2, this code hasn't been fully tested and there might be bugs. If errors persist I
+recommend using the StaticJUnitRunner for now in implementing the extension elements. 
+
+See the README.txt for more details about the project and bugs.
+------------------------------------------------------------------------
+r162 | whuang | 2015-03-18 16:19:03 -0600 (Wed, 18 Mar 2015) | 1 line
+
+Updated Readme.txt to show numbers in the structure to better understand how deep you are in the repository.
+------------------------------------------------------------------------
+r161 | jgillham | 2015-03-18 16:17:30 -0600 (Wed, 18 Mar 2015) | 1 line
+
+Uploaded meeting notes.
+------------------------------------------------------------------------
+r160 | jgillham | 2015-03-16 16:30:15 -0600 (Mon, 16 Mar 2015) | 1 line
+
+Today's meeting notes.
+------------------------------------------------------------------------
+r159 | nwitt | 2015-03-16 01:20:36 -0600 (Mon, 16 Mar 2015) | 1 line
+
+Fixed error
+------------------------------------------------------------------------
+r158 | nwitt | 2015-03-15 23:27:35 -0600 (Sun, 15 Mar 2015) | 1 line
+
+Uploaded my JUnit/Compile findings in the form of a static lib class and main demo class.
+------------------------------------------------------------------------
+r157 | nwitt | 2015-03-15 16:37:00 -0600 (Sun, 15 Mar 2015) | 1 line
+
+Organized Design documents and added process model understandings.
+------------------------------------------------------------------------
+r156 | jgillham | 2015-03-15 15:48:04 -0600 (Sun, 15 Mar 2015) | 1 line
+
+Presentation drafts.
+------------------------------------------------------------------------
+r155 | jgillham | 2015-03-15 15:03:50 -0600 (Sun, 15 Mar 2015) | 1 line
+
+Committed process model revision 1.
+------------------------------------------------------------------------
+r154 | nwitt | 2015-03-15 13:04:11 -0600 (Sun, 15 Mar 2015) | 1 line
+
+Edited Random Thoughts
+------------------------------------------------------------------------
+r153 | nwitt | 2015-03-15 12:44:27 -0600 (Sun, 15 Mar 2015) | 1 line
+
+Edited personal design notes
+------------------------------------------------------------------------
+r152 | jgillham | 2015-03-15 02:53:33 -0600 (Sun, 15 Mar 2015) | 1 line
+
+Added Wei's meeting notes.
+------------------------------------------------------------------------
+r151 | jgillham | 2015-03-15 02:42:12 -0600 (Sun, 15 Mar 2015) | 1 line
+
+Java FX Jar.
+------------------------------------------------------------------------
+r150 | jgillham | 2015-03-14 21:48:15 -0600 (Sat, 14 Mar 2015) | 1 line
+
+Removed unwanted *.ctxt files.
+------------------------------------------------------------------------
+r149 | jgillham | 2015-03-14 21:46:57 -0600 (Sat, 14 Mar 2015) | 1 line
+
+Ignoring *.class,*.ctxt .
+------------------------------------------------------------------------
+r148 | jgillham | 2015-03-14 21:08:34 -0600 (Sat, 14 Mar 2015) | 1 line
+
+Uploaded meeting notes.
+------------------------------------------------------------------------
+r147 | jgillham | 2015-03-14 21:07:50 -0600 (Sat, 14 Mar 2015) | 1 line
+
+Removed unnecessary files like *.ctxt.
+------------------------------------------------------------------------
+r146 | whuang | 2015-03-14 18:54:42 -0600 (Sat, 14 Mar 2015) | 1 line
+
+Updated Readme.txt about building the jar using BlueJ.
+------------------------------------------------------------------------
+r145 | whuang | 2015-03-14 18:48:27 -0600 (Sat, 14 Mar 2015) | 1 line
+
+Found an alternative to the window issue. Currently the extension GUI window is not resizable so we have it hard coded to 605 by 530. Also included a couple new features like clearing the text area when you select a different exercise and getting the button to react to click events.
+------------------------------------------------------------------------
+r144 | whuang | 2015-03-14 17:01:58 -0600 (Sat, 14 Mar 2015) | 1 line
+
+Added in User Story Complexity Metrics - Sheet1.pdf and modified the User Stories.csv
+------------------------------------------------------------------------
+r143 | whuang | 2015-03-14 15:38:00 -0600 (Sat, 14 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r142 | jgillham | 2015-03-14 15:34:19 -0600 (Sat, 14 Mar 2015) | 1 line
+
+User stories.
+------------------------------------------------------------------------
+r141 | whuang | 2015-03-14 15:33:39 -0600 (Sat, 14 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r140 | whuang | 2015-03-14 15:32:12 -0600 (Sat, 14 Mar 2015) | 1 line
+
+Removed a few lines of text regarding .class files and the extension jar.
+------------------------------------------------------------------------
+r139 | jgillham | 2015-03-14 14:19:40 -0600 (Sat, 14 Mar 2015) | 1 line
+
+Cleaned up.
+------------------------------------------------------------------------
+r138 | jgillham | 2015-03-14 14:14:07 -0600 (Sat, 14 Mar 2015) | 1 line
+
+New Meeting notes.
+------------------------------------------------------------------------
+r137 | whuang | 2015-03-13 20:05:52 -0600 (Fri, 13 Mar 2015) | 1 line
+
+Added in the instructions to add an extension to BlueJ. added active and inactive tags next to projects in the repository structure area.
+------------------------------------------------------------------------
+r136 | nwitt | 2015-03-13 13:57:25 -0600 (Fri, 13 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r135 | nwitt | 2015-03-13 13:48:02 -0600 (Fri, 13 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r134 | nwitt | 2015-03-13 13:33:38 -0600 (Fri, 13 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r133 | nwitt | 2015-03-13 13:24:14 -0600 (Fri, 13 Mar 2015) | 1 line
+
+Edited Typos
+------------------------------------------------------------------------
+r132 | nwitt | 2015-03-13 02:18:28 -0600 (Fri, 13 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r131 | nwitt | 2015-03-13 01:33:15 -0600 (Fri, 13 Mar 2015) | 1 line
+
+Added some random design notes
+------------------------------------------------------------------------
+r130 | nwitt | 2015-03-13 01:21:22 -0600 (Fri, 13 Mar 2015) | 1 line
+
+Created a proposal JUnitRunner design that depicts how the JUnitRunner might interface with the main program as well as how the JUnitRunner itself might function.
+------------------------------------------------------------------------
+r129 | nwitt | 2015-03-12 23:31:57 -0600 (Thu, 12 Mar 2015) | 1 line
+
+Updated proposal design to accommodate a foreseen issue with running infinite loops, with a multi thread mentality approach.
+------------------------------------------------------------------------
+r128 | nwitt | 2015-03-12 17:22:40 -0600 (Thu, 12 Mar 2015) | 1 line
+
+Edited a typo in the document.
+------------------------------------------------------------------------
+r127 | nwitt | 2015-03-12 17:19:29 -0600 (Thu, 12 Mar 2015) | 1 line
+
+Created a proposed upper level design document that is an adaptation of the design created from before, also includes how some basic functions may operate within it.
+------------------------------------------------------------------------
+r126 | mroman | 2015-03-12 13:48:22 -0600 (Thu, 12 Mar 2015) | 1 line
+
+ListView in GUI now changes title, description, and example labels (getting it ready for future iteration)
+------------------------------------------------------------------------
+r125 | mroman | 2015-03-11 18:17:39 -0600 (Wed, 11 Mar 2015) | 1 line
+
+Implemented JavaFX. Add FXMLDocument.fxml used by SceneBuilder to create GUI, added FXMLDocumentController which controls the GUI given by the fxml, and created a GUI class that displays the JavaFX gui example I created.
+------------------------------------------------------------------------
+r124 | whuang | 2015-03-11 15:03:51 -0600 (Wed, 11 Mar 2015) | 1 line
+
+Fixed a few spelling mistakes.
+------------------------------------------------------------------------
+r123 | whuang | 2015-03-11 11:54:27 -0600 (Wed, 11 Mar 2015) | 1 line
+
+Updated Readme.txt to the new repository structure.
+------------------------------------------------------------------------
+r122 | mroman | 2015-03-11 11:20:18 -0600 (Wed, 11 Mar 2015) | 1 line
+
+added javadoc to current classes.
+------------------------------------------------------------------------
+r121 | tmacari | 2015-03-11 10:07:12 -0600 (Wed, 11 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r120 | tmacari | 2015-03-11 10:05:47 -0600 (Wed, 11 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r119 | jgillham | 2015-03-11 09:30:40 -0600 (Wed, 11 Mar 2015) | 1 line
+
+Ignoring class files.
+------------------------------------------------------------------------
+r118 | jgillham | 2015-03-11 09:29:59 -0600 (Wed, 11 Mar 2015) | 1 line
+
+Removed generated by-products.
+------------------------------------------------------------------------
+r117 | jgillham | 2015-03-11 09:26:42 -0600 (Wed, 11 Mar 2015) | 1 line
+
+Updated Git-Extension README.TXT.
+------------------------------------------------------------------------
+r116 | jgillham | 2015-03-11 09:08:12 -0600 (Wed, 11 Mar 2015) | 1 line
+
+Added installation instructions for Git-Extension.
+------------------------------------------------------------------------
+r115 | jgillham | 2015-03-11 09:07:38 -0600 (Wed, 11 Mar 2015) | 1 line
+
+Removed build.xml in favor of BlueJ's build in Git-Extension.
+------------------------------------------------------------------------
+r114 | jgillham | 2015-03-11 08:55:12 -0600 (Wed, 11 Mar 2015) | 1 line
+
+Removed sample project.
+------------------------------------------------------------------------
+r113 | jgillham | 2015-03-11 08:53:45 -0600 (Wed, 11 Mar 2015) | 1 line
+
+Removed build.xml in favor of using BlueJ to build.
+------------------------------------------------------------------------
+r112 | whuang | 2015-03-10 23:57:08 -0600 (Tue, 10 Mar 2015) | 1 line
+
+The Readme.txt that explains our current project, how to build a project manually, and the structure of the repository.
+------------------------------------------------------------------------
+r111 | jgillham | 2015-03-10 14:18:23 -0600 (Tue, 10 Mar 2015) | 1 line
+
+Added a file with directions on how to install the extension.
+------------------------------------------------------------------------
+r110 | jgillham | 2015-03-10 13:48:06 -0600 (Tue, 10 Mar 2015) | 1 line
+
+Using BlueJ to build the project.
+------------------------------------------------------------------------
+r109 | jgillham | 2015-03-09 15:56:58 -0600 (Mon, 09 Mar 2015) | 1 line
+
+New meeting notes.
+------------------------------------------------------------------------
+r108 | jgillham | 2015-03-09 15:31:04 -0600 (Mon, 09 Mar 2015) | 1 line
+
+Added a build file.
+------------------------------------------------------------------------
+r107 | nwitt | 2015-03-09 15:11:30 -0600 (Mon, 09 Mar 2015) | 1 line
+
+Added GUI test
+------------------------------------------------------------------------
+r106 | mroman | 2015-03-09 14:49:53 -0600 (Mon, 09 Mar 2015) | 1 line
+
+Miguel's implementation of JavaFX for the Coding Practice Project
+------------------------------------------------------------------------
+r105 | whuang | 2015-03-09 14:33:43 -0600 (Mon, 09 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r104 | whuang | 2015-03-09 14:32:07 -0600 (Mon, 09 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r103 | whuang | 2015-03-09 14:18:27 -0600 (Mon, 09 Mar 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r102 | jgillham | 2015-03-07 16:31:40 -0700 (Sat, 07 Mar 2015) | 1 line
+
+Uploaded today's meeting notes.
+------------------------------------------------------------------------
+r101 | whuang | 2015-03-06 16:48:58 -0700 (Fri, 06 Mar 2015) | 8 lines
+
+Bluej exercise extension eclipse project folder. Also contains a Bluej package to open the files in Bluej.
+Java files located in the src folder.
+Files included:
+CodingAction.java - default action.
+CodingExercisesAction.java - Action that opens ExerciseGUI.
+ExerciseGUI.java - The GUI that will be the exercises.
+Main.java - the startup for the extension.
+MenuBuilder.java - Adds items to the bluej menu.
+------------------------------------------------------------------------
+r100 | jgillham | 2015-03-05 13:20:46 -0700 (Thu, 05 Mar 2015) | 1 line
+
+Initial class definitions for BlueJ CodingBat Project.
+------------------------------------------------------------------------
+r99 | jgillham | 2015-03-05 13:19:26 -0700 (Thu, 05 Mar 2015) | 1 line
+
+Uploaded meeting notes.
+------------------------------------------------------------------------
+r98 | nwitt | 2015-03-05 00:12:54 -0700 (Thu, 05 Mar 2015) | 2 lines
+
+Added a simple multi window example for proof of concept, and for fun. 
+Note: The other approach of just one window for the whole extension is still just as valid.
+------------------------------------------------------------------------
+r97 | whuang | 2015-03-02 21:06:58 -0700 (Mon, 02 Mar 2015) | 2 lines
+
+Adding Design sketches.pdf to Wei's sandbox
+
+------------------------------------------------------------------------
+r96 | jgillham | 2015-02-28 22:20:53 -0700 (Sat, 28 Feb 2015) | 1 line
+
+Uploaded new meeting notes.
+------------------------------------------------------------------------
+r95 | jgillham | 2015-02-25 10:50:58 -0700 (Wed, 25 Feb 2015) | 1 line
+
+Informal report on Thread visualization project.
+------------------------------------------------------------------------
+r94 | jgillham | 2015-02-25 09:38:46 -0700 (Wed, 25 Feb 2015) | 1 line
+
+Java Interpreter Informal Report.
+------------------------------------------------------------------------
+r93 | jgillham | 2015-02-24 21:52:06 -0700 (Tue, 24 Feb 2015) | 1 line
+
+Animated definition slide.
+------------------------------------------------------------------------
+r92 | nwitt | 2015-02-24 20:41:08 -0700 (Tue, 24 Feb 2015) | 1 line
+
+Fixed "whats pair slide"
+------------------------------------------------------------------------
+r91 | mroman | 2015-02-24 19:37:24 -0700 (Tue, 24 Feb 2015) | 1 line
+
+modified narrator script
+------------------------------------------------------------------------
+r90 | jgillham | 2015-02-24 16:58:10 -0700 (Tue, 24 Feb 2015) | 1 line
+
+Added comments to scripts and in-document comments on presentation.
+------------------------------------------------------------------------
+r89 | jgillham | 2015-02-24 14:35:37 -0700 (Tue, 24 Feb 2015) | 1 line
+
+Added QA Notes on Presentation.
+------------------------------------------------------------------------
+r88 | nwitt | 2015-02-23 23:04:42 -0700 (Mon, 23 Feb 2015) | 1 line
+
+Edited presentation power point.
+------------------------------------------------------------------------
+r87 | nwitt | 2015-02-23 22:43:13 -0700 (Mon, 23 Feb 2015) | 1 line
+
+Renamed presentation slides.
+------------------------------------------------------------------------
+r86 | nwitt | 2015-02-23 22:42:38 -0700 (Mon, 23 Feb 2015) | 1 line
+
+Edited Wrap-up slide of the presentation slides.
+------------------------------------------------------------------------
+r85 | nwitt | 2015-02-23 18:18:55 -0700 (Mon, 23 Feb 2015) | 1 line
+
+Edited and Updated presentation slides.
+------------------------------------------------------------------------
+r84 | jgillham | 2015-02-23 16:20:03 -0700 (Mon, 23 Feb 2015) | 1 line
+
+Added new meeting notes.
+------------------------------------------------------------------------
+r83 | mroman | 2015-02-23 09:34:32 -0700 (Mon, 23 Feb 2015) | 1 line
+
+Added intro and conclusion points
+------------------------------------------------------------------------
+r82 | dtran | 2015-02-23 00:03:03 -0700 (Mon, 23 Feb 2015) | 1 line
+
+Added negative bullet points.
+------------------------------------------------------------------------
+r81 | nwitt | 2015-02-21 20:19:47 -0700 (Sat, 21 Feb 2015) | 1 line
+
+Edited good script.
+------------------------------------------------------------------------
+r80 | nwitt | 2015-02-21 20:17:00 -0700 (Sat, 21 Feb 2015) | 1 line
+
+Organized good teams script files.
+------------------------------------------------------------------------
+r79 | nwitt | 2015-02-21 20:12:27 -0700 (Sat, 21 Feb 2015) | 1 line
+
+Added positive points to the presentation as well as their animations. 
+------------------------------------------------------------------------
+r78 | nwitt | 2015-02-21 15:37:12 -0700 (Sat, 21 Feb 2015) | 1 line
+
+Edited goodScript
+------------------------------------------------------------------------
+r77 | nwitt | 2015-02-21 12:19:04 -0700 (Sat, 21 Feb 2015) | 1 line
+
+Added Good team script 2.
+------------------------------------------------------------------------
+r76 | tmacari | 2015-02-21 11:16:38 -0700 (Sat, 21 Feb 2015) | 2 lines
+
+Flushed out the narrator script more.
+
+------------------------------------------------------------------------
+r75 | tmacari | 2015-02-21 10:14:01 -0700 (Sat, 21 Feb 2015) | 1 line
+
+Ported over documents from Google Drive.
+------------------------------------------------------------------------
+r74 | tmacari | 2015-02-21 10:10:35 -0700 (Sat, 21 Feb 2015) | 1 line
+
+Created a directory for presentation artifacts.
+------------------------------------------------------------------------
+r73 | jgillham | 2015-02-20 14:31:47 -0700 (Fri, 20 Feb 2015) | 1 line
+
+Added new meeting notes.
+------------------------------------------------------------------------
+r72 | jgillham | 2015-02-14 16:34:15 -0700 (Sat, 14 Feb 2015) | 1 line
+
+Added today's meeting notes.
+------------------------------------------------------------------------
+r71 | dtran | 2015-02-14 16:17:40 -0700 (Sat, 14 Feb 2015) | 1 line
+
+Added final decision declaration and revocation policy.
+------------------------------------------------------------------------
+r70 | dtran | 2015-02-14 16:09:06 -0700 (Sat, 14 Feb 2015) | 1 line
+
+Added tangent policy.
+------------------------------------------------------------------------
+r69 | jgillham | 2015-02-13 09:09:57 -0700 (Fri, 13 Feb 2015) | 1 line
+
+Created a test to show code can be lost in a merge. Currently fails.
+------------------------------------------------------------------------
+r68 | jgillham | 2015-02-12 14:18:20 -0700 (Thu, 12 Feb 2015) | 1 line
+
+Divided tests by how many repositories they use to reduce the lines of code.
+------------------------------------------------------------------------
+r67 | jgillham | 2015-02-12 13:56:02 -0700 (Thu, 12 Feb 2015) | 1 line
+
+Created Git Pull test that focuses on local repositories.
+------------------------------------------------------------------------
+r66 | jgillham | 2015-02-12 13:04:11 -0700 (Thu, 12 Feb 2015) | 1 line
+
+Improved the gitPush test by focusing on local repositories. Test currently fails.
+------------------------------------------------------------------------
+r65 | jgillham | 2015-02-12 12:25:44 -0700 (Thu, 12 Feb 2015) | 1 line
+
+Improved the gitClone test by focusing on local repositories.
+------------------------------------------------------------------------
+r64 | jgillham | 2015-02-11 23:23:10 -0700 (Wed, 11 Feb 2015) | 1 line
+
+Created a Java documentation target.
+------------------------------------------------------------------------
+r63 | jgillham | 2015-02-11 15:47:36 -0700 (Wed, 11 Feb 2015) | 1 line
+
+Fixed issue with exception handling in the actionPerformed method.
+------------------------------------------------------------------------
+r62 | jgillham | 2015-02-11 15:40:33 -0700 (Wed, 11 Feb 2015) | 1 line
+
+Fixed GitHelper Pull section.
+------------------------------------------------------------------------
+r61 | jgillham | 2015-02-11 15:32:29 -0700 (Wed, 11 Feb 2015) | 1 line
+
+Added a Pull Command menu item.
+------------------------------------------------------------------------
+r60 | jgillham | 2015-02-11 15:28:09 -0700 (Wed, 11 Feb 2015) | 1 line
+
+Added Pull command action, settings action was removed.
+------------------------------------------------------------------------
+r59 | jgillham | 2015-02-11 15:14:24 -0700 (Wed, 11 Feb 2015) | 1 line
+
+Added Pull command.
+------------------------------------------------------------------------
+r58 | jgillham | 2015-02-11 11:57:15 -0700 (Wed, 11 Feb 2015) | 1 line
+
+Created a README.md file to help new developers get started.
+------------------------------------------------------------------------
+r57 | jgillham | 2015-02-11 11:05:03 -0700 (Wed, 11 Feb 2015) | 1 line
+
+Documented the build.xml.
+------------------------------------------------------------------------
+r56 | jgillham | 2015-02-11 09:57:30 -0700 (Wed, 11 Feb 2015) | 1 line
+
+Moved debug property out of the build to increased its visibility.
+------------------------------------------------------------------------
+r55 | jgillham | 2015-02-10 13:49:46 -0700 (Tue, 10 Feb 2015) | 1 line
+
+The compilation source and target levels should be set to 1.7 for BlueJ compatibility.
+------------------------------------------------------------------------
+r54 | jgillham | 2015-02-10 13:24:08 -0700 (Tue, 10 Feb 2015) | 1 line
+
+Sped up the build building the jar directly from the JGit jar.
+------------------------------------------------------------------------
+r53 | jgillham | 2015-02-10 13:15:07 -0700 (Tue, 10 Feb 2015) | 1 line
+
+Documented and cleaned code using Netbeans' suggestions.
+------------------------------------------------------------------------
+r52 | jgillham | 2015-02-10 12:34:34 -0700 (Tue, 10 Feb 2015) | 1 line
+
+Renamed Git package to Helpers for naming coherency.
+------------------------------------------------------------------------
+r51 | jgillham | 2015-02-10 12:34:30 -0700 (Tue, 10 Feb 2015) | 1 line
+
+Renamed Git package to Helpers for naming coherency.
+------------------------------------------------------------------------
+r50 | jgillham | 2015-02-09 13:46:43 -0700 (Mon, 09 Feb 2015) | 1 line
+
+Prepared project for demo by removing unnecessary features and preventing problems.
+------------------------------------------------------------------------
+r49 | jgillham | 2015-02-09 08:49:03 -0700 (Mon, 09 Feb 2015) | 1 line
+
+Ignoring autogenerated folders.
+------------------------------------------------------------------------
+r48 | jgillham | 2015-02-09 08:39:43 -0700 (Mon, 09 Feb 2015) | 1 line
+
+Removed unnecessary code and cleaned design.
+------------------------------------------------------------------------
+r47 | jgillham | 2015-02-07 21:44:13 -0700 (Sat, 07 Feb 2015) | 1 line
+
+Uploaded meeting notes.
+------------------------------------------------------------------------
+r46 | mroman | 2015-02-07 16:36:39 -0700 (Sat, 07 Feb 2015) | 1 line
+
+Added JavaDoc to files. Created BlueJHelper class for BlueJ related methods
+------------------------------------------------------------------------
+r45 | jgillham | 2015-02-06 16:12:42 -0700 (Fri, 06 Feb 2015) | 1 line
+
+Refactored design. Seperating Git functionality from menu functionality.
+------------------------------------------------------------------------
+r44 | jgillham | 2015-02-06 16:12:38 -0700 (Fri, 06 Feb 2015) | 1 line
+
+Refactored design. Seperating Git functionality from menu functionality.
+------------------------------------------------------------------------
+r43 | mroman | 2015-02-06 15:17:19 -0700 (Fri, 06 Feb 2015) | 1 line
+
+Implemented GitCloneAction and made simple test case for it
+------------------------------------------------------------------------
+r42 | mroman | 2015-02-06 11:48:50 -0700 (Fri, 06 Feb 2015) | 1 line
+
+Created and Implemented GitPushAction. Created test case for push command.
+------------------------------------------------------------------------
+r41 | mroman | 2015-02-05 17:00:43 -0700 (Thu, 05 Feb 2015) | 1 line
+
+Refactored and moved some methods to a new GitHelper class
+------------------------------------------------------------------------
+r40 | jgillham | 2015-02-04 16:10:14 -0700 (Wed, 04 Feb 2015) | 1 line
+
+Implemented the Git commit feature.
+------------------------------------------------------------------------
+r39 | nwitt | 2015-02-04 11:27:55 -0700 (Wed, 04 Feb 2015) | 1 line
+
+updated url doc
+------------------------------------------------------------------------
+r38 | nwitt | 2015-02-04 11:23:57 -0700 (Wed, 04 Feb 2015) | 1 line
+
+Added simple editor Test that prints "Moved!" in the debug file when the cursor moves in the BlueJ editor. To install replace the "bluejeditor.jar" file in blueJ's lib folder with the one in this directory. 
+------------------------------------------------------------------------
+r37 | jgillham | 2015-02-03 18:03:15 -0700 (Tue, 03 Feb 2015) | 1 line
+
+Created tests for Git Commit and Init.
+------------------------------------------------------------------------
+r36 | mroman | 2015-02-03 17:50:17 -0700 (Tue, 03 Feb 2015) | 1 line
+
+Refactored GitExtension class and created new packages and classes
+------------------------------------------------------------------------
+r35 | mroman | 2015-02-03 16:22:58 -0700 (Tue, 03 Feb 2015) | 1 line
+
+JUnit Testing class for GitExtension
+------------------------------------------------------------------------
+r34 | jgillham | 2015-02-03 16:11:46 -0700 (Tue, 03 Feb 2015) | 1 line
+
+Including the JUnit and hamcrest jars.
+------------------------------------------------------------------------
+r33 | jgillham | 2015-02-03 16:00:36 -0700 (Tue, 03 Feb 2015) | 1 line
+
+Added Unit Testing to the build.
+------------------------------------------------------------------------
+r32 | jgillham | 2015-02-03 15:46:19 -0700 (Tue, 03 Feb 2015) | 1 line
+
+Added unit test frame work.
+------------------------------------------------------------------------
+r31 | mroman | 2015-02-03 15:40:16 -0700 (Tue, 03 Feb 2015) | 1 line
+
+added test folder and test class
+------------------------------------------------------------------------
+r30 | jgillham | 2015-02-03 14:39:25 -0700 (Tue, 03 Feb 2015) | 1 line
+
+Ignoring folders with *.classes.
+------------------------------------------------------------------------
+r29 | jgillham | 2015-02-03 14:08:44 -0700 (Tue, 03 Feb 2015) | 1 line
+
+Including JGit classes into the extension jar.
+------------------------------------------------------------------------
+r28 | jgillham | 2015-02-03 00:51:25 -0700 (Tue, 03 Feb 2015) | 1 line
+
+Added Git-Extension work from class session.
+------------------------------------------------------------------------
+r27 | whuang | 2015-02-02 15:25:43 -0700 (Mon, 02 Feb 2015) | 5 lines
+
+Update to the ChirpEx.zip deliverable.
+
+The ChirpEx.zip file is what we plan to deliver to our users.
+
+Contains the Chirp.wav file, ChirpEx.jar extension, and a README.txt with installation instructions.
+------------------------------------------------------------------------
+r26 | whuang | 2015-02-02 15:17:48 -0700 (Mon, 02 Feb 2015) | 1 line
+
+
+------------------------------------------------------------------------
+r25 | jgillham | 2015-02-01 15:06:25 -0700 (Sun, 01 Feb 2015) | 1 line
+
+Added the jar into the project lib for convenience.
+------------------------------------------------------------------------
+r24 | jgillham | 2015-02-01 15:02:15 -0700 (Sun, 01 Feb 2015) | 1 line
+
+Cleaned up JGit example.
+------------------------------------------------------------------------
+r23 | jgillham | 2015-01-31 17:02:08 -0700 (Sat, 31 Jan 2015) | 1 line
+
+Added experiment that tests JGit.
+------------------------------------------------------------------------
+r22 | jgillham | 2015-01-31 16:57:27 -0700 (Sat, 31 Jan 2015) | 1 line
+
+Created tasks for User Story 1.
+------------------------------------------------------------------------
+r21 | jgillham | 2015-01-31 16:19:31 -0700 (Sat, 31 Jan 2015) | 1 line
+
+Finished the user stories for the release planning stage.
+------------------------------------------------------------------------
+r20 | whuang | 2015-01-31 16:09:58 -0700 (Sat, 31 Jan 2015) | 1 line
+
+Updated source code and jar file. Removed pop up on compile. 
+------------------------------------------------------------------------
+r19 | tmacari | 2015-01-31 16:01:41 -0700 (Sat, 31 Jan 2015) | 1 line
+
+Added a Sample Project in which to test BlueJ SVN functionality.
+------------------------------------------------------------------------
+r18 | jgillham | 2015-01-31 15:28:26 -0700 (Sat, 31 Jan 2015) | 1 line
+
+Added the notes from team meeting for 01/31/2015.
+------------------------------------------------------------------------
+r17 | dtran | 2015-01-31 14:05:47 -0700 (Sat, 31 Jan 2015) | 1 line
+
+Created first draft of policies document
+------------------------------------------------------------------------
+r16 | dtran | 2015-01-29 22:50:26 -0700 (Thu, 29 Jan 2015) | 1 line
+
+Added information addressing default library paths on different OSes.
+------------------------------------------------------------------------
+r15 | dtran | 2015-01-29 22:25:47 -0700 (Thu, 29 Jan 2015) | 1 line
+
+Fixed directory backslash to forward slash, reuploaded resulting jar
+------------------------------------------------------------------------
+r14 | nwitt | 2015-01-29 19:59:27 -0700 (Thu, 29 Jan 2015) | 1 line
+
+Added a test extension to test if this kind of extension is system independent.
+------------------------------------------------------------------------
+r13 | dtran | 2015-01-29 19:54:19 -0700 (Thu, 29 Jan 2015) | 1 line
+
+Added Exploration Summary file, details on results of Project Chirp
+------------------------------------------------------------------------
+r12 | nwitt | 2015-01-29 16:02:33 -0700 (Thu, 29 Jan 2015) | 1 line
+
+Added file chooser to simple chirp.
+------------------------------------------------------------------------
+r11 | nwitt | 2015-01-29 15:13:06 -0700 (Thu, 29 Jan 2015) | 1 line
+
+added test class
+------------------------------------------------------------------------
+r10 | nwitt | 2015-01-29 14:50:20 -0700 (Thu, 29 Jan 2015) | 1 line
+
+Got audio to work
+------------------------------------------------------------------------
+r9 | whuang | 2015-01-29 14:34:28 -0700 (Thu, 29 Jan 2015) | 1 line
+
+Adding chirp sound effect
+------------------------------------------------------------------------
+r8 | whuang | 2015-01-29 14:24:32 -0700 (Thu, 29 Jan 2015) | 1 line
+
+Updated source code
+------------------------------------------------------------------------
+r7 | whuang | 2015-01-29 14:17:05 -0700 (Thu, 29 Jan 2015) | 1 line
+
+First Iteration - A pop up shows up on successful compile.
+------------------------------------------------------------------------
+r6 | mroman | 2015-01-29 13:11:18 -0700 (Thu, 29 Jan 2015) | 1 line
+
+Created a documents folder withing Github and added a User Stories text file.
+------------------------------------------------------------------------
+r5 | mroman | 2015-01-29 13:01:40 -0700 (Thu, 29 Jan 2015) | 1 line
+
+Test of basic extension
+------------------------------------------------------------------------
+r4 | jgillham | 2015-01-28 20:36:29 -0700 (Wed, 28 Jan 2015) | 1 line
+
+Updated the build with today's work.
+------------------------------------------------------------------------
+r3 | jgillham | 2015-01-28 20:33:44 -0700 (Wed, 28 Jan 2015) | 1 line
+
+Added file from the basic extension.
+------------------------------------------------------------------------
+r2 | jgillham | 2015-01-28 19:44:52 -0700 (Wed, 28 Jan 2015) | 1 line
+
+Uploaded meeting notes.
+------------------------------------------------------------------------
+r1 | tmacari | 2015-01-28 09:40:51 -0700 (Wed, 28 Jan 2015) | 1 line
+
+Created the initial base directories.
+------------------------------------------------------------------------

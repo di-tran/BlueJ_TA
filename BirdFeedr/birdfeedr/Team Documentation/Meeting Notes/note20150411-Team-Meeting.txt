@@ -1,0 +1,88 @@
+MEETING MINUTES
+2015-04-11 14:10
+
+AGENDA
+- Did we meet our deadline? (Implementing the two questions: exercise location / load button)
+
+DECISIONS
+— Wei will ask for examples of the team notebook.
+- Exercises will be deployed through a initial set in a jar, with the ability
+  to download exercises later.
+
+ACCOMPLISHMENTS
+- Thomas and Miguel implemented file location for exercises.
+- Load button implemented
+- Deadline has been met.
+- Finished brainstorming best / worst moments
+
+UNANSWERED QUESTIONS
+What’s our project’s name?
+How are we deploying our exercises? Inside our jar with BlueJ’s export feature?
+
+TO DO
+- Create a project name
+- Wei will make a closer for the status update
+- Assign agenda item to debug exercise button
+- Create a key message based off of our experiences
+- Compose Monday status update
+- Create agenda
+- Assign note taker
+- Create a blurb
+
+RAW NOTES
+
+Exercises could be placed in a temp folder / in the jar.
+Deploying it separately looks clumsy / unprofessional.
+Create an installer? There are tools available
+Prebuilt exercises + additional folders?
+
+Troubleshooting compile error (revision 213):
+Working as of Thursday night.
+Compiler error. Duplicate classes were deleted.
+Works after troubleshooting: duplicate classes with no source code.
+
+Options:
+- Deployed in jar.
+- Deployed separately in their own zip.
+- Starter set in jar, additional available for download.
+
+It would be good to make sure the jar exercises are tested & add whatever code is
+needed to make it work.
+
+Execute button doesn’t work. Exercise not launched.
+
+What were our best moments in general?
+Our vision
+Our teamname
+Our first design iteration on the smartboard
+Thomas’s jokes
+When Wei bought drinks for everyone
+Nate shows his stuff
+Showing up Git and Chirp to each other
+Getting members back
+
+What were our worst moments in general?
+Two weeks about process models
+Deciding our project
+Losing two members
+Chirp / Git reuniting
+When we started using Google Hangouts instead of Skype
+Using Google Drive when we had SVN
+Second presentation
+
+Starting key messages / main ideas:
+- Morale & how you can improve it (losing / gaining members; exploration / unification)
+- Conflicting / Unanimous Decisions: Conflicting decisions split morale; unanimous the opposite
+- Lingering decisions affects morale. 
+  - Process model
+    - Wasn’t considered until asked about
+    - Agreed on a concrete process model.
+    - Researched process model
+  - Chirp / Git reuniting
+  - Where to put what in Google Drive before refactoring
+  - Final project decision (CodingBat)
+
+- Identify decision making points or areas.
+- Hashed a process model that fit our needs, got Jodied. Stopped process model altogether.
+  Waited for feedback, listened to concerns and addressed them.
+- Being spiral: do a little effort, check for feedback, and continue / backup & reassess

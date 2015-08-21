@@ -1,0 +1,82 @@
+
+2015-03-16 14:34:30
+
+JP: How are you tagging releases?
+
+Josh: Typically there is a trunk?
+  We never discussed tagging.
+
+JP: You seem to make decisions w/o considering implications.
+  Think more about who the users were.
+  In agile, tools you need to be looked into further.
+
+
+  Liked the purpose.
+  I get you are not trying to hold us to this.
+  Its unclear that this defines what increments means.
+  Okay with that b/c of definitino
+  Unsure when we get to the process model.
+  What is the out come of project planning?
+
+Di, Wei: User stories, Vision, and Definition.
+
+JP: Project planning: you define the stories once.
+
+Di: According to the document it does look like we do the user stories once.
+   But we wanted to add and change the 
+
+JP: The whole thing is linear. Where is XP is a circle.
+   How do we know that this matches?
+   Consider what you are doing?
+   What are you doing that is different than CS1 students that demonstrates
+    knowledge of engineering?
+
+Josh: So you are looking at the disconnect b/t our custom process model
+    and what you are actually doing?
+
+JP: Start w/ something that you believe in.
+   Find attributes that you can use.
+    Its too grand.
+   Just do things that demonstrate best practices.
+   You don't have time to invent new stuff.
+   Worth doing so we can get to this discussion.
+
+Josh: So we can say we use test first development.
+
+Di: SO yes. Design based on outcomes.
+  Identify a small set things.
+  Ensure you were adhering.
+
+Josh: so I feel like this was education.
+
+  The core is what we need to get where we wanted to go.
+
+  We could split user stories into tasks.
+
+2015-03-16 14:57:41
+
+2015-03-16 15:10:23
+
+Thomas: exercise object.
+   (demoing)
+   Easily integratable.
+
+Nate: Shows that we may compile a string.
+  Not sure if we could get stack trace.
+
+Thought: need to determine insertion point.
+
+JP: How is this going to integrate.
+
+Nate: Problem: relies on the calling thread.
+   so what if the user does an infinite loop.
+
+JP: You might get resistance from educators who want students to see the
+  whole thing.
+   Highly entrenched 
+   They might write you off.
+   I am thinking of even greater success.
+   Your project as it lives on afterwards.
+   Acknowledge that we did not have time to address this issue
+   Now the people are happy b/c they are heard.
+2015-03-16 15:49:02

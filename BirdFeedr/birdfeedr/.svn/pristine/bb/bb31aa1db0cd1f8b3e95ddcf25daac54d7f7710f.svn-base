@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=event
+comment0.target=void\ handleButtonAction(javafx.event.ActionEvent)
+comment0.text=\r\n\ Called\ whenever\ a\ button\ or\ menu\ item\ is\ pressed,\ and\ calls\ a\ function\r\n\ depending\ on\ the\ button/item\ pressed.\r\n\r\n\ @param\ event\ the\ calling\ event\r\n
+comment1.params=url\ rb
+comment1.target=void\ initialize(java.net.URL,\ java.util.ResourceBundle)
+comment1.text=\r\n\ \r\n
+numComments=2

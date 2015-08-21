@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=junitPath
+comment0.target=TestRunner(java.lang.String)
+comment1.params=className\ dir
+comment1.target=java.lang.String\ test(java.lang.String,\ java.io.File)
+numComments=2

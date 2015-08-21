@@ -1,0 +1,73 @@
+import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JTextArea;
+
+
+/**
+ * Testing GUI for coding practice
+ * 
+ * @author Miguel Roman-Roman
+ * @author Wei Huang
+ * @author Di Tran
+ * @author Josh Gillham
+ * @author Nathan Witt
+ * @author Thomas Macari
+ */
+public class ExerciseGUI extends JFrame implements ActionListener{
+
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
+    
+    private JButton runButton;
+    
+    /**
+     * Creates the GUI
+     */
+    public ExerciseGUI(){
+        super("Coding Practice");
+        setSize(640, 480);
+        setResizable(true);
+        setLayout(new BoxLayout(this.getContentPane(), BoxLayout.Y_AXIS));
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        JLabel title = new JLabel("Title: " + "");
+        add(title);
+        JTextArea description = new JTextArea("Description: " + "MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM");
+        description.setEditable(false);
+        description.setLineWrap(true);
+        description.setBackground(getBackground());
+        add(description);
+        JLabel example = new JLabel("Example: " + "");
+        add(example);
+        JTextArea text = new JTextArea();
+        text.setLineWrap(true);
+        add(text);
+        JLabel jUnitText = new JLabel("Placeholder for JUnit lights to see if exercise is correct or not.");
+        add(jUnitText);
+        this.runButton = new JButton();
+        this.runButton.setText("Run");
+        this.runButton.addActionListener(this);
+        add(this.runButton);
+        setVisible(true);
+    }
+
+    /**
+     * Opens up a message dialog.
+     * 
+     * @param event Actionevent event
+     */
+    @Override
+    public void actionPerformed(ActionEvent event) {
+        if(event.getSource() == this.runButton){
+            JOptionPane.showMessageDialog(null, "Compiles!");
+        }
+    }
+}

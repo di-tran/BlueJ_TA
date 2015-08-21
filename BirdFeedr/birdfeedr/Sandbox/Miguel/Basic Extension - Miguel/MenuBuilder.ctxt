@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=aPackage
+comment0.target=javax.swing.JMenuItem\ getToolsMenuItem(bluej.extensions.BPackage)
+comment1.params=aClass
+comment1.target=javax.swing.JMenuItem\ getClassMenuItem(bluej.extensions.BClass)
+comment2.params=anObject
+comment2.target=javax.swing.JMenuItem\ getObjectMenuItem(bluej.extensions.BObject)
+comment3.params=bp\ jmi
+comment3.target=void\ notifyPostToolsMenu(bluej.extensions.BPackage,\ javax.swing.JMenuItem)
+comment4.params=bc\ jmi
+comment4.target=void\ notifyPostClassMenu(bluej.extensions.BClass,\ javax.swing.JMenuItem)
+comment5.params=bo\ jmi
+comment5.target=void\ notifyPostObjectMenu(bluej.extensions.BObject,\ javax.swing.JMenuItem)
+comment6.params=header
+comment6.target=void\ showCurrentStatus(java.lang.String)
+numComments=7

@@ -1,0 +1,4 @@
+To better address what user stories to implement first we decided to prioritize our
+stories by looking at what modules each story would require to be made. 
+
+The following artifact consists of the user stories generated for project BlueJ TA.

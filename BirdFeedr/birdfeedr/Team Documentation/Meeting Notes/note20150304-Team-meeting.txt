@@ -1,0 +1,98 @@
+
+2015-03-04 14:02:25
+
+
+Wei: we create the exercises for now and pull from a local file.
+
+Josh: I like to write code that can be scoped up later.
+
+Thomas: so we keep our design moduler.
+
+Wei: we create a get exercises class that we could scope up later.
+
+2015-03-04 14:06:20
+
+2015-03-04 14:51:46
+
+
+Thomas: we focusing on two sections the do and add features.
+
+Wei: we are just having a local repository.
+   We have do and integrate.
+
+Wei: We might be doing a presentation about presentations.
+
+Nate: We are doing a tiger presentation next Wednesday, 4th.
+   You could do a presentations on visions.
+
+Josh: If you are going to do that then describe what you want to do and
+   document.
+
+2015-03-04 15:11:38
+
+2015-03-04 15:20:17
+
+Wei: we split it up to editors and users.
+   Editors create exercises for the users.
+   Users do exercises
+
+   As a user, I want to select exercises.
+   As a user, I want to work on a exercise.
+   As a user, I would to receive feedback.
+   As a user, I want to see examples of the exercises.
+   As a user, I want to see a description of the exercises.
+   As user, I want to see solutions.
+   As a user, I want to run my solutions.
+
+
+Nate: we came up with elements.
+Thomas: this project def lays out what we want to do and fits in an agile space.
+  List of stake holders.
+
+Wei: Defined two different people who would use the program.
+   Users do the exercises.
+   Editor creates and edits the exercises.
+
+
+Wei: As a user, I want know what exercises I have already completed.
+
+Thomas:  That b/c more complex.
+
+Josh: the purpose of pairing is to create ideas. and meetings disapprove 
+
+Di: I think part of the stalemate: someone mentioned that we 
+   do something and then go back. This felt.
+
+Wei: Minimize risks.
+
+Di: I did not know what was going and wanted to fall back.
+  I like the idea of the create and invalidate cycle.
+  
+Nate: individualized work allows work and provides protection against
+  shutting down.
+
+Wei: Do you want to come up with architecture design.
+
+Thomas: I will look into exercise formats.
+
+   Can we define our first iteration.
+   We should define an iteration.
+
+Di: 1st iteration, click on the menu and launch the program.
+
+Thomas: that might not take all six of us.
+
+
+Thomas: Team meeting can address issues.
+
+Agenda for saturday:
+
+  -Touch base and update.
+  -Form status update.
+2015-03-04 15:49:38
+
+2015-03-04 15:52:02
+
+
+Josh: I will make presentation, table of contents, and take home message.
+2015-03-04 15:52:23

@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=TestGUI()
+comment0.text=\r\n\ Creates\ the\ GUI\ for\ the\ extension\r\n
+comment1.params=
+comment1.target=void\ createGUI()
+comment1.text=\r\n\ Used\ to\ create\ a\ JavaFX\ panel\r\n
+comment2.params=
+comment2.target=void\ run()
+comment3.params=
+comment3.target=javafx.scene.Scene\ createScene()
+comment3.text=\r\n\ Creates\ a\ JavaFX\ scene\r\n\ \r\n\ @return\ the\ JavaFX\ scene\r\n
+comment4.params=
+comment4.target=void\ packGUI()
+comment4.text=\r\n\ Packs\ the\ GUI\ and\ sets\ it\ visible\r\n
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+comment6.params=
+comment6.target=void\ run()
+numComments=7

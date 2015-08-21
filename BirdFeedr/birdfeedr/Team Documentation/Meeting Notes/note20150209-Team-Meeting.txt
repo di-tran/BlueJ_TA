@@ -1,0 +1,142 @@
+
+2015-02-09 15:03:46
+
+
+Thomas: likes a sweet of extensions.
+   We can pick several extensions.
+   Everybody gets to play everyrole.
+
+Agenda: talk about the final project ideas
+  talk about the presentations.
+
+
+Thomas: We gave a presentation last semester about the
+  principles of waterfall and then sprinkled clues about how we used.
+
+  That is, here is what it is general and here is how we applied.
+
+Di: Generalizing makes ideas useful for others.
+
+Thomas: the process is to pick a project and try and make it useful to others.
+
+Wei: In regards, to JP Git project suggestion
+  is everyone in favor of a suite of extensions.
+
+
+Thomas: want two more extensions to call it a suite.
+
+Di: Ext in the suite don't have to be related.
+
+Wei: We can do the API downloader idea.
+
+Thomas: an offline API browser.
+
+Nate: Fine w/ suite.
+
+Josh: the pro of a suite is less pressure on the idea choosing.
+
+Nate: con we never make anything useful.
+
+Thomas: Reflecting on the time line to Git project.
+
+
+Wei: If we do the suite then the Git Project should be documented regardless.
+   Would like everyone working on the presentation at once.
+
+Thomas: RPI it.
+  Have team members do a skit.
+
+Nate: RPI would make more content.
+
+Thomas: Goal -- value for us and audience, but, I need to enjoy it.
+
+Wei: have a guy in the audience
+
+Thomas: show pair programming vs chief programming.
+
+Josh: we need to top down design tasks.
+
+Nate: We need rehersals.
+
+Di: people need to read lines.
+
+Thomas: the people reading the lines off the slides could be scripted.
+   Some people 
+
+Di: We need a structure planned out.
+
+Thomas: Some people could be on improv.
+
+Di: we need to be in the same place for a rehersal.
+
+Thomas: we could let JP know we need to leave the room for rehersals.
+
+   We know class periods will have everyone here.
+
+We decide to use imprav on what we learned.
+
+We decided not to go to Comedy Works.
+
+We decided on the British Bulldog.
+
+Wei: If we did not do suites then we would have to put project Git on 
+   back burner.
+
+Wei: If we did suites then would could keep working on Project Git.
+
+Thomas: Creating an installer in net beans is easy for net beans.
+
+Wei: A con would be taking time to make the installer on suite.
+
+Nate: pro for no suite. Focused making a polished project.
+
+Thomas: con for suite. Scope. Might choose something too big.
+
+
+Thomas: Either way, tomorrow is a prep for wednesday
+   Wednesday and scope the idea and do research.
+  Get an idea for what would be involved.
+
+Miguel: would we still be in sep rpojects.
+
+Thomas: multiple lines of of production.
+
+Josh: there could be a task list.
+
+  One person needs to make sure that there is enough HR staffing for 
+    that project.
+
+Thomas: Let there be one founder that makes sure that project
+   moves forward.
+
+Nathan: Butting heads.
+  For example, if two projects need hours and there is not enough hours
+   to go around.
+
+Josh: We could choose project proirities to begin with.
+
+Wei: set a cap on the projects that can be worked on.
+
+Thomas: this may not be a problem if they are staggered.
+
+Wei: The suite may require more documentation which could be con.
+   It could provide more ways to track our project..
+
+Wei: Keep work out of the team building.
+
+Josh: likes suite + more creativity, I can keep working on suite.
+
+Thomas: Everybody gets what we want.
+
+Wei: Likes the installer.
+
+Nate:
+  Suite rigidity can be a curse to projects.
+
+Miguel: Votes suite for project Git.
+
+Thomas: We should research intentions.
+  Give a rough estimate on what it would take.
+  Think about what we need for presentations.
+
+2015-02-09 15:54:59
